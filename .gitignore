@@ -12,3 +12,7 @@ node_modules/
 *.sqlite
 *.sqlite-*
 *.sqlite3
+
+# Local design drafts and canvas metadata
+.superdesign/
+.superdesign/tmp/
