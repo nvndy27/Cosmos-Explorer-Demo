@@ -124,7 +124,7 @@
     {
       "id": "QA-003",
       "lane": "codex-1",
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "QA-001"
       ],
@@ -137,7 +137,7 @@
     {
       "id": "QA-004",
       "lane": "codex-2",
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "QA-001"
       ],
@@ -146,6 +146,22 @@
       ],
       "title": "Kiểm tra chia sẻ trên HTTPS cục bộ và đường dẫn con",
       "acceptance": "Mở rộng check_http.cjs giữ nguyên các kiểm tra HTTP cũ, thêm mount /cosmos/ và HTTPS loopback self-signed bằng chứng chỉ tạm tạo với openssl qua spawnSync (không shell). Test asset, #earth và hash hồ sơ khác trong context mới, 390/820/1440 và pageerror. Chỉ bind127.0.0.1 port ngẫu nhiên, realpath containment, dọn server/browser/cert trong finally. Báo rõ ignoreHTTPSErrors chỉ dùng cho chứng chỉ test; không chứng minh TLS/public hosting thật. Không lưu private key vào repo và không thêm npm dependency."
+    },
+    {
+      "id": "OPS-QUOTA-001",
+      "lane": "codex-coordinator",
+      "status": "done",
+      "depends_on": [],
+      "allowed_paths": [
+        "scripts/quota_guard.py",
+        "scripts/tests/test_quota_guard.py",
+        "scripts/automation.py",
+        "scripts/install_automation.py",
+        "automation/config.json",
+        "AGENTS.md"
+      ],
+      "title": "Giữ 10% hạn mức 5 giờ và tự tiếp tục sau reset",
+      "acceptance": "Đọc account/rateLimits/read của Codex qua stdio, xác định cửa sổ 300 phút, dừng nhận việc ở <=10%, không mặc định quota lỗi là còn. systemd kiểm tra lại 2 phút và gửi tiếp vào đúng phiên điều phối idle sau khi backend xác nhận còn >10%. Không gọi model để đọc quota, không tự dùng reset credit, không gửi trùng khi kết quả submit không rõ. Unit tests cho ngưỡng, cửa sổ đảo, quota tuần, dữ liệu lỗi, stale reset và resume một lần."
     }
   ]
 }

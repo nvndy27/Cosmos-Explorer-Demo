@@ -51,10 +51,35 @@ Unit=cosmos-explorer.service
 [Install]
 WantedBy=timers.target
 ''')
+    (units / 'cosmos-quota.service').write_text(f'''[Unit]
+Description=Codex quota reserve and reset monitor for Cosmos Explorer
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory={ROOT}
+Environment=PATH={Path.home()}/.local/bin:/usr/local/bin:/usr/bin:/bin:/snap/bin
+ExecStart="{rtk}" proxy /usr/bin/python3 "{ROOT}/scripts/quota_guard.py" tick
+TimeoutStartSec=100
+KillMode=control-group
+UMask=0077
+''')
+    (units / 'cosmos-quota.timer').write_text('''[Unit]
+Description=Check Codex quota every two minutes
+
+[Timer]
+OnStartupSec=30
+OnUnitActiveSec=2min
+AccuracySec=5s
+Unit=cosmos-quota.service
+
+[Install]
+WantedBy=timers.target
+''')
     subprocess.run(['rtk', 'proxy', 'systemctl', '--user', 'daemon-reload'], check=True)
     if args.enable:
         subprocess.run(['rtk', 'proxy', 'systemctl', '--user', 'enable', '--now',
-                        'cosmos-explorer.timer'], check=True)
+                        'cosmos-explorer.timer', 'cosmos-quota.timer'], check=True)
     print('Installed user units at', units)
 
 if __name__ == '__main__':

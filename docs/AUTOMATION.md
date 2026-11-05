@@ -50,3 +50,29 @@ Playwright cài ngoài repo, biến COSMOS_PLAYWRIGHT_MODULE trỏ tới module;
 rtk proxy python3 scripts/install_automation.py --playwright-module /home/nguyenduy/.cache/cosmos-qa/node_modules/playwright --chrome /usr/bin/google-chrome --enable
 ```
 Script tạo unit user và runtime.env, không cài phụ thuộc/đăng nhập hay bật quyền root. Không dùng --enable nếu chỉ muốn tạo unit để xem lại.
+
+## Ngưỡng 10% cửa sổ 5 giờ và tự tiếp tục
+
+Theo yêu cầu chủ dự án ngày 2026-11-05, `minimum_remaining_5h_percent=10`. Trước mỗi wave Codex, điều phối đọc trực tiếp `account/rateLimits/read` qua `codex app-server` stdio; nhận diện cửa sổ bằng `windowDurationMins=300`, không giả định primary luôn là 5 giờ. Nguồn giao thức: [OpenAI Docs — App Server](https://learn.chatgpt.com/docs/app-server). Không đọc/copy token đăng nhập, không gọi model để hỏi quota, không dùng reset credit hoặc mua thêm/đổi tài khoản.
+
+Còn <=10%, tuần hết hạn mức, backend chặn hoặc không đọc được quota: không mở worker mới; trạng thái `waiting_quota` và các tác vụ ready được giữ, không đánh blocked vì quota. Các lượt đang chạy kết thúc ở checkpoint an toàn. Ngưỡng là cổng nhận việc; kiểm tra định kỳ, độ trễ máy chủ và nhiều CLI dùng chung tài khoản có thể khiến phần trăm thực tế thấp hơn 10%. Đây là phần trăm hạn mức tài khoản, không phải bộ đếm token chính xác của dự án.
+
+`cosmos-quota.timer` gọi `quota_guard.py tick` mỗi 2 phút. Khi dữ liệu mới xác nhận còn >10%, watcher đối chiếu đúng handle, incarnation và thư mục của phiên Codex điều phối đã gắn trong `.automation/coordinator.json`; đợi phiên rảnh rồi gửi một prompt tiếp tục. Nếu phiên đang bận/không có, giữ yêu cầu và kiểm tra lại. Không đoán một terminal khác. Máy cần thức, phiên user và Orca/terminal điều phối cần còn hoạt động. Lịch 09:00 vẫn dùng worker exec riêng; watcher reset gửi vào phiên điều phối mở sẵn.
+
+```bash
+rtk proxy python3 scripts/quota_guard.py check
+rtk proxy systemctl --user status cosmos-quota.timer
+rtk proxy journalctl --user -u cosmos-quota.service -n 30 --no-pager
+```
+
+`check` trả 0 khi nhận thêm việc được; 75 khi cần chờ và lưu yêu cầu tiếp tục. `.automation/quota-state.json` chỉ lưu quota đã lọc, không có account ID/token/reset-credit ID. `retry_at` lấy từ mốc reset máy chủ cộng 30 giây; watcher vẫn đọc lại quota, không suy rằng đồng hồ qua mốc reset nghĩa là quota đã đầy.
+
+Gửi prompt có trạng thái `resume_submitting` trước khi gửi, lưu receipt sau khi được nhận. Nếu mất kết nối/crash giữa lúc gửi và lưu receipt thì đánh `resume_needs_inspection`, không gửi trùng. Người điều phối đọc terminal để xác nhận kết quả trước khi sửa cờ này. Đây là trường hợp chưa xác minh, không tự coi là prompt thất bại.
+
+Tạm dừng việc tự gửi tiếp sau reset:
+```bash
+rtk proxy systemctl --user disable --now cosmos-quota.timer
+rtk proxy systemctl --user stop cosmos-quota.service
+```
+
+Installer với --enable cài cả timer hằng ngày và timer quota. Khi khởi động lại Orca hoặc phiên điều phối, phải nhận diện lại terminal và cập nhật binding cục bộ theo inventory mới. Không tái sử dụng handle cũ sau restart.

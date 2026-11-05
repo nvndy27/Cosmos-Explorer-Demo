@@ -74,3 +74,12 @@ Khôi phục thử file Kepler-22 b bị thiếu bằng `cache_images.py` từ m
 [Báo cáo bền trong repo](qa/automation-2026-11-05.json). Log/prompt/review chi tiết lưu cục bộ trong `.automation/runs/`; chúng không được đưa vào Git/gói phát hành. Script ảnh ngoại hành tinh hiện ghi vào thư mục tạm mới và dùng ngày chạy thật, giữ nguyên bằng chứng lịch sử trong docs/qa.
 
 Chưa chạy lại Firefox/Safari hoặc trình đọc màn hình thực, chưa thử 5 người, HTTPS/hosting thật hay rollback public. Storage bị cấm hoàn toàn vẫn cần QA browser thủ công riêng; không đồng nhất với kiểm tra JSON storage hỏng. Hai AGY không thay kiểm định thiên văn chuyên gia.
+
+## Bổ sung trong lượt làm việc bằng terminal mở sẵn — 2026-11-05
+
+- `check_storage.cjs`: Chrome thật với init script tiêm DOMException SecurityError vào getter localStorage, getItem và setItem. Sáu context riêng (file:// ngoại tuyến và HTTP loopback × ba kiểu lỗi), reduced motion, chọn hồ sơ, tìm kiếm, lưu/bỏ lưu trong phiên, pageerror và tràn ngang 390/820/1440. Có probe xác nhận lỗi đã được tiêm. Đây là fault injection trong browser, không phải kiểm thử mọi cấu hình quyền riêng tư của Chrome.
+- `check_http.cjs`: HTTP root, HTTP /cosmos/ và HTTPS /cosmos/ với chứng chỉ self-signed tạm; kiểm tra tải tài nguyên/MIME, hash Earth/Mars ở context mới, thư viện/tìm không dấu và ba viewport. Chỉ context HTTPS test bỏ qua lỗi chứng chỉ; không kết luận TLS trust hay hosting thật đã được kiểm chứng.
+- `check_all.py --browser` nay chạy cả hai script; automation dùng một cổng tổng hợp, không chạy lặp HTTP riêng. Không sửa giao diện hay dữ liệu khoa học.
+- `quota_guard.py` có kiểm thử ngưỡng 10%, xác định cửa sổ theo 300 phút, hạn mức tuần/backend chặn, dữ liệu lỗi, không tự suy refill theo đồng hồ, giữ khi coordinator bận và chống gửi lặp sau receipt không rõ. Đọc live qua App Server thành công; việc chờ reset thật sẽ do timer theo dõi khi chạm ngưỡng, chưa giả vờ rằng đã trải qua reset tự nhiên trong lượt này.
+
+Bằng chứng chi tiết cục bộ: `.automation/live-20261105-storage-https/`; script browser ghi JSON và ảnh trong thư mục tạm được in trong log. Các giới hạn thử người thật, Firefox/Safari, trình đọc màn hình và hosting công khai ở trên vẫn còn.

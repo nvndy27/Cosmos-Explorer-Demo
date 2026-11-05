@@ -15,6 +15,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 LOCAL = ROOT / '.automation'
 PROTECTED = ('AGENTS.md', 'automation/', 'scripts/automation.py', 'scripts/check_all.py',
+             'scripts/quota_guard.py', 'scripts/install_automation.py',
+             'scripts/tests/test_quota_guard.py', 'scripts/tests/test_automation.py',
              'cosmos-explorer/data/', 'cosmos-explorer/catalog')
 
 
@@ -235,6 +237,14 @@ def cycle():
                 report['status'] = 'idle'
                 report['note'] = 'No unblocked ready tasks; baseline passed. No AI quota used.'
             else:
+                from quota_guard import check, record_hold
+                admission = check(config.get('minimum_remaining_5h_percent', 10))
+                report['quota_admission'] = admission
+                if not admission['allowed']:
+                    record_hold(admission)
+                    report['status'] = 'waiting_quota'
+                    report['note'] = 'No worker launched. Quota monitor will recheck before resuming.'
+                    return 0
                 # Inspect every future and wait for all editors to settle before reporting failure.
                 with ThreadPoolExecutor(max_workers=3) as pool:
                     futures = [pool.submit(worker, t, base, folder, config) for t in tasks]

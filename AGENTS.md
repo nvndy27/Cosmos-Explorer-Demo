@@ -31,3 +31,6 @@ Không triển khai công khai hoặc gửi tin nhắn cho bên thứ ba nếu c
 
 ## Vận hành nhiều CLI
 Đọc `docs/PRODUCT.md`, `docs/WORK_RULES.md`, `docs/AUTOMATION.md` trước khi nhận tác vụ. Backlog duyệt tại `automation/backlog.json`; chỉ sửa `allowed_paths` của tác vụ, không sửa luật/bộ điều phối để vượt nghiệm thu. Không tạo tác nhân con trong một worker CLI. Không commit, merge, deploy hay sửa trạng thái backlog trong worker; bộ điều phối quản lý Git. Báo cáo trung thực bằng tiếng Việt.
+
+## Giữ hạn mức Codex theo yêu cầu chủ dự án
+Trước mỗi lượt giao việc Codex mới chạy `rtk proxy python3 scripts/quota_guard.py check`. Còn <=10% cửa sổ 5 giờ hoặc không đọc được hạn mức thì giữ checkpoint và không giao việc mới; mã thoát 75 nghĩa là đang chờ. Để bộ theo dõi systemd đọc lại hạn mức và gửi tiếp vào phiên điều phối sau reset khi còn >10%. Không dùng reset credit, không đổi tài khoản/model hay mua thêm để né ngưỡng. Các lượt đang chạy kết thúc ở checkpoint an toàn, không bảo đảm chặn đúng từng phần trăm khi nhiều CLI dùng chung tài khoản. Không tự biến các việc SCI/USER/PUB cần con người thành việc tự động.

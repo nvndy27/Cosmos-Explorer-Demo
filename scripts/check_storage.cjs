@@ -110,7 +110,8 @@ async function runCase(browser, protocol, mode, baseUrl, report) {
   try {
     context = await browser.newContext({
       viewport: { width: 1440, height: 1000 },
-      reducedMotion: 'reduce'
+      reducedMotion: 'reduce',
+      offline: protocol === 'file'
     });
     await context.addInitScript({ content: storageInitScript(mode) });
     const page = await context.newPage();
