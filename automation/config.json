@@ -6,5 +6,5 @@
   "auto_integrate": true,
   "daily_time": "09:00",
   "timezone": "Asia/Ho_Chi_Minh",
-  "minimum_remaining_5h_percent": 10
+  "minimum_remaining_5h_percent": 50
 }

@@ -51,13 +51,13 @@ rtk proxy python3 scripts/install_automation.py --playwright-module /home/nguyen
 ```
 Script tạo unit user và runtime.env, không cài phụ thuộc/đăng nhập hay bật quyền root. Không dùng --enable nếu chỉ muốn tạo unit để xem lại.
 
-## Ngưỡng 10% cửa sổ 5 giờ và tự tiếp tục
+## Ngưỡng 50% cửa sổ 5 giờ và tự tiếp tục
 
-Theo yêu cầu chủ dự án ngày 2026-11-05, `minimum_remaining_5h_percent=10`. Trước mỗi wave Codex, điều phối đọc trực tiếp `account/rateLimits/read` qua `codex app-server` stdio; nhận diện cửa sổ bằng `windowDurationMins=300`, không giả định primary luôn là 5 giờ. Nguồn giao thức: [OpenAI Docs — App Server](https://learn.chatgpt.com/docs/app-server). Không đọc/copy token đăng nhập, không gọi model để hỏi quota, không dùng reset credit hoặc mua thêm/đổi tài khoản.
+Theo yêu cầu mới nhất của chủ dự án ngày 2026-11-05, dừng khi đã dùng 50% cửa sổ 5 giờ (giữ lại 50%); `minimum_remaining_5h_percent=50`. Trước mỗi wave Codex, điều phối đọc trực tiếp `account/rateLimits/read` qua `codex app-server` stdio; nhận diện cửa sổ bằng `windowDurationMins=300`, không giả định primary luôn là 5 giờ. Nguồn giao thức: [OpenAI Docs — App Server](https://learn.chatgpt.com/docs/app-server). Không đọc/copy token đăng nhập, không gọi model để hỏi quota, không dùng reset credit hoặc mua thêm/đổi tài khoản.
 
-Còn <=10%, tuần hết hạn mức, backend chặn hoặc không đọc được quota: không mở worker mới; trạng thái `waiting_quota` và các tác vụ ready được giữ, không đánh blocked vì quota. Các lượt đang chạy kết thúc ở checkpoint an toàn. Ngưỡng là cổng nhận việc; kiểm tra định kỳ, độ trễ máy chủ và nhiều CLI dùng chung tài khoản có thể khiến phần trăm thực tế thấp hơn 10%. Đây là phần trăm hạn mức tài khoản, không phải bộ đếm token chính xác của dự án.
+Còn <=50%, tuần hết hạn mức, backend chặn hoặc không đọc được quota: không mở worker mới; trạng thái `waiting_quota` và các tác vụ ready được giữ, không đánh blocked vì quota. Các lượt đang chạy kết thúc ở checkpoint an toàn. Ngưỡng là cổng nhận việc; kiểm tra định kỳ, độ trễ máy chủ và nhiều CLI dùng chung tài khoản có thể khiến phần trăm thực tế thấp hơn 50%. Đây là phần trăm hạn mức tài khoản, không phải bộ đếm token chính xác của dự án.
 
-`cosmos-quota.timer` gọi `quota_guard.py tick` mỗi 2 phút. Khi dữ liệu mới xác nhận còn >10%, watcher đối chiếu đúng handle, incarnation và thư mục của phiên Codex điều phối đã gắn trong `.automation/coordinator.json`; đợi phiên rảnh rồi gửi một prompt tiếp tục. Nếu phiên đang bận/không có hoặc pipeline đang giữ khóa .automation/lock, giữ yêu cầu và kiểm tra lại. Bộ gửi tiếp giữ cùng khóa trong lúc xác nhận và gửi để tránh đụng lượt chạy hằng ngày. Không đoán một terminal khác. Máy cần thức, phiên user và Orca/terminal điều phối cần còn hoạt động. Lịch 09:00 vẫn dùng worker exec riêng; watcher reset gửi vào phiên điều phối mở sẵn.
+`cosmos-quota.timer` gọi `quota_guard.py tick` mỗi 2 phút. Khi dữ liệu mới xác nhận còn >50%, watcher đối chiếu đúng handle, incarnation và thư mục của phiên Codex điều phối đã gắn trong `.automation/coordinator.json`; đợi phiên rảnh rồi gửi một prompt tiếp tục. Nếu phiên đang bận/không có hoặc pipeline đang giữ khóa .automation/lock, giữ yêu cầu và kiểm tra lại. Bộ gửi tiếp giữ cùng khóa trong lúc xác nhận và gửi để tránh đụng lượt chạy hằng ngày. Không đoán một terminal khác. Máy cần thức, phiên user và Orca/terminal điều phối cần còn hoạt động. Lịch 09:00 vẫn dùng worker exec riêng; watcher reset gửi vào phiên điều phối mở sẵn.
 
 ```bash
 rtk proxy python3 scripts/quota_guard.py check

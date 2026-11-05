@@ -239,7 +239,7 @@ def cycle():
                 report['note'] = 'No unblocked ready tasks; baseline passed. No AI quota used.'
             else:
                 from quota_guard import check, record_hold
-                admission = check(config.get('minimum_remaining_5h_percent', 10))
+                admission = check(config.get('minimum_remaining_5h_percent', 50))
                 report['quota_admission'] = admission
                 if not admission['allowed']:
                     record_hold(admission)
