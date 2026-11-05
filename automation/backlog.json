@@ -4,7 +4,7 @@
     {
       "id": "OPS-001",
       "lane": "codex-1",
-      "status": "ready",
+      "status": "done",
       "depends_on": [],
       "allowed_paths": [
         "docs/RELEASE.md"
@@ -15,7 +15,7 @@
     {
       "id": "QA-001",
       "lane": "codex-2",
-      "status": "ready",
+      "status": "done",
       "depends_on": [],
       "allowed_paths": [
         "scripts/check_http.cjs"
@@ -26,7 +26,7 @@
     {
       "id": "OPS-002",
       "lane": "codex-3",
-      "status": "ready",
+      "status": "done",
       "depends_on": [],
       "allowed_paths": [
         "scripts/package_release.py"
