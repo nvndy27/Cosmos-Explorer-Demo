@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 import signal
 import shlex
+import shutil
 import subprocess
 import sys
 
@@ -33,7 +34,7 @@ def read(path, default=None):
 
 def run(argv, cwd=ROOT, log=None, timeout=240):
     """Kill the process group on timeout; never leave a duplicate editor running."""
-    with subprocess.Popen(['rtk', 'proxy', *map(str, argv)], cwd=cwd,
+    with subprocess.Popen((['rtk', 'proxy'] if shutil.which('rtk') else []) + list(map(str, argv)), cwd=cwd,
                           stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                           start_new_session=True, text=True) as process:
         try:

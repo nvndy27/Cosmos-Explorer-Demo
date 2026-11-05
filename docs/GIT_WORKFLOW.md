@@ -24,7 +24,7 @@ Coordinator commit sau khi kiểm diff/phạm vi. Mỗi commit giải quyết m�
 4. Có request_changes hoặc SHA đổi thì sửa và review lại. Coordinator xác nhận HEAD, trạng thái cây và phạm vi trước khi merge. Dùng merge commit để giữ commit đã duyệt; không rewrite SHA sau review.
 5. Chỉ đóng issue khi acceptance đạt, review/gates có bằng chứng và PR đã merge. Issue manual giữ mở khi chưa có đầu vào. Đồng bộ backlog done sau merge; không đóng issue chỉ vì đã có kế hoạch.
 
-Automation hiện fast-forward main cục bộ theo thiết kế cũ; không có bước tự push remote. Khi có lệnh push/phát hành riêng, coordinator đưa candidate lên branch và PR theo quy trình trên. Không cho timer tự push main. GitHub chưa bật branch protection/check bắt buộc trên server; các quy tắc hiện được áp dụng qua quy trình, không báo là đã cưỡng chế bằng GitHub.
+Automation hiện fast-forward main cục bộ theo thiết kế cũ; không có bước tự push remote. Khi có lệnh push/phát hành riêng, coordinator đưa candidate lên branch và PR theo quy trình trên. Không cho timer tự push main. GitHub branch protection đã bật trên main ngày 05/11/2026: bắt buộc PR và check `product` của GitHub Actions đạt, branch phải cập nhật với main; áp dụng cả admin, cấm force push/xóa branch main và yêu cầu giải quyết conversation. Không yêu cầu số lượng GitHub human approval (đặt 0); hai AGY cùng SHA là cổng review riêng theo quy trình, không được giả thành hai reviewer người thật.
 
 ## Phân công và phát hành
 Codex điều phối quản lý Git/tích hợp; hai Codex worker nhận file riêng. AGY 1 rà logic/hồi quy; AGY 2 rà UX/tiếp cận/độ khớp bằng chứng. Bản cập nhật khoa học cần nguồn và người rà có chuyên môn theo DATA_POLICY.md. Merge Git không đồng nghĩa deploy web; public theo issue PUB-001 và RELEASE.md.

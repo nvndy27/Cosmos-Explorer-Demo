@@ -63,3 +63,6 @@ Mở bằng `file://` là cách dùng ngoại tuyến, nhưng không thay cho ki
 Hiện tài liệu dự án chưa xác nhận một kênh liên hệ công khai. Nếu đang dùng bản trong lớp, hãy báo cho giáo viên hoặc người phụ trách đã cung cấp bản đó, kèm tên nút/bước thao tác, thiết bị/trình duyệt và cách tái hiện lỗi. Có thể gửi ảnh chụp màn hình sau khi xem lại và che mọi thông tin cá nhân trước khi chia sẻ.
 
 Không cần gửi tên thật, email, tài khoản, lịch sử duyệt web, danh sách yêu thích, đường dẫn `file://` đầy đủ, hay nội dung cá nhân khác. Đừng đính kèm dữ liệu cá nhân; chỉ mô tả điều đã xảy ra và kết quả mong đợi. Nếu không có người phụ trách để nhận báo lỗi, hiện chưa có địa chỉ hay biểu mẫu báo lỗi chính thức được xác nhận trong ứng dụng.
+
+## Xóa dữ liệu trên thiết bị
+Mở **Hướng dẫn (?)**, chọn **Xóa mục đã lưu trên thiết bị** và xác nhận. Chỉ yêu thích của Cosmos Explorer được xóa; hủy giữ nguyên danh sách. Nếu trình duyệt chặn bộ nhớ, ứng dụng báo giới hạn và bạn cần xóa dữ liệu site trong cài đặt trình duyệt.

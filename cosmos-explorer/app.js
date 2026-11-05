@@ -69,6 +69,18 @@ async function copyProfileLink(){
  showCopyNotice(message);
 }
 $('copyProfileLink').addEventListener('click',copyProfileLink);
+function clearSavedOnDevice(){
+ const message='Chỉ xóa các mục yêu thích của Cosmos Explorer trên thiết bị này. Không xóa dữ liệu trang web khác.';
+ if(!window.confirm(message)){showCopyNotice('Đã hủy. Danh sách yêu thích không thay đổi.');return}
+ let persistent=true;
+ try{localStorage.removeItem('cosmos_favorites')}catch(_){persistent=false}
+ favorites=[];
+ renderList();
+ $('favBtn').textContent='☆';$('favBtn').classList.remove('active');$('favBtn').setAttribute('aria-pressed','false');$('favBtn').setAttribute('aria-label','Lưu mục yêu thích');
+ if(typeof ExplorerUI!=='undefined'&&ExplorerUI.state.mode==='library')$('libraryQuery').dispatchEvent(new Event('input',{bubbles:true}));
+ showCopyNotice(persistent?'Đã xóa các mục yêu thích của Cosmos Explorer khỏi thiết bị này.':'Đã xóa yêu thích trong phiên này, nhưng không thể bảo đảm xóa dữ liệu lưu lâu dài. Hãy xóa dữ liệu trang web trong cài đặt trình duyệt.');
+}
+$('clearSavedOnDevice').addEventListener('click',clearSavedOnDevice);
 // Dialog keyboard containment and focus restoration.
 let previousFocus=null;
 $('helpBtn').addEventListener('click',()=>{previousFocus=document.activeElement;$('closeHelp').focus()});

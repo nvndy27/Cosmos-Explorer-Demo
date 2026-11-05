@@ -94,3 +94,11 @@ Bằng chứng chi tiết cục bộ: `.automation/live-20261105-storage-https/`
 Toàn bộ `scripts/check_all.py --browser` đạt trên commit này: 18 unittest, 14 smoke, validator 138 hồ sơ/126 ảnh, các kiểm tra Chrome cũ, 6 ca localStorage SecurityError, HTTP root, HTTP/HTTPS loopback tại `/cosmos/`, và kiểm tra chia sẻ. Log chi tiết cục bộ: `.automation/live-20261105-ux-share/final-gates.log`; tóm tắt bền: [ux-share-2026-11-05.json](qa/ux-share-2026-11-05.json). Hai AGY đã approve cùng commit, không có issue.
 
 HTTPS dùng chứng chỉ self-signed trên loopback, không xác minh TLS/hosting công khai. Chưa kiểm tra Firefox, Safari, trình đọc màn hình hoặc thử nghiệm người dùng thật; các cổng này vẫn chờ thực hiện thủ công.
+
+## Nền CSDL và bảo mật sản phẩm — 2026-11-05
+
+`check_all.py --browser` đạt trên code `3bc1b409b0acf0afc2b6981aa714a81facf2e643`: **27 unittest, 14 smoke**, validator 138 hồ sơ/126 ảnh, toàn bộ bộ Chrome cũ và các kiểm tra CSP, người dùng giả lập, xóa yêu thích mới. DB/API có 9 test riêng: FK/integrity, round-trip, typed measurements/null/nguồn, phân trang/read-only, injection/traversal, build ổn định, giữ DB cũ khi lỗi và bảo vệ đường dẫn output. CSDL schema 2 dựng thực với các số dòng được ghi tại [báo cáo](qa/product-foundation-2026-11-05.json).
+
+Chrome kiểm tra chặn inline script thật qua sự kiện CSP, query/hash độc hại không thực thi, không request ra ngoài trong luồng khởi động/tìm kiếm, link nguồn vẫn còn. Xóa yêu thích có xác nhận: cancel giữ nguyên; confirm chỉ xóa cosmos_favorites, giữ key khác và hồ sơ/so sánh; removeItem bị SecurityError xóa trong phiên và báo giới hạn. Nút xóa được đo >=14px, >=42px tại 390px. Ba synthetic persona dùng context riêng; **0 người dùng thật**.
+
+README đã được chụp bằng Chrome thật offline, kiểm ảnh/link cục bộ và không chứa hướng dẫn vận hành tác nhân. Các ảnh trình bày sản phẩm ở docs/screenshots. Log chi tiết cục bộ: .automation/product-wave/final-gates.log; kiểm tra remote và review theo [PR #11](https://github.com/nvndy27/Cosmos-Explorer-Demo/pull/11). Frontend chưa dùng API; API loopback, header triển khai mẫu và test giả lập không thay thế nghiệm thu backend/hosting public, người thật, khoa học hoặc cross-browser.

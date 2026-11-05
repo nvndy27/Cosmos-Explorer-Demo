@@ -4,11 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#070b17" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'none'" />
   <meta name="description" content="Cosmos Explorer — ứng dụng khám phá vũ trụ trực quan, kiến thức thiên văn từ NASA." />
   <title>Cosmos Explorer — Khám phá vũ trụ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="enhancements.css" />
   <link rel="stylesheet" href="explorer22.css" />
@@ -97,7 +96,7 @@
       </aside>
     </div>
   </div>
-  <div class="overlay hidden" id="helpOverlay" tabindex="-1" role="dialog" aria-modal="true" aria-label="Hướng dẫn sử dụng"><div class="modal"><button class="modal-close" id="closeHelp" aria-label="Đóng">×</button><div class="tiny-overline">Hướng dẫn</div><h2>Bắt đầu chuyến du hành</h2><p>Chọn một cấp độ vũ trụ hoặc thiên thể ở thanh bên. Dùng chuột, bàn rê hoặc ngón tay kéo để dịch góc nhìn, cuộn để phóng to và thu nhỏ.</p><p>Khung giữa luôn giữ góc nhìn tổng thể; chọn một điểm sáng để mở hồ sơ. Ảnh chi tiết chỉ hiển thị trong hồ sơ bên phải (hoặc bên dưới trên điện thoại). Nhấp <b>Khám phá khoa học</b> để đọc thông tin đã được quan sát. Nhấp <b>Xem dữ liệu gốc</b> để mở nguồn NASA hoặc ESA. Bạn có thể tìm kiếm, đánh dấu mục yêu thích và so sánh bán kính với Trái Đất.</p><p class="caution">Chuyển giữa Sơ đồ, Thư viện và So sánh bằng thanh chế độ. Thư viện có bộ lọc và bộ sưu tập; chọn Đọc rộng để đọc hồ sơ dễ hơn. Đây là dữ liệu biên tập sẵn, không tự cập nhật. Mô hình đồ họa và chuyển động không tương ứng với bản đồ thiên văn 3D theo thời gian thực.</p><button class="modal-cta" id="gotIt">Bắt đầu khám phá →</button></div></div>
+  <div class="overlay hidden" id="helpOverlay" tabindex="-1" role="dialog" aria-modal="true" aria-label="Hướng dẫn sử dụng"><div class="modal"><button class="modal-close" id="closeHelp" aria-label="Đóng">×</button><div class="tiny-overline">Hướng dẫn</div><h2>Bắt đầu chuyến du hành</h2><p>Chọn nhóm thiên thể ở thanh bên, hoặc mở Thư viện để tìm tên, bí danh và lọc hồ sơ. Trong sơ đồ, dùng chuột hoặc ngón tay để dịch góc nhìn; cuộn để thu phóng.</p><p>Chọn thiên thể để đọc hồ sơ bên phải hoặc bên dưới trên điện thoại. Hồ sơ có các tab <b>Tổng quan, Đặc điểm, Khám phá, Nguồn</b>; chọn <b>Đọc rộng</b> để đọc dễ hơn. Bấm sao để lưu yêu thích trên thiết bị, hoặc thêm 2–4 hồ sơ vào So sánh. Chỉ các đại lượng cùng định nghĩa và đơn vị được đối chiếu.</p><p class="caution">Chuyển giữa Sơ đồ, Thư viện và So sánh bằng thanh chế độ. Thư viện có bộ lọc và bộ sưu tập; chọn Đọc rộng để đọc hồ sơ dễ hơn. Đây là dữ liệu biên tập sẵn, không tự cập nhật. Mô hình đồ họa và chuyển động không tương ứng với bản đồ thiên văn 3D theo thời gian thực.</p><button id="clearSavedOnDevice" class="modal-cta" type="button">Xóa mục đã lưu trên thiết bị</button><button class="modal-cta" id="gotIt">Bắt đầu khám phá →</button></div></div>
   <script src="catalog.js"></script>
   <script src="catalog-expanded.js"></script>
   <script src="explorer-model.js"></script>

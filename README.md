@@ -1,22 +1,52 @@
-# Cosmos Explorer 2.2
+# Cosmos Explorer
 
-Mở [cosmos-explorer/index.html](cosmos-explorer/index.html) trực tiếp bằng trình duyệt. Không cần máy chủ, framework, tài khoản hoặc API key.
+**Khám phá thiên văn bằng tiếng Việt — từ Hệ Mặt Trời đến những thiên hà xa.**
 
-138 hồ sơ (thêm 30), 126 hình ảnh cục bộ. Ba chế độ **Sơ đồ / Thư viện / So sánh**, hồ sơ đọc rộng và bốn bộ sưu tập. Chọn hành tinh luôn giữ tổng thể Hệ Mặt Trời; ảnh chi tiết nằm ở hồ sơ bên phải hoặc bên dưới trên mobile.
+Cosmos Explorer là ứng dụng học thiên văn cho học sinh, giáo viên và người yêu vũ trụ. Tìm một thiên thể, đọc hồ sơ có nguồn, xem tư liệu ảnh và đặt các thế giới cạnh nhau để hiểu sự khác biệt. Miễn phí sử dụng, không cần tài khoản.
 
-[Hướng dẫn](cosmos-explorer/README.md) · [Requirements](docs/REQUIREMENTS.md) · [Roadmap](docs/ROADMAP.md) · [Dữ liệu và nguồn](docs/DATA_POLICY.md) · [Kiểm tra](docs/QA.md) · [Kiểm kê ID và hồ sơ mới](docs/inventory-2.2.json)
+![Sơ đồ Hệ Mặt Trời và hồ sơ Trái Đất trên Cosmos Explorer](docs/screenshots/explorer-desktop.png)
 
-## Phát triển thành sản phẩm
+## Bạn có thể làm gì?
 
-[Định nghĩa sản phẩm](docs/PRODUCT.md) · [Roadmap mới](docs/ROADMAP.md) · [Quy tắc làm việc](docs/WORK_RULES.md) · [Vận hành 3 Codex + 2 AGY](docs/AUTOMATION.md) · [Backlog](automation/backlog.json)
+| Trải nghiệm | Điều bạn nhận được |
+|---|---|
+| Khám phá | 138 hồ sơ trong 11 nhóm, từ hành tinh và vệ tinh đến tinh vân, thiên hà, hố đen |
+| Tìm và lọc | Tìm tiếng Việt không dấu hoặc bí danh; lọc loại, hệ, đã lưu và ảnh quan sát |
+| Đọc có nguồn | Hồ sơ Tổng quan, Đặc điểm, Khám phá, Nguồn; thông số có đơn vị và tham chiếu |
+| So sánh | Chọn 2–4 hồ sơ; chỉ đối chiếu các đại lượng tương thích về định nghĩa và đơn vị |
+| Lưu và chia sẻ | Lưu yêu thích trên thiết bị, sao chép liên kết đến đúng hồ sơ |
+| Học ngoại tuyến | Mở bản tải về với hình và nội dung cục bộ khi không có mạng |
 
-Kiểm tra tổng hợp: `rtk proxy python3 scripts/check_all.py`. Automation: `rtk proxy python3 scripts/automation.py status`. Chưa triển khai công khai.
+![Thư viện thiên thể với tìm kiếm và bộ lọc](docs/screenshots/library-desktop.png)
 
-[Hướng dẫn học sinh/giáo viên](docs/USER_GUIDE.md) · [Kiểm kê nội dung](docs/CONTENT_AUDIT.md) · [Phát hành và quay lui](docs/RELEASE.md) · [Báo cáo automation 05/11/2026](docs/qa/automation-2026-11-05.json)
+## Bắt đầu trong một phút
 
-Automation đã kiểm chứng qua systemd user: 3 Codex + 2 AGY, 09:00 giờ Việt Nam mỗi ngày. Khi hết backlog ready chỉ chạy kiểm tra sức khỏe. Trạng thái và cách tạm dừng ở docs/AUTOMATION.md. Bản public vẫn chờ các cổng nghiệm thu trong roadmap.
+1. [Tải mã nguồn dạng ZIP](https://github.com/nvndy27/Cosmos-Explorer-Demo/archive/refs/heads/main.zip) và giải nén.
+2. Mở `cosmos-explorer/index.html` bằng trình duyệt. Không cần cài thư viện hay nhập API key.
+3. Vào **Thư viện**, tìm “trai dat”, chọn **Đọc hồ sơ**; mở tab **Nguồn** hoặc thêm Trái Đất và Sao Hỏa vào **So sánh**.
 
-Theo dõi quota đã bật: giữ ít nhất 10% cửa sổ Codex 5 giờ, kiểm tra mỗi 2 phút và gửi tiếp vào đúng phiên điều phối đang mở sau khi backend xác nhận hạn mức hồi lại. [Báo cáo storage/HTTPS/quota](docs/qa/live-storage-quota-2026-11-05.json) · [Chính sách và cách dừng](docs/AUTOMATION.md).
+Giáo viên có thể dùng bộ sưu tập Hành tinh đá, Hành tinh khổng lồ, TRAPPIST-1 hoặc Vệ tinh để tổ chức một buổi khám phá. [Hướng dẫn học sinh và giáo viên](docs/USER_GUIDE.md) có kịch bản học 15 phút.
 
-## Phối hợp trên GitHub
-[Trạng thái sản phẩm](docs/STATUS.md) · [Quy tắc branch/commit/issue/PR](docs/GIT_WORKFLOW.md) · [Đóng góp](CONTRIBUTING.md)
+<p align="center"><img src="docs/screenshots/profile-mobile.png" width="320" alt="Hồ sơ Trái Đất trong chế độ đọc rộng trên màn hình điện thoại"></p>
+
+Ảnh chụp từ ứng dụng thật ngày 05/11/2026. Tư liệu thiên văn trong giao diện giữ ghi công của nguồn; [nguồn ảnh và chính sách dữ liệu](docs/DATA_POLICY.md) giải thích quyền và phân loại từng tư liệu.
+
+## Dữ liệu và độ tin cậy
+
+Ứng dụng có 138 hồ sơ và 126 ảnh cục bộ có nguồn, ghi công và checksum. Nội dung được biên tập từ NASA, ESA, JPL, ESO/EHT và các nguồn nghiên cứu được liên kết trong hồ sơ. Đây là dữ liệu tuyển chọn tại thời điểm biên tập, không phải dữ liệu thiên văn thời gian thực.
+
+Sơ đồ Canvas là minh họa khám phá, kích thước và khoảng cách không theo tỷ lệ thực. Ảnh quan sát, tái dựng từ dữ liệu và minh họa nghệ thuật có nhãn riêng. Giá trị thiếu không được thay bằng 0; bán kính trung bình và bán kính quá cảnh không bị gộp để tạo biểu đồ.
+
+Danh mục cũng có thể dựng thành CSDL SQLite với quan hệ hồ sơ, bí danh, đại lượng, nguồn và ảnh, kèm API JSON chỉ đọc để truy vấn cục bộ. [Schema, cách dựng và chạy CSDL](docs/DATABASE.md) giải thích rõ luồng dữ liệu; giao diện hiện vẫn dùng bản catalog tĩnh để hoạt động ngoại tuyến.
+
+## Dữ liệu của bạn
+
+Bản hiện tại không yêu cầu tên, email hoặc mật khẩu. Yêu thích được lưu trong trình duyệt trên thiết bị đang dùng, chưa đồng bộ giữa các máy. Bạn có thể mở **Hướng dẫn (?) → Xóa mục đã lưu trên thiết bị** để xóa yêu thích sau khi xác nhận; hoặc xóa dữ liệu trang trong cài đặt trình duyệt. Khi mở từ file cục bộ, liên kết sao chép chỉ là đường dẫn trên máy bạn; người nhận cần bản tải về tương ứng. Mở nguồn khoa học bên ngoài sẽ đưa bạn đến website của đơn vị cung cấp nguồn.
+
+[Quyền riêng tư và cách xóa dữ liệu](docs/PRIVACY.md) · [Báo cáo vấn đề bảo mật](SECURITY.md)
+
+## Trạng thái phát triển
+
+Bản 2.2 đang chuẩn bị beta. Các kiểm tra Chrome ở 390/820/1440 px, luồng ngoại tuyến, ảnh lỗi, bộ nhớ bị cấm và chia sẻ đã có [bằng chứng kiểm thử](docs/QA.md). Ba phiên người dùng giả lập đã chạy; chưa thay thế thử nghiệm với người thật. Chưa hoàn tất rà khoa học độc lập, screen reader, Firefox/Safari hoặc nghiệm thu hosting công khai.
+
+[Trạng thái chi tiết](docs/STATUS.md) · [Lộ trình sản phẩm](docs/ROADMAP.md) · [Báo lỗi](https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/new?template=bug.md) · [Đóng góp](CONTRIBUTING.md)
