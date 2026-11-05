@@ -5,7 +5,7 @@ Cosmos Explorer là thư viện thiên văn tiếng Việt với dữ liệu bi�
 ## Hành trình 1: Tìm và đọc một hồ sơ
 
 1. Mở `cosmos-explorer/index.html` trong trình duyệt. Nếu nhận ZIP, trước hết giải nén toàn bộ gói rồi mở `index.html` bên trong thư mục `cosmos-explorer`; giữ nguyên các tệp và thư mục cạnh nó.
-2. Tìm kiếm bằng hộp trên cùng, ví dụ `trai dat`, `sao thuy` hoặc `55 cancri`. Tìm kiếm bỏ dấu và nhận tên/bí danh tiếng Việt, tiếng Anh. Nhấn `/` để chuyển nhanh đến ô tìm kiếm, dùng phím mũi tên để duyệt kết quả và Enter để mở.
+2. Tìm kiếm bằng hộp trên cùng, ví dụ `trai dat`, `sao thuy` hoặc `55 cancri`. Tìm kiếm bỏ dấu và nhận tên/bí danh tiếng Việt, tiếng Anh. Nhấn `/` để chuyển nhanh đến ô tìm kiếm, nhấn Enter để mở kết quả đầu tiên, hoặc dùng Tab tới nút kết quả rồi Enter để chọn.
 3. Hoặc chọn **Thư viện**, nhập tên/bí danh và lọc theo phân loại, hệ, mục đã lưu hoặc **Có ảnh từ quan sát**. Mỗi trang hiển thị tối đa 12 thẻ. **Xóa bộ lọc** đưa các bộ lọc về mặc định.
 4. Chọn thiên thể để đọc hồ sơ. Các tab **Tổng quan**, **Đặc điểm**, **Khám phá** và **Nguồn** lần lượt cho nội dung giới thiệu, đại lượng, giới hạn quan sát/nghiên cứu và liên kết tham khảo. Mở **Nguồn** hoặc chọn **Xem dữ liệu gốc** để xem trang nguồn; những liên kết này cần Internet.
 5. Ảnh chi tiết nằm trong hồ sơ bên phải trên màn hình rộng, bên dưới sơ đồ trên điện thoại. Đọc chú thích và nhãn: ảnh quan sát đã xử lý, ảnh tái dựng và minh họa nghệ thuật là các loại tư liệu khác nhau. Ảnh minh họa không phải ảnh chụp bề mặt. Nếu ảnh không tải được, giao diện có hình dự phòng ghi là minh họa của Cosmos Explorer.
