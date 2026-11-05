@@ -8,6 +8,6 @@ The local policy blocks inline JavaScript, plugins and base URL changes; removes
 
 ## Reporting
 
-Use GitHub's private vulnerability reporting only if the repository's Security Advisories page offers the private reporting option. Its availability has not been checked or asserted here. If it is unavailable, do not post exploit details or sensitive information in a public issue; first ask the repository owner through an already known private contact channel for a reporting route. Do not send credentials, access tokens, personal information, or private user data in a report.
+Private vulnerability reporting was enabled and verified through GitHub on 2026-11-05. Use [Report a vulnerability](https://github.com/nvndy27/Cosmos-Explorer-Demo/security/advisories/new) for sensitive findings. If the option becomes unavailable, ask the owner through an already known private channel; do not publish exploit details in an issue. Do not send credentials, access tokens, personal information, or private user data in a report.
 
 GitHub documentation: [Privately reporting a security vulnerability](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately).

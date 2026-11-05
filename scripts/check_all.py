@@ -14,6 +14,7 @@ def commands(browser=False):
     result += [["node", "--check", "scripts/check_http.cjs"],
                ["node", "--check", "scripts/check_storage.cjs"],
                ["node", "--check", "scripts/check_share.cjs"],
+               ["node", "--check", "scripts/check_security.cjs"],
                ["python3", "-m", "unittest", "discover", "-s", "scripts/tests"],
                ["node", "cosmos-explorer/tests/smoke.cjs"],
                ["node", "scripts/validate_catalog.cjs"]]
@@ -22,7 +23,8 @@ def commands(browser=False):
                    ["node", "scripts/check_exoplanet_images.cjs"],
                    ["node", "scripts/check_http.cjs"],
                    ["node", "scripts/check_storage.cjs"],
-                   ["node", "scripts/check_share.cjs"]]
+                   ["node", "scripts/check_share.cjs"],
+                   ["node", "scripts/check_security.cjs"]]
     return result
 
 def main():

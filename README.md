@@ -41,6 +41,8 @@ Sơ đồ Canvas là minh họa khám phá, kích thước và khoảng cách kh
 
 Bản hiện tại không yêu cầu tên, email hoặc mật khẩu. Yêu thích được lưu trong trình duyệt trên thiết bị đang dùng, chưa đồng bộ giữa các máy. Xóa dữ liệu trang trong trình duyệt sẽ xóa các mục đã lưu. Khi mở từ file cục bộ, liên kết sao chép chỉ là đường dẫn trên máy bạn; người nhận cần bản tải về tương ứng. Mở nguồn khoa học bên ngoài sẽ đưa bạn đến website của đơn vị cung cấp nguồn.
 
+[Quyền riêng tư và cách xóa dữ liệu](docs/PRIVACY.md) · [Báo cáo vấn đề bảo mật](SECURITY.md)
+
 ## Trạng thái phát triển
 
 Bản 2.2 đang chuẩn bị beta. Các kiểm tra Chrome ở 390/820/1440 px, luồng ngoại tuyến, ảnh lỗi, bộ nhớ bị cấm và chia sẻ đã có [bằng chứng kiểm thử](docs/QA.md). Ba phiên người dùng giả lập đã chạy; chưa thay thế thử nghiệm với người thật. Chưa hoàn tất rà khoa học độc lập, screen reader, Firefox/Safari hoặc nghiệm thu hosting công khai.
