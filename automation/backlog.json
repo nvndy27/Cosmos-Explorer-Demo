@@ -120,6 +120,32 @@
       ],
       "title": "Kiểm thử gói từ phía người tải về",
       "acceptance": "Thêm unittest Python chuẩn dùng thư mục tạm và package_release.py: mở ZIP, kiểm tra entrypoint/đủ 126 ảnh/checksum mỗi file, không path traversal/secret/test/cache, giải nén an toàn rồi xác nhận mọi đường dẫn script/link stylesheet cục bộ của index có file và các đường dẫn ảnh manifest hiện hữu. Kiểm chứng hai lần dựng cùng checksum; không sửa implementation hay dữ liệu để test qua. Test chạy bằng unittest discover hiện có, không để artifact vào repo."
+    },
+    {
+      "id": "QA-003",
+      "lane": "codex-1",
+      "status": "ready",
+      "depends_on": [
+        "QA-001"
+      ],
+      "allowed_paths": [
+        "scripts/check_storage.cjs"
+      ],
+      "title": "Kiểm tra browser khi localStorage bị cấm",
+      "acceptance": "Playwright thật ở file:// và HTTP loopback: giả lập SecurityError từ getter localStorage, getItem và setItem trong context mới; xác nhận khởi động, đổi hồ sơ, thư viện, lưu/bỏ lưu không gây pageerror, thông báo phù hợp theo hành vi hiện có. Có reduced motion và 390/820/1440. Chỉ thêm script QA, không sửa app/test cũ để ép qua; phát hiện lỗi sản phẩm thì báo rõ bước tái hiện. Dọn server/browser trong finally; báo cáo JSON lưu thư mục tạm; không phụ thuộc build mới."
+    },
+    {
+      "id": "QA-004",
+      "lane": "codex-2",
+      "status": "ready",
+      "depends_on": [
+        "QA-001"
+      ],
+      "allowed_paths": [
+        "scripts/check_http.cjs"
+      ],
+      "title": "Kiểm tra chia sẻ trên HTTPS cục bộ và đường dẫn con",
+      "acceptance": "Mở rộng check_http.cjs giữ nguyên các kiểm tra HTTP cũ, thêm mount /cosmos/ và HTTPS loopback self-signed bằng chứng chỉ tạm tạo với openssl qua spawnSync (không shell). Test asset, #earth và hash hồ sơ khác trong context mới, 390/820/1440 và pageerror. Chỉ bind127.0.0.1 port ngẫu nhiên, realpath containment, dọn server/browser/cert trong finally. Báo rõ ignoreHTTPSErrors chỉ dùng cho chứng chỉ test; không chứng minh TLS/public hosting thật. Không lưu private key vào repo và không thêm npm dependency."
     }
   ]
 }
