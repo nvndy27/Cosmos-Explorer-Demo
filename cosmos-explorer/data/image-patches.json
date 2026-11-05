@@ -1,0 +1,165 @@
+{
+  "mercury": {
+    "image": "assets/observations/mercury.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/05/mercury-from-messenger-pia15160-1920x640-1.jpg?w=900",
+    "imageSource": "https://science.nasa.gov/mercury/facts/",
+    "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington",
+    "photoCaption": "Quan sát MESSENGER, ghép hình bề mặt; ảnh có xử lý.",
+    "imageKind": "observation",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "venus": {
+    "image": "assets/observations/venus.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2024/03/venus-mariner-10-pia23791-fig2.jpg?w=900&h=900&fit=clip",
+    "imageSource": "https://science.nasa.gov/venus/venus-facts/",
+    "credit": "NASA/JPL-Caltech",
+    "photoCaption": "Quan sát Mariner 10 năm 1974; ảnh mây có xử lý màu, không cho thấy trực tiếp bề mặt.",
+    "imageKind": "observation",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "jupiter": {
+    "image": "assets/observations/jupiter.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2024/03/jupiter-marble-pia22946-16x9-1.jpg?w=900",
+    "imageSource": "https://science.nasa.gov/jupiter/jupiter-facts/",
+    "credit": "Kevin M. Gill (CC-BY), NASA/JPL-Caltech/SwRI/MSSS",
+    "photoCaption": "Ảnh Juno ghép từ ba lần chụp ngày 12/02/2019, tăng cường màu.",
+    "imageKind": "observation",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "saturn": {
+    "image": "assets/observations/saturn.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2024/03/saturn-farewell-pia21345.jpg?w=900",
+    "imageSource": "https://science.nasa.gov/saturn/facts/",
+    "credit": "NASA/JPL-Caltech/Space Science Institute",
+    "photoCaption": "Ảnh Cassini tổng hợp từ quan sát ngày 28/10/2016; có xử lý màu.",
+    "imageKind": "observation",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "uranus": {
+    "image": "assets/observations/uranus.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2024/03/uranus-pia18182-16x9-1.jpg?w=900&h=900&fit=clip",
+    "imageSource": "https://science.nasa.gov/uranus/facts/",
+    "credit": "NASA/JPL-Caltech",
+    "photoCaption": "Voyager 2 quan sát năm 1986; ảnh có xử lý.",
+    "imageKind": "observation",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "neptune": {
+    "image": "assets/observations/neptune.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2024/03/pia01492-neptune-full-disk-16x9-1.jpg?w=900",
+    "imageSource": "https://science.nasa.gov/neptune/neptune-facts/",
+    "credit": "NASA/JPL-Caltech",
+    "photoCaption": "Ảnh Voyager 2 năm 1989 ghép qua bộ lọc. Màu ảnh công bố đã xử lý, không dùng để so màu thực với Thiên Vương.",
+    "imageKind": "observation",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "pluto": {
+    "image": "assets/observations/pluto.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2024/03/pluto-new-horizons-pia20291-16x9-1.jpg?w=900",
+    "imageSource": "https://science.nasa.gov/dwarf-planets/pluto/facts/",
+    "credit": "NASA/JHUAPL/SwRI",
+    "photoCaption": "Quan sát New Horizons ngày 13/07/2015, ảnh có xử lý.",
+    "imageKind": "observation",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "crab": {
+    "image": "assets/observations/messier-1.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/crab-nebula-mosaic-jpg.webp?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/",
+    "credit": "NASA, ESA, J. Hester and A. Loll (Arizona State University)",
+    "photoCaption": "Ảnh quan sát Hubble tổng hợp qua bộ lọc; màu hiển thị có xử lý khoa học.",
+    "imageAlt": "Crab Nebula",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "andromeda": {
+    "image": "assets/observations/messier-31.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/andromeda/Hubble_M31Mosaic_2025_42208x9870_STScI-01JGY8MZB6RAYKZ1V4CHGN37Q6.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/",
+    "credit": "NASA, ESA, Benjamin F. Williams (UWashington), Zhuo Chen (UWashington), L. Clifton Johnson (Northwestern); Image Processing: Joseph DePasquale (STScI)",
+    "photoCaption": "Ảnh quan sát Hubble tổng hợp qua bộ lọc; màu hiển thị có xử lý khoa học.",
+    "imageAlt": "The Andromeda galaxy, a spiral galaxy, spreads across the width. It is tilted nearly edge-on to our line of sight so that it appears as an extreme oval on its side. The borders of the galaxy are jagged because the image is a mosaic of smaller, square images. The outer edges are blue, while the inner two-thirds are yellowish with a bright, central core. Dark, dusty filamentary clouds wrap around the outer half of the galaxy’s disk. At 10 o'clock, a smaller dwarf elliptical galaxy forms a fuzzy, yellow blob. Hubble's sharp vision distinguishes about 200 million stars within the image. The background of space is black. There are what appears to be steps toward the bottom, mainly toward the middle, which indicates where no data were taken.",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "orion": {
+    "image": "assets/observations/messier-42.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/orion-nebula-xlarge_web-jpg.webp?w=1280",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-42/",
+    "credit": "NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team",
+    "photoCaption": "Ảnh quan sát Hubble tổng hợp qua bộ lọc; màu hiển thị có xử lý khoa học.",
+    "imageAlt": "Orion Nebula",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "whirlpool": {
+    "image": "assets/observations/messier-51.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/m51-and-companion_0-jpg.webp?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-51/",
+    "credit": "NASA, ESA, S. Beckwith (STScI) and the Hubble Heritage Team (STScI/AURA)",
+    "photoCaption": "Ảnh quan sát Hubble tổng hợp qua bộ lọc; màu hiển thị có xử lý khoa học.",
+    "imageAlt": "The Whirlpool Galaxy and NGC 5195",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "earth": {
+    "image": "assets/observations/earth.webp",
+    "imageRemote": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~medium.jpg",
+    "imageSource": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002131",
+    "credit": "NASA/Goddard Space Flight Center/Reto Stöckli",
+    "photoCaption": "Blue Marble 2007: tổng hợp dữ liệu vệ tinh, không phải ảnh chụp duy nhất hay ảnh thời gian thực.",
+    "visualType": "ẢNH TỔNG HỢP TỪ QUAN SÁT"
+  },
+  "mars": {
+    "image": "assets/observations/mars.webp",
+    "imageRemote": "https://images-assets.nasa.gov/image/PIA00407/PIA00407~medium.jpg",
+    "imageSource": "https://images.nasa.gov/details/PIA00407",
+    "credit": "NASA/JPL/USGS",
+    "photoCaption": "Mosaic quan sát Viking: ghép nhiều lần chụp để thể hiện toàn cầu, có xử lý màu.",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "moon": {
+    "image": "assets/observations/moon.webp",
+    "imageRemote": "https://images-assets.nasa.gov/image/PIA00405/PIA00405~medium.jpg",
+    "imageSource": "https://images.nasa.gov/details/PIA00405",
+    "credit": "NASA/JPL/USGS",
+    "photoCaption": "Quan sát Galileo ngày 07/12/1992, có xử lý màu.",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU"
+  },
+  "sun": {
+    "image": "assets/observations/sun.webp",
+    "imageRemote": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002069/GSFC_20171208_Archive_e002069~small.jpg",
+    "imageSource": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002069",
+    "credit": "NASA/GSFC/SVS/SDO",
+    "photoCaption": "SDO/AIA 304: quan sát cực tím, màu được gán để hiển thị dữ liệu ngoài vùng mắt nhìn thấy.",
+    "visualType": "QUAN SÁT CỰC TÍM · GÁN MÀU"
+  },
+  "proxima": {
+    "image": "assets/observations/proxima.webp",
+    "imageRemote": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2016/january/ProximaCentauri_Hubble_2048.jpg?w=2048&h=1536&fit=clip&crop=faces%2Cfocalpoint",
+    "imageSource": "https://science.nasa.gov/image-article/apod-2016-january-18-proxima-centauri-the-closest-star/",
+    "credit": "ESA/Hubble & NASA",
+    "photoCaption": "Quan sát Hubble: Proxima hiện như một điểm sáng kèm gai nhiễu xạ của kính; không phân giải trực tiếp bề mặt ngôi sao.",
+    "visualType": "ẢNH QUAN SÁT HUBBLE"
+  },
+  "sgr": {
+    "image": "assets/observations/sgr.webp",
+    "imageRemote": "https://cdn.eso.org/images/screen/eso2208-eht-mwa.jpg",
+    "imageSource": "https://www.eso.org/public/images/eso2208-eht-mwa/",
+    "credit": "EHT Collaboration",
+    "photoCaption": "Ảnh EHT tái dựng từ dữ liệu vô tuyến, gán màu cường độ; không phải ảnh ánh sáng khả kiến.",
+    "visualType": "ẢNH VÔ TUYẾN TÁI DỰNG"
+  },
+  "m87": {
+    "image": "assets/observations/m87.webp",
+    "imageRemote": "https://cdn.eso.org/images/screen/eso1907a.jpg",
+    "imageSource": "https://www.eso.org/public/images/eso1907a/",
+    "credit": "EHT Collaboration",
+    "photoCaption": "Ảnh EHT tái dựng từ dữ liệu vô tuyến, gán màu cường độ; không phải ảnh ánh sáng khả kiến.",
+    "visualType": "ẢNH VÔ TUYẾN TÁI DỰNG"
+  },
+  "deep": {
+    "image": "assets/observations/smacs-0723.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2022/07/STScI-01G8H15R2PGEXQD7TYYBFJ3FT4.png?w=900&h=900&fit=clip",
+    "imageSource": "https://science.nasa.gov/asset/webb/webbs-first-deep-field-unveiled-nircam-image/",
+    "credit": "NASA, ESA, CSA, STScI",
+    "photoCaption": "Webb/NIRCam: quan sát hồng ngoại, tổng hợp qua bộ lọc và gán màu; đây là trường ảnh gồm các thiên hà ở nhiều khoảng cách.",
+    "visualType": "QUAN SÁT HỒNG NGOẠI · GÁN MÀU"
+  }
+}

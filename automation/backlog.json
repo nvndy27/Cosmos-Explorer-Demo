@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "OPS-001",
+      "lane": "codex-1",
+      "status": "ready",
+      "depends_on": [],
+      "allowed_paths": [
+        "docs/RELEASE.md"
+      ],
+      "title": "Hướng dẫn phát hành web tĩnh và quay lui",
+      "acceptance": "Tạo docs/RELEASE.md: đóng gói, chạy kiểm tra, thử HTTP/HTTPS, cấu hình hosting tĩnh dưới đường dẫn con, hash link, nguồn/ảnh, rollback bản trước, checklist chủ dự án. Không deploy, không khẳng định thử hosting thật. Nêu rõ file:// và HTTPS khác nhau; public cần yêu cầu riêng."
+    },
+    {
+      "id": "QA-001",
+      "lane": "codex-2",
+      "status": "ready",
+      "depends_on": [],
+      "allowed_paths": [
+        "scripts/check_http.cjs"
+      ],
+      "title": "Kiểm tra cùng sản phẩm qua HTTP",
+      "acceptance": "Tạo scripts/check_http.cjs dùng Playwright ngoài repo theo COSMOS_PLAYWRIGHT_MODULE và COSMOS_CHROME như check_browser.cjs. Tự dựng HTTP server chỉ trên 127.0.0.1 port ngẫu nhiên bằng Node core, phục vụ cosmos-explorer an toàn, đóng server/browser trong finally. Kiểm tra mở #earth, điều hướng thư viện/tìm không dấu, 3 viewport 390/820/1440 không tràn ngang và không pageerror, link hash mở context mới đúng hồ sơ. Không cần build/dependency ứng dụng. Được dùng script browser hiện có làm tham khảo. Báo rõ HTTP cục bộ không chứng minh HTTPS/hosting thật. Chạy thử script bằng môi trường đã cấu hình."
+    },
+    {
+      "id": "OPS-002",
+      "lane": "codex-3",
+      "status": "ready",
+      "depends_on": [],
+      "allowed_paths": [
+        "scripts/package_release.py"
+      ],
+      "title": "Gói phân phối tái tạo kèm checksum",
+      "acceptance": "Tạo scripts/package_release.py chỉ Python chuẩn, đóng cosmos-explorer thành ZIP trong dist/ với SHA256SUMS từng file và hướng dẫn mở index.html. Không chứa .git, automation, token, dist, __pycache__, tests. CLI --output-dir cho phép nơi đầu ra; không sửa file sản phẩm; đường dẫn archive an toàn và thứ tự/timestamp ổn định để cùng nội dung cho cùng checksum. Kiểm tra thử bằng thư mục tạm, xác nhận ZIP có index.html, đủ ảnh, checksum khớp và hai lần dựng cùng hash. Không commit artifact."
+    },
+    {
+      "id": "UX-001",
+      "lane": "codex-1",
+      "status": "manual",
+      "depends_on": [
+        "QA-001"
+      ],
+      "allowed_paths": [
+        "cosmos-explorer/app.js",
+        "cosmos-explorer/index.html"
+      ],
+      "title": "Chia sẻ liên kết hồ sơ và hướng dẫn người mới",
+      "acceptance": "Cần chốt trải nghiệm và đọc mã hiện tại trước khi chuyển ready. Chứng minh copy link/file fallback, ID không hợp lệ, bàn phím và mobile; giữ ID/yêu thích."
+    },
+    {
+      "id": "SCI-001",
+      "lane": "codex-2",
+      "status": "manual",
+      "depends_on": [],
+      "allowed_paths": [],
+      "title": "Rà khoa học và quyền sử dụng ảnh",
+      "acceptance": "Chủ dự án bố trí người rà; kiểm đối chiếu nguồn gốc, ngày và các đại lượng chưa chuẩn hóa. Không coi 2 AGY là chuyên gia thiên văn."
+    },
+    {
+      "id": "USER-001",
+      "lane": "codex-3",
+      "status": "manual",
+      "depends_on": [
+        "OPS-001",
+        "QA-001",
+        "OPS-002"
+      ],
+      "allowed_paths": [],
+      "title": "Thử nghiệm 5 người và kiểm tra tiếp cận thủ công",
+      "acceptance": "Chủ dự án tuyển người đồng ý, ghi 3 hành trình, bàn phím/trình đọc màn hình, Firefox/Safari; không tự liên hệ. Mục tiêu 4/5 hoàn thành."
+    },
+    {
+      "id": "PUB-001",
+      "lane": "codex-3",
+      "status": "manual",
+      "depends_on": [
+        "USER-001",
+        "SCI-001"
+      ],
+      "allowed_paths": [],
+      "title": "Phát hành web HTTPS",
+      "acceptance": "Chủ dự án chọn hosting/domain và yêu cầu deploy rõ; kiểm URL thật, cache, metadata, rollback. Không tự publish."
+    }
+  ]
+}

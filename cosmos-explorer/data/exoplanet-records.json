@@ -1,0 +1,1450 @@
+[
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20189733%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20189733%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 12.66617,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#bd9e7b",
+    "id": "exo-hd-189733-b",
+    "name": "HD 189733 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · HD 189733",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "HD 189733",
+    "summary": "Ngoại hành tinh quanh HD 189733; chu kỳ quỹ đạo khoảng 2,219 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "2,219 ngày"
+      ],
+      [
+        "Bán kính",
+        "12,666 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "19,764 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2005"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Vận tốc xuyên tâm. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20209458%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20209458%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 15.58051,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#8aaebd",
+    "id": "exo-hd-209458-b",
+    "name": "HD 209458 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · HD 209458",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "HD 209458",
+    "summary": "Ngoại hành tinh quanh HD 209458; chu kỳ quỹ đạo khoảng 3,525 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "3,525 ngày"
+      ],
+      [
+        "Bán kính",
+        "15,581 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "48,302 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "1999"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Vận tốc xuyên tâm. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-80%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-80%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Triaud et al. 2015",
+        "https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.2279T/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 11.197791,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#b99acb",
+    "id": "exo-wasp-80-b",
+    "name": "WASP-80 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · WASP-80",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "WASP-80",
+    "summary": "Ngoại hành tinh quanh WASP-80; chu kỳ quỹ đạo khoảng 3,068 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "3,068 ngày"
+      ],
+      [
+        "Bán kính",
+        "11,198 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "49,788 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2012"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20149026%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20149026%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 8.29466,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#cfa887",
+    "id": "exo-hd-149026-b",
+    "name": "HD 149026 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · HD 149026",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "HD 149026",
+    "summary": "Ngoại hành tinh quanh HD 149026; chu kỳ quỹ đạo khoảng 2,876 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "2,876 ngày"
+      ],
+      [
+        "Bán kính",
+        "8,295 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "75,864 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2005"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Vận tốc xuyên tâm. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-43%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-43%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Hellier et al. 2011",
+        "https://ui.adsabs.harvard.edu/abs/2011arXiv1104.2823H/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 10.424,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#bd9e7b",
+    "id": "exo-wasp-43-b",
+    "name": "WASP-43 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · WASP-43",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "WASP-43",
+    "summary": "Ngoại hành tinh quanh WASP-43; chu kỳ quỹ đạo khoảng 0,813 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "0,813 ngày"
+      ],
+      [
+        "Bán kính",
+        "10,424 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "86,747 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2011"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/KELT-7%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/KELT-7%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 17.9344,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#8aaebd",
+    "id": "exo-kelt-7-b",
+    "name": "KELT-7 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · KELT-7",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "KELT-7",
+    "summary": "Ngoại hành tinh quanh KELT-7; chu kỳ quỹ đạo khoảng 2,735 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "2,735 ngày"
+      ],
+      [
+        "Bán kính",
+        "17,934 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "136,681 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2015"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-33%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/K2-33%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Mann et al. 2016",
+        "https://ui.adsabs.harvard.edu/abs/2016AJ....152...61M/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 5.04,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#b99acb",
+    "id": "exo-k2-33-b",
+    "name": "K2-33 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · K2-33",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "K2-33",
+    "summary": "Ngoại hành tinh quanh K2-33; chu kỳ quỹ đạo khoảng 5,425 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "5,425 ngày"
+      ],
+      [
+        "Bán kính",
+        "5,04 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "139,268 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2016"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HAT-P-26%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HAT-P-26%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 7.06167,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#cfa887",
+    "id": "exo-hat-p-26-b",
+    "name": "HAT-P-26 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · HAT-P-26",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "HAT-P-26",
+    "summary": "Ngoại hành tinh quanh HAT-P-26; chu kỳ quỹ đạo khoảng 4,235 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "4,235 ngày"
+      ],
+      [
+        "Bán kính",
+        "7,062 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "141,837 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2010"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-285%20c",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/K2-285%20c"
+      ]
+    ],
+    "papers": [
+      [
+        "Palle et al. 2019",
+        "https://ui.adsabs.harvard.edu/abs/2019A&A...623A..41P/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 3.53,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#bd9e7b",
+    "id": "exo-k2-285-c",
+    "name": "K2-285 c",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · K2-285",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "K2-285",
+    "summary": "Ngoại hành tinh quanh K2-285; chu kỳ quỹ đạo khoảng 7,138 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "7,138 ngày"
+      ],
+      [
+        "Bán kính",
+        "3,53 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "154,961 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2018"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-285%20d",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/K2-285%20d"
+      ]
+    ],
+    "papers": [
+      [
+        "Palle et al. 2019",
+        "https://ui.adsabs.harvard.edu/abs/2019A&A...623A..41P/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 2.48,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#8aaebd",
+    "id": "exo-k2-285-d",
+    "name": "K2-285 d",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · K2-285",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "K2-285",
+    "summary": "Ngoại hành tinh quanh K2-285; chu kỳ quỹ đạo khoảng 10,456 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "10,456 ngày"
+      ],
+      [
+        "Bán kính",
+        "2,48 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "154,961 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2018"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HATS-6%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HATS-6%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Hartman et al. 2015",
+        "https://ui.adsabs.harvard.edu/abs/2015AJ....149..166H/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 11.186582,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#b99acb",
+    "id": "exo-hats-6-b",
+    "name": "HATS-6 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · HATS-6",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "HATS-6",
+    "summary": "Ngoại hành tinh quanh HATS-6; chu kỳ quỹ đạo khoảng 3,325 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "3,325 ngày"
+      ],
+      [
+        "Bán kính",
+        "11,187 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "169,318 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2015"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/KELT-8%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/KELT-8%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 18.15858,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#cfa887",
+    "id": "exo-kelt-8-b",
+    "name": "KELT-8 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · KELT-8",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "KELT-8",
+    "summary": "Ngoại hành tinh quanh KELT-8; chu kỳ quỹ đạo khoảng 3,244 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "3,244 ngày"
+      ],
+      [
+        "Bán kính",
+        "18,159 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "197,572 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2015"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-94%20A%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-94%20A%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 17.71022,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#bd9e7b",
+    "id": "exo-wasp-94-a-b",
+    "name": "WASP-94 A b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · WASP-94 A",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "WASP-94 A",
+    "summary": "Ngoại hành tinh quanh WASP-94 A; chu kỳ quỹ đạo khoảng 3,95 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "3,95 ngày"
+      ],
+      [
+        "Bán kính",
+        "17,71 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "211,211 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2014"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/KELT-4%20A%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/KELT-4%20A%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Eastman et al. 2016",
+        "https://ui.adsabs.harvard.edu/abs/2016AJ....151...45E/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 19.044091,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#8aaebd",
+    "id": "exo-kelt-4-a-b",
+    "name": "KELT-4 A b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · KELT-4 A",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "KELT-4 A",
+    "summary": "Ngoại hành tinh quanh KELT-4 A; chu kỳ quỹ đạo khoảng 2,99 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "2,99 ngày"
+      ],
+      [
+        "Bán kính",
+        "19,044 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "218,05 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2016"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-15%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-15%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 15.80469,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#b99acb",
+    "id": "exo-wasp-15-b",
+    "name": "WASP-15 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · WASP-15",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "WASP-15",
+    "summary": "Ngoại hành tinh quanh WASP-15; chu kỳ quỹ đạo khoảng 3,752 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "3,752 ngày"
+      ],
+      [
+        "Bán kính",
+        "15,805 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "282,091 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2009"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-63%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-63%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 15.80469,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#cfa887",
+    "id": "exo-wasp-63-b",
+    "name": "WASP-63 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · WASP-63",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "WASP-63",
+    "summary": "Ngoại hành tinh quanh WASP-63; chu kỳ quỹ đạo khoảng 4,378 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "4,378 ngày"
+      ],
+      [
+        "Bán kính",
+        "15,805 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "290,684 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2012"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-164%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-164%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Lendl et al. 2019",
+        "https://ui.adsabs.harvard.edu/abs/2019MNRAS.482..301L/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 12.643752,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#bd9e7b",
+    "id": "exo-wasp-164-b",
+    "name": "WASP-164 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · WASP-164",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "WASP-164",
+    "summary": "Ngoại hành tinh quanh WASP-164; chu kỳ quỹ đạo khoảng 1,777 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "1,777 ngày"
+      ],
+      [
+        "Bán kính",
+        "12,644 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "327,506 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2018"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/NGTS-2%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/NGTS-2%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Raynard et al. 2018",
+        "https://ui.adsabs.harvard.edu/abs/2018MNRAS.481.4960R/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 17.878355,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#8aaebd",
+    "id": "exo-ngts-2-b",
+    "name": "NGTS-2 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · NGTS-2",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "NGTS-2",
+    "summary": "Ngoại hành tinh quanh NGTS-2; chu kỳ quỹ đạo khoảng 4,511 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "4,511 ngày"
+      ],
+      [
+        "Bán kính",
+        "17,878 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "356,391 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2018"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-17%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-17%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 20.96083,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#b99acb",
+    "id": "exo-wasp-17-b",
+    "name": "WASP-17 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · WASP-17",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "WASP-17",
+    "summary": "Ngoại hành tinh quanh WASP-17; chu kỳ quỹ đạo khoảng 3,735 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "3,735 ngày"
+      ],
+      [
+        "Bán kính",
+        "20,961 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "405,908 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2009"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TrES-4%20b",
+    "references": [
+      [
+        "NASA Exoplanet Archive — dữ liệu hệ hành tinh",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/TrES-4%20b"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "radius": 18.04649,
+    "status": "ĐÃ XÁC NHẬN",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "image": null,
+    "photoCaption": "Minh họa nghệ thuật của ứng dụng, không phải ảnh quan sát bề mặt.",
+    "color": "#cfa887",
+    "id": "exo-tres-4-b",
+    "name": "TrES-4 b",
+    "small": "Ngoại hành tinh đã xác nhận",
+    "level": "exoplanets",
+    "category": "Ngoại hành tinh · TrES-4",
+    "kicker": "NASA Exoplanet Archive",
+    "type": "exoplanet",
+    "aliases": "TrES-4",
+    "summary": "Ngoại hành tinh quanh TrES-4; chu kỳ quỹ đạo khoảng 3,554 ngày.",
+    "stats": [
+      [
+        "Chu kỳ quỹ đạo",
+        "3,554 ngày"
+      ],
+      [
+        "Bán kính",
+        "18,046 R⊕"
+      ],
+      [
+        "Khoảng cách hệ sao",
+        "515,98 pc"
+      ],
+      [
+        "Năm công bố phát hiện",
+        "2007"
+      ]
+    ],
+    "fact": "Phương pháp phát hiện được lưu trong Archive: Quá cảnh. Bán kính trong hồ sơ được biểu diễn theo bán kính Trái Đất (R⊕).",
+    "research": "Bản ghi lấy từ bảng Planetary Systems (PS), chỉ chọn bộ tham số default_flag=1 và pl_controv_flag=0. Các giá trị thuộc cùng bộ tham số tham chiếu của Archive; bài báo được liên kết bên dưới.",
+    "limits": "Giá trị được làm tròn để hiển thị; sai số và tham chiếu đầy đủ nằm trong Archive. Bán kính không đủ để suy ra thành phần, khí quyển, nước hoặc sự sống. Minh họa không mô tả bề mặt đã quan sát."
+  },
+  {
+    "id": "star-hd-189733",
+    "name": "HD 189733",
+    "small": "Sao có hành tinh được xác nhận",
+    "level": "nearby",
+    "category": "Sao chủ · NASA Exoplanet Archive",
+    "kicker": "Một hệ hành tinh đã biết",
+    "type": "star",
+    "temperature": 5052.0,
+    "color": "#f2d2a3",
+    "summary": "Ngôi sao chủ của HD 189733 b; thông số được ghi nhận trong NASA Exoplanet Archive.",
+    "stats": [
+      [
+        "Nhiệt độ hiệu dụng",
+        "5 052 K"
+      ],
+      [
+        "Bán kính sao",
+        "0,75 R☉"
+      ],
+      [
+        "Khoảng cách",
+        "19,764 pc"
+      ],
+      [
+        "Hành tinh tham chiếu",
+        "HD 189733 b"
+      ]
+    ],
+    "radius": null,
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "fact": "R☉ là đơn vị bán kính Mặt Trời; nhiệt độ hiệu dụng không phải nhiệt độ lõi sao.",
+    "research": "Các thông số sao được lấy cùng bộ tham số mặc định với hành tinh trong bảng PS. Tham chiếu gốc của bộ số liệu được liên kết trong hồ sơ.",
+    "limits": "Đây là minh họa ngôi sao, không phải ảnh chụp trực tiếp đĩa sao. Quầng sáng và màu sắc không dùng để suy ra kích thước góc, độ sáng biểu kiến hoặc cấu trúc bề mặt.",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20189733",
+    "references": [
+      [
+        "NASA Exoplanet Archive — hệ sao",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20189733"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "photoCaption": "Minh họa nghệ thuật của ngôi sao; không phải ảnh quan sát."
+  },
+  {
+    "id": "star-hd-209458",
+    "name": "HD 209458",
+    "small": "Sao có hành tinh được xác nhận",
+    "level": "nearby",
+    "category": "Sao chủ · NASA Exoplanet Archive",
+    "kicker": "Một hệ hành tinh đã biết",
+    "type": "star",
+    "temperature": 6091.0,
+    "color": "#f2d2a3",
+    "summary": "Ngôi sao chủ của HD 209458 b; thông số được ghi nhận trong NASA Exoplanet Archive.",
+    "stats": [
+      [
+        "Nhiệt độ hiệu dụng",
+        "6 091 K"
+      ],
+      [
+        "Bán kính sao",
+        "1,19 R☉"
+      ],
+      [
+        "Khoảng cách",
+        "48,302 pc"
+      ],
+      [
+        "Hành tinh tham chiếu",
+        "HD 209458 b"
+      ]
+    ],
+    "radius": null,
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "fact": "R☉ là đơn vị bán kính Mặt Trời; nhiệt độ hiệu dụng không phải nhiệt độ lõi sao.",
+    "research": "Các thông số sao được lấy cùng bộ tham số mặc định với hành tinh trong bảng PS. Tham chiếu gốc của bộ số liệu được liên kết trong hồ sơ.",
+    "limits": "Đây là minh họa ngôi sao, không phải ảnh chụp trực tiếp đĩa sao. Quầng sáng và màu sắc không dùng để suy ra kích thước góc, độ sáng biểu kiến hoặc cấu trúc bề mặt.",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20209458",
+    "references": [
+      [
+        "NASA Exoplanet Archive — hệ sao",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20209458"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "photoCaption": "Minh họa nghệ thuật của ngôi sao; không phải ảnh quan sát."
+  },
+  {
+    "id": "star-wasp-80",
+    "name": "WASP-80",
+    "small": "Sao có hành tinh được xác nhận",
+    "level": "nearby",
+    "category": "Sao chủ · NASA Exoplanet Archive",
+    "kicker": "Một hệ hành tinh đã biết",
+    "type": "star",
+    "temperature": 4143.0,
+    "color": "#f2d2a3",
+    "summary": "Ngôi sao chủ của WASP-80 b; thông số được ghi nhận trong NASA Exoplanet Archive.",
+    "stats": [
+      [
+        "Nhiệt độ hiệu dụng",
+        "4 143 K"
+      ],
+      [
+        "Bán kính sao",
+        "0,586 R☉"
+      ],
+      [
+        "Khoảng cách",
+        "49,788 pc"
+      ],
+      [
+        "Hành tinh tham chiếu",
+        "WASP-80 b"
+      ]
+    ],
+    "radius": null,
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "fact": "R☉ là đơn vị bán kính Mặt Trời; nhiệt độ hiệu dụng không phải nhiệt độ lõi sao.",
+    "research": "Các thông số sao được lấy cùng bộ tham số mặc định với hành tinh trong bảng PS. Tham chiếu gốc của bộ số liệu được liên kết trong hồ sơ.",
+    "limits": "Đây là minh họa ngôi sao, không phải ảnh chụp trực tiếp đĩa sao. Quầng sáng và màu sắc không dùng để suy ra kích thước góc, độ sáng biểu kiến hoặc cấu trúc bề mặt.",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-80",
+    "references": [
+      [
+        "NASA Exoplanet Archive — hệ sao",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-80"
+      ]
+    ],
+    "papers": [
+      [
+        "Triaud et al. 2015",
+        "https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.2279T/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "photoCaption": "Minh họa nghệ thuật của ngôi sao; không phải ảnh quan sát."
+  },
+  {
+    "id": "star-hd-149026",
+    "name": "HD 149026",
+    "small": "Sao có hành tinh được xác nhận",
+    "level": "nearby",
+    "category": "Sao chủ · NASA Exoplanet Archive",
+    "kicker": "Một hệ hành tinh đã biết",
+    "type": "star",
+    "temperature": 6179.0,
+    "color": "#f2d2a3",
+    "summary": "Ngôi sao chủ của HD 149026 b; thông số được ghi nhận trong NASA Exoplanet Archive.",
+    "stats": [
+      [
+        "Nhiệt độ hiệu dụng",
+        "6 179 K"
+      ],
+      [
+        "Bán kính sao",
+        "1,41 R☉"
+      ],
+      [
+        "Khoảng cách",
+        "75,864 pc"
+      ],
+      [
+        "Hành tinh tham chiếu",
+        "HD 149026 b"
+      ]
+    ],
+    "radius": null,
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "fact": "R☉ là đơn vị bán kính Mặt Trời; nhiệt độ hiệu dụng không phải nhiệt độ lõi sao.",
+    "research": "Các thông số sao được lấy cùng bộ tham số mặc định với hành tinh trong bảng PS. Tham chiếu gốc của bộ số liệu được liên kết trong hồ sơ.",
+    "limits": "Đây là minh họa ngôi sao, không phải ảnh chụp trực tiếp đĩa sao. Quầng sáng và màu sắc không dùng để suy ra kích thước góc, độ sáng biểu kiến hoặc cấu trúc bề mặt.",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20149026",
+    "references": [
+      [
+        "NASA Exoplanet Archive — hệ sao",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20149026"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "photoCaption": "Minh họa nghệ thuật của ngôi sao; không phải ảnh quan sát."
+  },
+  {
+    "id": "star-wasp-43",
+    "name": "WASP-43",
+    "small": "Sao có hành tinh được xác nhận",
+    "level": "nearby",
+    "category": "Sao chủ · NASA Exoplanet Archive",
+    "kicker": "Một hệ hành tinh đã biết",
+    "type": "star",
+    "temperature": 4400.0,
+    "color": "#f2d2a3",
+    "summary": "Ngôi sao chủ của WASP-43 b; thông số được ghi nhận trong NASA Exoplanet Archive.",
+    "stats": [
+      [
+        "Nhiệt độ hiệu dụng",
+        "4 400 K"
+      ],
+      [
+        "Bán kính sao",
+        "0,6 R☉"
+      ],
+      [
+        "Khoảng cách",
+        "86,747 pc"
+      ],
+      [
+        "Hành tinh tham chiếu",
+        "WASP-43 b"
+      ]
+    ],
+    "radius": null,
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "fact": "R☉ là đơn vị bán kính Mặt Trời; nhiệt độ hiệu dụng không phải nhiệt độ lõi sao.",
+    "research": "Các thông số sao được lấy cùng bộ tham số mặc định với hành tinh trong bảng PS. Tham chiếu gốc của bộ số liệu được liên kết trong hồ sơ.",
+    "limits": "Đây là minh họa ngôi sao, không phải ảnh chụp trực tiếp đĩa sao. Quầng sáng và màu sắc không dùng để suy ra kích thước góc, độ sáng biểu kiến hoặc cấu trúc bề mặt.",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-43",
+    "references": [
+      [
+        "NASA Exoplanet Archive — hệ sao",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-43"
+      ]
+    ],
+    "papers": [
+      [
+        "Hellier et al. 2011",
+        "https://ui.adsabs.harvard.edu/abs/2011arXiv1104.2823H/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "photoCaption": "Minh họa nghệ thuật của ngôi sao; không phải ảnh quan sát."
+  },
+  {
+    "id": "star-kelt-7",
+    "name": "KELT-7",
+    "small": "Sao có hành tinh được xác nhận",
+    "level": "nearby",
+    "category": "Sao chủ · NASA Exoplanet Archive",
+    "kicker": "Một hệ hành tinh đã biết",
+    "type": "star",
+    "temperature": 6768.0,
+    "color": "#f2d2a3",
+    "summary": "Ngôi sao chủ của KELT-7 b; thông số được ghi nhận trong NASA Exoplanet Archive.",
+    "stats": [
+      [
+        "Nhiệt độ hiệu dụng",
+        "6 768 K"
+      ],
+      [
+        "Bán kính sao",
+        "1,81 R☉"
+      ],
+      [
+        "Khoảng cách",
+        "136,681 pc"
+      ],
+      [
+        "Hành tinh tham chiếu",
+        "KELT-7 b"
+      ]
+    ],
+    "radius": null,
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "fact": "R☉ là đơn vị bán kính Mặt Trời; nhiệt độ hiệu dụng không phải nhiệt độ lõi sao.",
+    "research": "Các thông số sao được lấy cùng bộ tham số mặc định với hành tinh trong bảng PS. Tham chiếu gốc của bộ số liệu được liên kết trong hồ sơ.",
+    "limits": "Đây là minh họa ngôi sao, không phải ảnh chụp trực tiếp đĩa sao. Quầng sáng và màu sắc không dùng để suy ra kích thước góc, độ sáng biểu kiến hoặc cấu trúc bề mặt.",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/KELT-7",
+    "references": [
+      [
+        "NASA Exoplanet Archive — hệ sao",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/KELT-7"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "photoCaption": "Minh họa nghệ thuật của ngôi sao; không phải ảnh quan sát."
+  },
+  {
+    "id": "star-k2-33",
+    "name": "K2-33",
+    "small": "Sao có hành tinh được xác nhận",
+    "level": "nearby",
+    "category": "Sao chủ · NASA Exoplanet Archive",
+    "kicker": "Một hệ hành tinh đã biết",
+    "type": "star",
+    "temperature": 3540.0,
+    "color": "#f2d2a3",
+    "summary": "Ngôi sao chủ của K2-33 b; thông số được ghi nhận trong NASA Exoplanet Archive.",
+    "stats": [
+      [
+        "Nhiệt độ hiệu dụng",
+        "3 540 K"
+      ],
+      [
+        "Bán kính sao",
+        "1,05 R☉"
+      ],
+      [
+        "Khoảng cách",
+        "139,268 pc"
+      ],
+      [
+        "Hành tinh tham chiếu",
+        "K2-33 b"
+      ]
+    ],
+    "radius": null,
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "fact": "R☉ là đơn vị bán kính Mặt Trời; nhiệt độ hiệu dụng không phải nhiệt độ lõi sao.",
+    "research": "Các thông số sao được lấy cùng bộ tham số mặc định với hành tinh trong bảng PS. Tham chiếu gốc của bộ số liệu được liên kết trong hồ sơ.",
+    "limits": "Đây là minh họa ngôi sao, không phải ảnh chụp trực tiếp đĩa sao. Quầng sáng và màu sắc không dùng để suy ra kích thước góc, độ sáng biểu kiến hoặc cấu trúc bề mặt.",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-33",
+    "references": [
+      [
+        "NASA Exoplanet Archive — hệ sao",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/K2-33"
+      ]
+    ],
+    "papers": [
+      [
+        "Mann et al. 2016",
+        "https://ui.adsabs.harvard.edu/abs/2016AJ....152...61M/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "photoCaption": "Minh họa nghệ thuật của ngôi sao; không phải ảnh quan sát."
+  },
+  {
+    "id": "star-hat-p-26",
+    "name": "HAT-P-26",
+    "small": "Sao có hành tinh được xác nhận",
+    "level": "nearby",
+    "category": "Sao chủ · NASA Exoplanet Archive",
+    "kicker": "Một hệ hành tinh đã biết",
+    "type": "star",
+    "temperature": 5079.0,
+    "color": "#f2d2a3",
+    "summary": "Ngôi sao chủ của HAT-P-26 b; thông số được ghi nhận trong NASA Exoplanet Archive.",
+    "stats": [
+      [
+        "Nhiệt độ hiệu dụng",
+        "5 079 K"
+      ],
+      [
+        "Bán kính sao",
+        "0,87 R☉"
+      ],
+      [
+        "Khoảng cách",
+        "141,837 pc"
+      ],
+      [
+        "Hành tinh tham chiếu",
+        "HAT-P-26 b"
+      ]
+    ],
+    "radius": null,
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ĐỒ HỌA MINH HỌA",
+    "fact": "R☉ là đơn vị bán kính Mặt Trời; nhiệt độ hiệu dụng không phải nhiệt độ lõi sao.",
+    "research": "Các thông số sao được lấy cùng bộ tham số mặc định với hành tinh trong bảng PS. Tham chiếu gốc của bộ số liệu được liên kết trong hồ sơ.",
+    "limits": "Đây là minh họa ngôi sao, không phải ảnh chụp trực tiếp đĩa sao. Quầng sáng và màu sắc không dùng để suy ra kích thước góc, độ sáng biểu kiến hoặc cấu trúc bề mặt.",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HAT-P-26",
+    "references": [
+      [
+        "NASA Exoplanet Archive — hệ sao",
+        "https://exoplanetarchive.ipac.caltech.edu/overview/HAT-P-26"
+      ]
+    ],
+    "papers": [
+      [
+        "Stassun et al. 2017",
+        "https://ui.adsabs.harvard.edu/abs/2017AJ....153..136S/abstract"
+      ]
+    ],
+    "reviewed": "2026-10-21",
+    "photoCaption": "Minh họa nghệ thuật của ngôi sao; không phải ảnh quan sát."
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "agy_reviewers": 2,
+  "worker_timeout_seconds": 900,
+  "review_timeout_seconds": 600,
+  "require_browser": true,
+  "auto_integrate": true,
+  "daily_time": "09:00",
+  "timezone": "Asia/Ho_Chi_Minh"
+}

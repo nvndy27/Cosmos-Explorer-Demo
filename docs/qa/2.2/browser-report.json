@@ -1,0 +1,36 @@
+{
+  "version": "2.2",
+  "records": 138,
+  "added": 30,
+  "images": 126,
+  "viewports": [
+    1440,
+    820,
+    390
+  ],
+  "errors": [],
+  "checks": [
+    "file:// startup",
+    "legacy IDs and favorites",
+    "library pagination 12 cards",
+    "name and aliases",
+    "classification/system/saved/observed filters",
+    "empty and clear state",
+    "collections",
+    "compatible sort",
+    "four reading tabs",
+    "wide reading",
+    "2–4 selections and fifth rejected",
+    "linear radius ratios",
+    "incompatible definitions excluded",
+    "missing mass not zero",
+    "keyboard and modal focus",
+    "all 126 local images decode",
+    "all 138 profiles render",
+    "reduced motion and stopped default",
+    "corrupt localStorage",
+    "three modes at 3 sizes",
+    "image failure fallback",
+    "full offline file:// navigation"
+  ]
+}

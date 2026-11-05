@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070b17" />
+  <meta name="description" content="Cosmos Explorer — ứng dụng khám phá vũ trụ trực quan, kiến thức thiên văn từ NASA." />
+  <title>Cosmos Explorer — Khám phá vũ trụ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="enhancements.css" />
+  <link rel="stylesheet" href="explorer22.css" />
+</head>
+<body>
+  <div class="ambient-bg"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <a href="#" class="brand" id="homeBtn" aria-label="Cosmos Explorer, về trang đầu">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-planet"></span><span class="brand-orbit"></span></span>
+        <span class="brand-word">COSMOS <b>EXPLORER</b><small>Khám phá vũ trụ</small></span>
+      </a>
+      <div class="header-middle"><span class="header-eyebrow">Khám phá không giới hạn</span><span class="header-dot"></span><span class="header-tag">Thư viện thiên văn</span></div>
+      <div class="top-actions">
+        <button class="small-icon search-mobile" id="mobileSearchBtn" aria-label="Mở tìm kiếm">⌕</button>
+        <div class="search" id="searchBox"><span class="search-icon">⌕</span><input id="searchInput" type="search" autocomplete="off" placeholder="Tìm hành tinh, thiên hà..." aria-label="Tìm kiếm thiên thể" /><span class="keycap">/</span><div class="search-results hidden" id="searchResults" aria-live="polite"></div></div>
+        <button class="icon-button" id="helpBtn" title="Hướng dẫn sử dụng" aria-label="Hướng dẫn sử dụng">?</button>
+      </div>
+    </header>
+    <nav class="mode-bar" aria-label="Chế độ khám phá"><div role="tablist" aria-label="Chế độ"><button id="modeDiagram" class="mode-tab active" data-mode="diagram" role="tab" aria-selected="true" aria-controls="diagramView">Sơ đồ</button><button id="modeLibrary" class="mode-tab" data-mode="library" role="tab" aria-selected="false" aria-controls="libraryView">Thư viện</button><button id="modeCompare" class="mode-tab" data-mode="compare" role="tab" aria-selected="false" aria-controls="comparisonView">So sánh <span id="compareCount">0</span></button></div><p>Quan sát, tìm hiểu và đối chiếu</p></nav>
+    <p id="uiNotice" class="ui-notice" role="status" aria-live="polite"></p>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <a class="skip-link" href="#details">Đến hồ sơ thiên thể</a><div class="aside-head"><span class="tiny-overline">Thư viện vũ trụ</span><span class="count">138 đối tượng</span></div>
+        <nav aria-label="Cấp độ vũ trụ" id="levelNav">
+<button class="level active" data-level="solar"><span class="level-icon">☀</span><span><strong>Hệ Mặt Trời</strong><small>Tám hành tinh</small></span><span class="level-arrow">›</span></button><button class="level" data-level="dwarfs"><span class="level-icon">◐</span><span><strong>Hành tinh lùn</strong></span></button><button class="level" data-level="moons"><span class="level-icon">☾</span><span><strong>Các vệ tinh</strong></span></button><button class="level" data-level="exoplanets"><span class="level-icon">◌</span><span><strong>Ngoại hành tinh</strong><small>Thế giới đã xác nhận</small></span><span class="level-arrow">›</span></button><button class="level" data-level="nearby"><span class="level-icon">✧</span><span><strong>Các ngôi sao</strong><small>Sao &amp; các sao chủ</small></span><span class="level-arrow">›</span></button><button class="level" data-level="nebula"><span class="level-icon">☁</span><span><strong>Tinh vân</strong><small>Nơi sao sinh ra &amp; tàn lụi</small></span><span class="level-arrow">›</span></button><button class="level" data-level="clusters"><span class="level-icon">⁙</span><span><strong>Cụm sao</strong><small>Cầu &amp; cụm sao mở</small></span><span class="level-arrow">›</span></button><button class="level" data-level="galaxies"><span class="level-icon">◎</span><span><strong>Các thiên hà</strong><small>Những thiên hà khác</small></span><span class="level-arrow">›</span></button><button class="level" data-level="blackholes"><span class="level-icon">◉</span><span><strong>Hố đen</strong><small>Giới hạn của ánh sáng</small></span><span class="level-arrow">›</span></button><button class="level" data-level="milky"><span class="level-icon">❋</span><span><strong>Ngân Hà</strong><small>Thiên hà của chúng ta</small></span><span class="level-arrow">›</span></button><button class="level" data-level="deep"><span class="level-icon">✦</span><span><strong>Vũ trụ sâu</strong><small>Ánh sáng từ xa</small></span><span class="level-arrow">›</span></button></nav>
+        <div class="aside-divider"></div>
+        <div class="aside-head"><span class="tiny-overline">Trong nhóm này</span><span class="list-count" id="listCount">9</span></div>
+        <div class="library-filters"><button id="allFilter" class="filter active" aria-pressed="true">Tất cả</button><button id="savedFilter" class="filter" aria-pressed="false">Đã lưu <span id="savedCount">0</span></button></div><p id="listEmpty" class="hidden empty-state">Chưa lưu đối tượng trong nhóm này. Bấm ☆ trong hồ sơ để lưu.</p><div class="object-list" id="objectList"></div>
+        <div class="sidebar-footer"><span class="data-dot"></span> Dữ liệu tham khảo: NASA / ESA <small>Đồ họa mô phỏng, không theo tỷ lệ thực</small></div>
+      </aside>
+      <main class="stage" id="workspace">
+<section id="diagramView" class="diagram-view" role="tabpanel" aria-labelledby="modeDiagram">
+        <div class="space-canvas-wrap" id="spaceWrap">
+          <canvas id="spaceCanvas" aria-label="Sơ đồ khám phá thiên thể; chọn bằng danh sách hoặc nút bên dưới"></canvas><div id="sceneTargets" class="scene-targets" aria-label="Các đối tượng trong sơ đồ"></div>
+          <div class="nebula-layer" aria-hidden="true"></div>
+          <div class="scene-top">
+            <div class="breadcrumb"><span>Không gian</span><span class="crumb-chevron">/</span><strong id="breadcrumbLevel">Hệ Mặt Trời</strong><span class="crumb-chevron">/</span><span id="breadcrumbObject">TRAPPIST-1e</span></div>
+            <span class="scene-status"><span></span> CHẾ ĐỘ KHÁM PHÁ</span>
+          </div>
+          <div class="scene-mode-note">Sơ đồ khám phá <span>Ảnh chi tiết ở hồ sơ bên phải</span></div><div class="scene-title" aria-live="polite">
+            <div class="display-index"><span class="line"></span> <span id="sceneKicker">THẾ GIỚI NGOÀI HỆ MẶT TRỜI</span></div>
+            <h1 id="sceneName">TRAPPIST-1e</h1>
+            <p id="sceneSummary">Một thế giới đá xa xôi, thuộc hệ bảy hành tinh quanh ngôi sao lùn đỏ.</p>
+          </div>
+          <div class="scene-marker" id="sceneMarker"><span class="marker-cross">✛</span> <span id="markerText">TRAPPIST-1e</span><i></i></div>
+          <div class="scale-label" id="scaleLabel">MINH HỌA KHÔNG THEO TỶ LỆ THỰC</div>
+          <div class="scene-side-tools"><button id="zoomIn" aria-label="Phóng to">+</button><button id="resetView" aria-label="Đặt lại góc nhìn">⌖</button><button id="zoomOut" aria-label="Thu nhỏ">−</button></div>
+          <div class="viewer-tip" id="viewerTip"><span class="tip-icon">✦</span> Kéo để dịch góc nhìn · Cuộn để thu phóng</div>
+          <div class="bottom-controls">
+            <div class="bottom-left"><span class="control-icon">◈</span><div><span class="control-title">Chuyển động minh họa</span><span class="control-sub">Chuyển động minh họa, không phải vị trí thời gian thực</span></div></div>
+            <div class="bottom-right"><button id="playBtn" class="play-button" aria-label="Tạm dừng hoạt ảnh">Ⅱ</button><div class="speed-block"><span>Tốc độ</span><input id="speedRange" aria-label="Tốc độ mô phỏng" type="range" min="0" max="100" value="38" /><b id="speedValue">1.0×</b></div><button id="nextBtn" class="next-button">Khám phá tiếp <span>→</span></button></div>
+          </div>
+        </div>
+</section>
+<section id="libraryView" class="library-view hidden" role="tabpanel" aria-labelledby="modeLibrary">
+ <div class="view-heading"><h1>Thư viện vũ trụ</h1><p>Từ thế giới quen thuộc đến những hệ hành tinh xa xôi.</p></div>
+ <details id="collectionToggle" class="collection-section"><summary>Bộ sưu tập khám phá</summary><div id="collections" class="collections" aria-label="Bộ sưu tập"></div></details>
+ <form id="libraryFilters" class="library-toolbar" aria-label="Bộ lọc thư viện">
+  <label>Tên hoặc bí danh<input type="search" id="libraryQuery" placeholder="Trái Đất, Earth, Europa…" autocomplete="off"></label>
+  <label>Phân loại<select id="libraryType"><option value="">Tất cả phân loại</option></select></label>
+  <label>Hệ hành tinh<select id="librarySystem"><option value="">Tất cả các hệ</option></select></label>
+  <label>Sắp xếp<select id="librarySort"><option value="name">Tên A–Z</option><option value="radius">Bán kính trung bình (km)</option><option value="transit">Bán kính quá cảnh (R⊕)</option><option value="distance">Khoảng cách từ Mặt Trời (pc)</option></select></label>
+  <label class="check-label"><input id="librarySaved" type="checkbox">Chỉ mục đã lưu</label><label class="check-label"><input id="libraryObserved" type="checkbox">Có ảnh từ quan sát</label><button id="clearLibraryFilters" type="button">Xóa bộ lọc</button>
+ </form>
+ <p id="libraryScope" class="scope-note"></p><p id="libraryCount" role="status" aria-live="polite"></p>
+ <div id="libraryGrid" class="library-grid"></div><div id="libraryEmpty" class="empty-state hidden"><h2>Chưa tìm thấy hồ sơ phù hợp</h2><p>Thử tên ngắn hơn hoặc tên tiếng Anh, bỏ bớt phân loại/hệ, hay dùng nút Xóa bộ lọc để xem lại toàn bộ.</p></div>
+ <div class="pagination"><button id="libraryPrev">Trang trước</button><span id="libraryPage" aria-live="polite"></span><button id="libraryNext">Trang sau</button></div>
+</section>
+<section id="comparisonView" class="comparison-view hidden" role="tabpanel" aria-labelledby="modeCompare"><div class="view-heading"><h1>Đặt các thế giới cạnh nhau</h1><p>Chọn từ 2 đến 4 hồ sơ. Chỉ vẽ biểu đồ khi các đại lượng cùng định nghĩa và đơn vị.</p></div><form id="compareForm" class="compare-picker"><label>Thêm thiên thể<select id="comparePicker"></select></label><button type="submit" id="addCompare">Thêm vào so sánh</button><button type="button" id="clearCompare">Xóa lựa chọn</button></form><p id="compareMessage" role="status" aria-live="polite"></p><div id="compareSelection" class="compare-selection"></div><div id="multiCompare" class="multi-compare"></div></section>
+      </main>
+      <aside class="details" id="details" tabindex="-1" aria-label="Hồ sơ đang đọc"><div class="reading-controls"><button id="readWide" aria-expanded="false">Đọc rộng</button><button id="addCurrentCompare">Thêm vào so sánh</button></div>
+        <div class="details-head"><div class="tiny-overline">Hồ sơ thiên thể</div><span class="verified-dot" title="Thông số dựa trên nguồn NASA / ESA">✦ <span>Dữ liệu tham khảo</span></span></div>
+        <div class="object-heading"><div><div class="object-category" id="objectCategory">NGOẠI HÀNH TINH · HỆ TRAPPIST-1</div><h2 id="objectName">TRAPPIST-1e</h2></div><button id="favBtn" class="star-button" title="Lưu mục yêu thích" aria-label="Lưu mục yêu thích">☆</button></div>
+        <div class="badges"><span class="confirmed-badge" id="statusBadge"><i></i> ĐÃ XÁC NHẬN</span><span class="alt-badge" id="dataTypeBadge">NGHỆ THUẬT MINH HỌA</span></div>
+        <div class="photo-wrap" id="photoWrap"><div class="photo-fallback" id="photoFallback"><span class="fallback-stars"></span><div class="fallback-planet" id="fallbackPlanet"></div><canvas id="detailCanvas" aria-label="Minh họa thiên thể, không phải ảnh quan sát"></canvas></div><img id="objectImage" alt="Ảnh tư liệu thiên văn" loading="eager" /><span class="photo-corner">NASA • SPACE SCIENCE</span></div>
+        <p class="photo-caption" id="photoCaption">Hình minh họa khoa học, không phải ảnh chụp trực tiếp bề mặt.</p>
+        <p id="profileIntro" class="profile-intro"></p>
+        <div class="tabs" role="tablist" aria-label="Nội dung hồ sơ"><button class="tab active" data-tab="overview" role="tab" aria-selected="true">Tổng quan</button><button class="tab" data-tab="features" role="tab" aria-selected="false">Đặc điểm</button><button class="tab" data-tab="research" role="tab" aria-selected="false">Khám phá</button><button class="tab" data-tab="sources" role="tab" aria-selected="false">Nguồn</button></div>
+        <div class="tab-content" id="overviewTab" role="tabpanel"><div class="stat-grid" id="statGrid"></div><div class="fact-card"><div class="fact-heading"><span class="fact-star">✧</span> Điểm đáng khám phá</div><p id="factText"></p></div></div>
+        <div class="tab-content hidden" id="featuresTab" role="tabpanel"><p id="featuresText"></p><div id="measurementDetails" class="measurement-details"></div><p id="hostText"></p></div>
+        <div class="tab-content hidden" id="researchTab" role="tabpanel"><div class="research-h">Khám phá và thám hiểm</div><p id="researchText"></p><div class="research-h">Giới hạn quan sát</div><p id="limitsText"></p><blockquote id="sourceNote" class="source-note hidden"></blockquote><span class="research-note">Nguồn tham khảo bên dưới mở trang nghiên cứu chính thức.</span></div>
+        <div id="sourcesTab" class="tab-content hidden" role="tabpanel"><div class="source-panel" id="sourcePanel"></div></div><div class="compare hidden" id="comparePanel"></div>
+        <div class="detail-actions"><button class="primary-action" id="compareBtn"><span>◐</span> So sánh hai hồ sơ</button><a class="source-link" id="sourceLink" href="https://science.nasa.gov/exoplanets/" target="_blank" rel="noopener noreferrer">Xem dữ liệu gốc <span>↗</span></a></div>
+        <div class="details-foot">COSMOS EXPLORER <span>•</span> Phiên bản 2.2</div>
+      </aside>
+    </div>
+  </div>
+  <div class="overlay hidden" id="helpOverlay" tabindex="-1" role="dialog" aria-modal="true" aria-label="Hướng dẫn sử dụng"><div class="modal"><button class="modal-close" id="closeHelp" aria-label="Đóng">×</button><div class="tiny-overline">Hướng dẫn</div><h2>Bắt đầu chuyến du hành</h2><p>Chọn một cấp độ vũ trụ hoặc thiên thể ở thanh bên. Dùng chuột, bàn rê hoặc ngón tay kéo để dịch góc nhìn, cuộn để phóng to và thu nhỏ.</p><p>Khung giữa luôn giữ góc nhìn tổng thể; chọn một điểm sáng để mở hồ sơ. Ảnh chi tiết chỉ hiển thị trong hồ sơ bên phải (hoặc bên dưới trên điện thoại). Nhấp <b>Khám phá khoa học</b> để đọc thông tin đã được quan sát. Nhấp <b>Xem dữ liệu gốc</b> để mở nguồn NASA hoặc ESA. Bạn có thể tìm kiếm, đánh dấu mục yêu thích và so sánh bán kính với Trái Đất.</p><p class="caution">Chuyển giữa Sơ đồ, Thư viện và So sánh bằng thanh chế độ. Thư viện có bộ lọc và bộ sưu tập; chọn Đọc rộng để đọc hồ sơ dễ hơn. Đây là dữ liệu biên tập sẵn, không tự cập nhật. Mô hình đồ họa và chuyển động không tương ứng với bản đồ thiên văn 3D theo thời gian thực.</p><button class="modal-cta" id="gotIt">Bắt đầu khám phá →</button></div></div>
+  <script src="catalog.js"></script>
+  <script src="catalog-expanded.js"></script>
+  <script src="explorer-model.js"></script>
+  <script src="scene.js"></script>
+  <script src="app.js"></script>
+  <script src="explorer-ui.js"></script>
+</body>
+</html>

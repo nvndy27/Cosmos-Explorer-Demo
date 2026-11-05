@@ -1,0 +1,26 @@
+{
+  "records": 108,
+  "imagesDecoded": 78,
+  "viewports": [
+    1440,
+    820,
+    390
+  ],
+  "errors": [],
+  "checks": [
+    "Earth stays <10 CSS px radius",
+    "No full-stage photo",
+    "Canvas body selection",
+    "78 local images decode",
+    "Unaccented search + Enter",
+    "Favorites persist + filter",
+    "Source excerpt",
+    "Modal keyboard focus",
+    "All 9 groups",
+    "All 108 profiles render",
+    "Reduced motion",
+    "Corrupt storage",
+    "Real image failure fallback",
+    "Offline content"
+  ]
+}

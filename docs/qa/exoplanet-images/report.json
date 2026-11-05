@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-21",
+  "profiles": 37,
+  "artwork": 36,
+  "generic": 16,
+  "observations": 1,
+  "viewports": [
+    390,
+    820,
+    1440
+  ],
+  "checks": [
+    "fresh offline file context",
+    "all 37 profile images decoded and labelled",
+    "Kepler library images and artwork labels",
+    "generic illustration disclosure",
+    "observed-only filter excludes all art",
+    "real missing artwork fallback",
+    "no horizontal page overflow"
+  ],
+  "errors": []
+}

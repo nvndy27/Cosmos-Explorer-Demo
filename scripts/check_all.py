@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""Mandatory local gates, optionally including the real Chrome QA suite."""
+import argparse
+import os
+from pathlib import Path
+import subprocess
+
+ROOT = Path(__file__).resolve().parents[1]
+
+def commands(browser=False):
+    result = [["node", "--check", "cosmos-explorer/" + name + ".js"] for name in
+              ("app", "catalog", "scene", "catalog-expanded", "explorer-model", "explorer-ui")]
+    result += [["node", "cosmos-explorer/tests/smoke.cjs"],
+               ["node", "scripts/validate_catalog.cjs"]]
+    if browser:
+        result += [["node", "scripts/check_browser.cjs"],
+                   ["node", "scripts/check_exoplanet_images.cjs"]]
+    return result
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--browser", action="store_true")
+    args = parser.parse_args()
+    for cmd in commands(args.browser):
+        print("RUN " + " ".join(cmd), flush=True)
+        subprocess.run(["rtk", "proxy", *cmd], cwd=ROOT, check=True, timeout=240,
+                       env=os.environ.copy())
+    print("PASS mandatory gates" + (" including Chrome" if args.browser else "; browser NOT run"))
+
+if __name__ == "__main__":
+    main()

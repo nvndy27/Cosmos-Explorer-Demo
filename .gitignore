@@ -1,0 +1,9 @@
+# Local automation state, credentials and generated packages
+.automation/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+dist/
+node_modules/

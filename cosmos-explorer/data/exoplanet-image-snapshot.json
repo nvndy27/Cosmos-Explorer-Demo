@@ -1,0 +1,749 @@
+{
+  "version": "2.2",
+  "retrieved": "2026-10-21",
+  "note": "Reviewed official NASA catalog/asset metadata and ESO sources. Generic NASA catalog art is explicitly labelled, not reassigned as an observed surface. Only resize/format conversion, no synthesized imagery.",
+  "patches": {
+    "trappist": {
+      "image": "assets/illustrations/trappist.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/TRAPPIST-1e.png/jcr:content/renditions/cq5dam.web.1280.1280.png",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/trappist-1-e/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho TRAPPIST-1e trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-hd-189733-b": {
+      "image": "assets/illustrations/exo-hd-189733-b.webp",
+      "imageRemote": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001427/GSFC_20171208_Archive_e001427~medium.jpg",
+      "imageSource": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001427",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA, ESA, M. Kornmesser",
+      "photoCaption": "Minh họa nghệ thuật cho HD 189733 b trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-hd-209458-b": {
+      "image": "assets/illustrations/exo-hd-209458-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/hd-209458-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho HD 209458 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-wasp-80-b": {
+      "image": "assets/illustrations/exo-wasp-80-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/wasp-80-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho WASP-80 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-hd-149026-b": {
+      "image": "assets/illustrations/exo-hd-149026-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/hd-149026-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho HD 149026 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-wasp-43-b": {
+      "image": "assets/illustrations/exo-wasp-43-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2024/04/STScI-01HW67PCJZQ5SK68C3EPCAEVCC.jpg?w=2000&h=1125&fit=clip",
+      "imageSource": "https://science.nasa.gov/asset/webb/hot-gas-giant-exoplanet-wasp-43-b-artists-concept/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA, ESA, CSA, Ralf Crawford (STScI)",
+      "photoCaption": "Minh họa nghệ thuật WASP-43 b; không phải ảnh chụp trực tiếp. Màu, mây và chi tiết bề mặt trong tranh không xác nhận điều kiện thực tế của hành tinh.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-kelt-7-b": {
+      "image": "assets/illustrations/exo-kelt-7-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/kelt-7-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho KELT-7 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-k2-33-b": {
+      "image": "assets/illustrations/exo-k2-33-b.webp",
+      "imageRemote": "https://images-assets.nasa.gov/image/PIA20690/PIA20690~medium.jpg",
+      "imageSource": "https://images.nasa.gov/details/PIA20690",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA/JPL-Caltech",
+      "photoCaption": "Minh họa nghệ thuật K2-33 b quanh sao trẻ (PIA20690); không phải ảnh chụp trực tiếp hoặc bản đồ bề mặt.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-hat-p-26-b": {
+      "image": "assets/illustrations/exo-hat-p-26-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/neptunelike-8.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/hat-p-26-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho HAT-P-26 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-k2-285-c": {
+      "image": "assets/illustrations/exo-k2-285-c.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/neptunelike-8.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/k2-285-c/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho K2-285 c; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-k2-285-d": {
+      "image": "assets/illustrations/exo-k2-285-d.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/neptunelike-8.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/k2-285-d/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho K2-285 d; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-hats-6-b": {
+      "image": "assets/illustrations/exo-hats-6-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/hats-6-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho HATS-6 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-kelt-8-b": {
+      "image": "assets/illustrations/exo-kelt-8-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/kelt-8-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho KELT-8 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-wasp-94-a-b": {
+      "image": "assets/illustrations/exo-wasp-94-a-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/wasp-94-a-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho WASP-94 A b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-kelt-4-a-b": {
+      "image": "assets/illustrations/exo-kelt-4-a-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/kelt-4-a-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho KELT-4 A b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-wasp-15-b": {
+      "image": "assets/illustrations/exo-wasp-15-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/wasp-15-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho WASP-15 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-wasp-63-b": {
+      "image": "assets/illustrations/exo-wasp-63-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/wasp-63-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho WASP-63 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-wasp-164-b": {
+      "image": "assets/illustrations/exo-wasp-164-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/wasp-164-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho WASP-164 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-ngts-2-b": {
+      "image": "assets/illustrations/exo-ngts-2-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/ngts-2-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho NGTS-2 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-wasp-17-b": {
+      "image": "assets/illustrations/exo-wasp-17-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2023/10/STScI-01HC3AY82PXH352B641ZRYNNNS.png?w=2000&h=1125&fit=clip",
+      "imageSource": "https://science.nasa.gov/asset/webb/exoplanet-wasp-17-b-artists-concept/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA, ESA, CSA, Ralf Crawford (STScI)",
+      "photoCaption": "Minh họa nghệ thuật WASP-17 b; không phải ảnh chụp trực tiếp. Màu, mây và chi tiết bề mặt trong tranh không xác nhận điều kiện thực tế của hành tinh.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-tres-4-b": {
+      "image": "assets/illustrations/exo-tres-4-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/assets/content/planets/gasgiant-7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/tres-4-b/",
+      "imageKind": "illustration",
+      "imageScope": "generic",
+      "visualType": "Minh họa đại diện",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Ảnh đại diện chung cho loại hành tinh, do danh mục NASA dùng cho TrES-4 b; không phải hình riêng hoặc bề mặt đã quan sát của thiên thể này.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-55-cnc-e": {
+      "image": "assets/illustrations/exo-55-cnc-e.webp",
+      "imageRemote": "https://images-assets.nasa.gov/image/PIA20068/PIA20068~medium.jpg",
+      "imageSource": "https://images.nasa.gov/details/PIA20068",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA/JPL-Caltech",
+      "photoCaption": "Minh họa nghệ thuật 55 Cancri e (PIA20068): kịch bản thế giới dung nham, không phải ảnh chụp hoặc xác nhận bản đồ bề mặt.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-gj-1214-b": {
+      "image": "assets/illustrations/exo-gj-1214-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2013/12/STScI-01EVVM4G8ZMDQJTZZS59GS5MFD.tif?w=2000",
+      "imageSource": "https://science.nasa.gov/asset/hubble/clouds-in-atmosphere-of-exoplanet-gj-1214b-artists-view/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA, ESA, G. Bacon (STScI); khoa học: L. Kreidberg, J. Bean, H. Knutson và cộng sự",
+      "photoCaption": "Minh họa nghệ thuật GJ 1214 b; không phải ảnh chụp trực tiếp. Màu, mây và chi tiết bề mặt trong tranh không xác nhận điều kiện thực tế của hành tinh.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-gj-436-b": {
+      "image": "assets/illustrations/exo-gj-436-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/Gliese436b1200.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/gj-436-b/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho GJ 436 b trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-k2-18-b": {
+      "image": "assets/illustrations/exo-k2-18-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2023/09/STScI-01H9R8AEK6Y7QR03MGN9V9P6ZJ.jpg?w=2000&h=1125&fit=clip",
+      "imageSource": "https://science.nasa.gov/asset/webb/exoplanet-k2-18-b-illustration/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA, ESA, CSA, Joseph Olmsted (STScI); khoa học: Nikku Madhusudhan (IoA)",
+      "photoCaption": "Minh họa nghệ thuật K2-18 b; không phải ảnh chụp trực tiếp. Màu, mây và chi tiết bề mặt trong tranh không xác nhận điều kiện thực tế của hành tinh.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-kepler-16-b": {
+      "image": "assets/illustrations/exo-kepler-16-b.webp",
+      "imageRemote": "https://images-assets.nasa.gov/image/PIA14724/PIA14724~medium.jpg",
+      "imageSource": "https://images.nasa.gov/details/PIA14724",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA/JPL-Caltech",
+      "photoCaption": "Minh họa nghệ thuật Kepler-16 b và hai sao chủ (PIA14724), không phải ảnh chụp. Màu sắc và chi tiết hành tinh là diễn giải của họa sĩ, không phải bề mặt đã được phân giải.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-kepler-22-b": {
+      "image": "assets/illustrations/exo-kepler-22-b.webp",
+      "imageRemote": "https://images-assets.nasa.gov/image/PIA14883/PIA14883~medium.jpg",
+      "imageSource": "https://images.nasa.gov/details/PIA14883",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA/JPL-Caltech/Ames",
+      "photoCaption": "Minh họa nghệ thuật Kepler-22 b (PIA14883). Mây và màu xanh là cách diễn giải của họa sĩ, không phải ảnh chụp; hình này không xác nhận đại dương, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-lhs-1140-b": {
+      "image": "assets/illustrations/exo-lhs-1140-b.webp",
+      "imageRemote": "https://cdn.eso.org/images/screen/eso1712a.jpg",
+      "imageSource": "https://www.eso.org/public/images/eso1712a/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "ESO/spaceengine.org",
+      "photoCaption": "Minh họa nghệ thuật LHS 1140 b; không phải ảnh chụp trực tiếp. Màu, mây và chi tiết bề mặt trong tranh không xác nhận điều kiện thực tế của hành tinh.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-toi-700-d": {
+      "image": "assets/illustrations/exo-toi-700-d.webp",
+      "imageRemote": "https://images-assets.nasa.gov/image/PIA23408/PIA23408~orig.jpg",
+      "imageSource": "https://images.nasa.gov/details/PIA23408",
+      "imageKind": "illustration",
+      "imageScope": "system",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA's Goddard Space Flight Center",
+      "photoCaption": "Minh họa nghệ thuật hệ TOI 700 (PIA23408), không phải ảnh riêng của TOI-700 d; màu sắc và bề mặt chỉ minh họa.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-trappist-1-b": {
+      "image": "assets/illustrations/exo-trappist-1-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/TRAPPIST-1b.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/trappist-1-b/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho TRAPPIST-1 b trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-trappist-1-c": {
+      "image": "assets/illustrations/exo-trappist-1-c.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/TRAPPIST-1c_600x.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/trappist-1-c/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho TRAPPIST-1 c trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-trappist-1-d": {
+      "image": "assets/illustrations/exo-trappist-1-d.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/503.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/trappist-1-d/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho TRAPPIST-1 d trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-trappist-1-f": {
+      "image": "assets/illustrations/exo-trappist-1-f.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/trappist_1f.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/trappist-1-f/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho TRAPPIST-1 f trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-trappist-1-g": {
+      "image": "assets/illustrations/exo-trappist-1-g.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/TRAPPIST-1g_600x.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/trappist-1-g/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho TRAPPIST-1 g trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-trappist-1-h": {
+      "image": "assets/illustrations/exo-trappist-1-h.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/TRAPPIST-1h_600x.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/trappist-1-h/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho TRAPPIST-1 h trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-wasp-12-b": {
+      "image": "assets/illustrations/exo-wasp-12-b.webp",
+      "imageRemote": "https://assets.science.nasa.gov/content/dam/science/astro/exo-explore/2024/03/wasp12b.png/jcr:content/renditions/cq5dam.web.1280.1280.png",
+      "imageSource": "https://science.nasa.gov/exoplanet-catalog/wasp-12-b/",
+      "imageKind": "illustration",
+      "imageScope": "object",
+      "visualType": "Minh họa nghệ thuật",
+      "credit": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng.",
+      "photoCaption": "Minh họa nghệ thuật cho WASP-12 b trong danh mục NASA. Màu sắc, mây và bề mặt là diễn giải của họa sĩ, không phải ảnh chụp hay bằng chứng về nước, khí quyển hoặc sự sống.",
+      "imageReviewed": "2026-10-21"
+    },
+    "exo-bet-pic-b": {
+      "image": "assets/observations/exo-bet-pic-b.webp",
+      "imageRemote": "https://cdn.eso.org/images/screen/ann1037d.jpg",
+      "imageSource": "https://www.eso.org/public/images/ann1037d/",
+      "imageKind": "observation",
+      "imageScope": "object",
+      "visualType": "Ảnh quan sát hồng ngoại có xử lý",
+      "credit": "ESO",
+      "photoCaption": "Ảnh quan sát hồng ngoại VLT/NACO ở bước sóng 4,05 µm ngày 03/04/2010; Beta Pictoris b là điểm sáng bên trái. Ánh sáng sao chủ được che, ảnh có xử lý và chú thích, không phân giải bề mặt hành tinh. ESO, CC BY 4.0.",
+      "imageReviewed": "2026-10-21"
+    }
+  },
+  "provenance": [
+    {
+      "id": "trappist",
+      "source": "https://science.nasa.gov/exoplanet-catalog/trappist-1-e/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "61247bc8452290fecbbe97c8b6b8fcfff232959eaa8a4139e5ccaee3279237c2",
+      "downloadSha256": "a06081648f674acd6a83b9151a94d48cd8ff5835452377fffd33a7ae6f451227",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-hd-189733-b",
+      "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001427",
+      "retrieved": "2026-10-21",
+      "pageSha256": "9b763de20f83a0baffccf696a66fbeea492940a123d767b1f75363256935cf2d",
+      "downloadSha256": "aada19167093783cc27e43b171a44f16a84b3cceced4f32b7bfe3b0e8d6f422c",
+      "imageScope": "object",
+      "attributionNote": "NASA, ESA, M. Kornmesser"
+    },
+    {
+      "id": "exo-hd-209458-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/hd-209458-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "7e38acad77c2af10599e7bb3534f71ecdc5c9d9f4c0116943ebc2fb27b1b7a38",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-wasp-80-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/wasp-80-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "0002cce299e1eb6fd98337c054de35bfdb9ecd4cd142f7bf045ea97dd0611c29",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-hd-149026-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/hd-149026-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "bad00887b77f1d8b222019e19f1a29308b006819f39b3a51ead7b1d86f0b1130",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-wasp-43-b",
+      "source": "https://science.nasa.gov/asset/webb/hot-gas-giant-exoplanet-wasp-43-b-artists-concept/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "160bdc81b6f565d8fa17ce44c081523e297e97d47801b71d1957879947cf392f",
+      "downloadSha256": "288b9a59ac63d29550911df1757a752606039924d2da226f144630200d55c1d5",
+      "imageScope": "object",
+      "attributionNote": "NASA, ESA, CSA, Ralf Crawford (STScI)"
+    },
+    {
+      "id": "exo-kelt-7-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/kelt-7-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "8a5df532c984d937083b9267b7892d10a32acd8255502523a94cc7d5b0d0cb0c",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-k2-33-b",
+      "source": "https://images.nasa.gov/details/PIA20690",
+      "retrieved": "2026-10-21",
+      "pageSha256": "f64c7b82c9edb0ef1352f1750340fb32bd62ceb14b1829a54ff9037864a88883",
+      "downloadSha256": "fa2dd2814b4d0ef01f5b0cd2df0719d90b5b53f083147cbf8a4b1c708fd19f3d",
+      "imageScope": "object",
+      "attributionNote": "NASA/JPL-Caltech"
+    },
+    {
+      "id": "exo-hat-p-26-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/hat-p-26-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "3e606db83b52cb1c3221a7fb94f8fa6aadf2b3131ddc2af488119b77c021ba01",
+      "downloadSha256": "73fb34263d0ee593b99693f33f8b7451eb5c67b7de0286fe76b7f32556c671a9",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-k2-285-c",
+      "source": "https://science.nasa.gov/exoplanet-catalog/k2-285-c/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "7080ef5b3c2dda40a041f7ad828f2cd6c83606c08d9e2d404b3ba57c4b49df23",
+      "downloadSha256": "73fb34263d0ee593b99693f33f8b7451eb5c67b7de0286fe76b7f32556c671a9",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-k2-285-d",
+      "source": "https://science.nasa.gov/exoplanet-catalog/k2-285-d/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "864d0b23364de18d5532eb24059f5f584d00861b916412f5ab7ffe0da57b7ae0",
+      "downloadSha256": "73fb34263d0ee593b99693f33f8b7451eb5c67b7de0286fe76b7f32556c671a9",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-hats-6-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/hats-6-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "69051d45b696d35126f80b0514186a2494b70b1f5f506389f8db7c5d11fe5a0a",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-kelt-8-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/kelt-8-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "1083094b2e313dd9a2c9aa29a2de13d2095d0715e77d9d61eec3166b0f4941fa",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-wasp-94-a-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/wasp-94-a-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "220566e6892cdbd14b672a73c4cb88c64d6530b43f35696f8f1976c823103b02",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-kelt-4-a-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/kelt-4-a-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "f29ab18c4d11df3065822877d76e5e1511713ef3d20e990aaa71f3344684bfeb",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-wasp-15-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/wasp-15-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "dfb2e2559dc61b43c0837529d0800c35a5d2bd3dd4d1bc3a840f1c32cafbd792",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-wasp-63-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/wasp-63-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "e8681417f4ec80348183038a26194f86cfb28ff286eca6e7f3157f990b4be347",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-wasp-164-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/wasp-164-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "7d93cdc6f91aef724294efcc5c03ff2a5a284cb85280fe55d1351d335b98c80e",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-ngts-2-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/ngts-2-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "1a70479c5f24621727b78bd65605aff21b01bc7955bdd1c482e8d406697bd5c9",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-wasp-17-b",
+      "source": "https://science.nasa.gov/asset/webb/exoplanet-wasp-17-b-artists-concept/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "20be0ea6d2aed7bfd75ec2ccabe407a4e21feb5ada473d8efbade0068996a1c1",
+      "downloadSha256": "ccb1f02850c30d8bb4a4d7cfdc5b3f87373046f1a672c5a43d20539601602289",
+      "imageScope": "object",
+      "attributionNote": "NASA, ESA, CSA, Ralf Crawford (STScI)"
+    },
+    {
+      "id": "exo-tres-4-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/tres-4-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "2cb51b585354d2dc0d194b06ef2893440c07016e3d69d2823e2aabf632098e6b",
+      "downloadSha256": "8c9e3884611d5c95dc297ce2e257127ada275a1eaee70962b8ce556a766642ad",
+      "imageScope": "generic",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-55-cnc-e",
+      "source": "https://images.nasa.gov/details/PIA20068",
+      "retrieved": "2026-10-21",
+      "pageSha256": "76b91cfdeda1518c961b5312774afbb5d7657e794dd4804aa0e62628e3a001c1",
+      "downloadSha256": "01f14280693e976047ff52ff6974bc9169ea068663ba0b13d8acce072da225d9",
+      "imageScope": "object",
+      "attributionNote": "NASA/JPL-Caltech"
+    },
+    {
+      "id": "exo-gj-1214-b",
+      "source": "https://science.nasa.gov/asset/hubble/clouds-in-atmosphere-of-exoplanet-gj-1214b-artists-view/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "4b440314e0186d194401d338f13f29414684a88857237a4f184c9a5f1cc5fa5f",
+      "downloadSha256": "09840779121b4f2ae0bd9f427e0ae7e85e86b1874351b2828dbc4213f0846861",
+      "imageScope": "object",
+      "attributionNote": "NASA, ESA, G. Bacon (STScI); khoa học: L. Kreidberg, J. Bean, H. Knutson và cộng sự"
+    },
+    {
+      "id": "exo-gj-436-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/gj-436-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "ba7e06e2e81165fe6349d6524e0ffb40a31bca26c882eb1e11d6957a98b086cb",
+      "downloadSha256": "4cb17d1518b48da256faa4bd52af49706d110f5d5295e454781d4d5a5950a589",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-k2-18-b",
+      "source": "https://science.nasa.gov/asset/webb/exoplanet-k2-18-b-illustration/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "e81d8d72a904f99d5042af103e6af09393a3571f1402d3c44684fdc6019d922c",
+      "downloadSha256": "f56b80881d51af2c8b9bbb4ec0f8751fef89c39f2318a4f031214d9a176f6788",
+      "imageScope": "object",
+      "attributionNote": "NASA, ESA, CSA, Joseph Olmsted (STScI); khoa học: Nikku Madhusudhan (IoA)"
+    },
+    {
+      "id": "exo-kepler-16-b",
+      "source": "https://images.nasa.gov/details/PIA14724",
+      "retrieved": "2026-10-21",
+      "pageSha256": "caa0238d3a242abfa1411125db62b2d7082305926c7cc686519a06bd823bcd6a",
+      "downloadSha256": "b260352d7931ce6566daaaf2b13449f60ba8b30fa9ad22b0920f709a9623308b",
+      "imageScope": "object",
+      "attributionNote": "NASA/JPL-Caltech"
+    },
+    {
+      "id": "exo-kepler-22-b",
+      "source": "https://images.nasa.gov/details/PIA14883",
+      "retrieved": "2026-10-21",
+      "pageSha256": "3bf04870e8a58a6d3be31cbf73addf858773af8c58bd3f2d27750bb3aa798eb8",
+      "downloadSha256": "ae48c3b583cf15b996ebc621701904d2a5599041d2cb54f8298b76796d0fa35e",
+      "imageScope": "object",
+      "attributionNote": "NASA/JPL-Caltech/Ames"
+    },
+    {
+      "id": "exo-lhs-1140-b",
+      "source": "https://www.eso.org/public/images/eso1712a/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "805b896209fe2d8f62efaabd5f4bab314336ea8db175582992036b7f78c977f5",
+      "downloadSha256": "fbc6e12a4f2a7d0948933c66c2ce5eeae4fe27b4adbe960f3ebacfa162dc852b",
+      "imageScope": "object",
+      "attributionNote": "ESO/spaceengine.org"
+    },
+    {
+      "id": "exo-toi-700-d",
+      "source": "https://images.nasa.gov/details/PIA23408",
+      "retrieved": "2026-10-21",
+      "pageSha256": "0e5a23f6d556ea438d8c6b5ba991a376ed3fd2a84e36cd84a02d306f8458d6c4",
+      "downloadSha256": "e39b77d2229457c43307a0d7e9d3bf9315b7cba00cc903fb4c0bdfb2c997108c",
+      "imageScope": "system",
+      "attributionNote": "NASA's Goddard Space Flight Center"
+    },
+    {
+      "id": "exo-trappist-1-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/trappist-1-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "f5655feca0b68cfa40f5efce4f7131f797b41332d6d677970ccd44c43a7d297c",
+      "downloadSha256": "0e6415f749d2268efd43defdd9ce8e3a46070d3d05a71f25a7b486586c5821fd",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-trappist-1-c",
+      "source": "https://science.nasa.gov/exoplanet-catalog/trappist-1-c/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "7751ac714b80a63bb43e55132c188630b546b7974963d92400bdb20f3edb3f7c",
+      "downloadSha256": "feebad7e33bac47ff1216c153139489a1d72f708282838bac096486aba86ad1e",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-trappist-1-d",
+      "source": "https://science.nasa.gov/exoplanet-catalog/trappist-1-d/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "8d073afb3abed9f2a4299b7644254fd4d1dbca37ab1960b2d0ef5babc39438f1",
+      "downloadSha256": "593f963d26e440b1a324c3d8132de56445937f06a0384983dcfa3f898ee2384c",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-trappist-1-f",
+      "source": "https://science.nasa.gov/exoplanet-catalog/trappist-1-f/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "bd45fd1a4dcb384114ee0f5b020d5057daea4aecddfcc06828b4a5bb236449c2",
+      "downloadSha256": "1a170300f5f5c0ddd74099d2c4a89e50eae33879433809393905e192c22eef59",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-trappist-1-g",
+      "source": "https://science.nasa.gov/exoplanet-catalog/trappist-1-g/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "bb0753f8fb55c9bf8e742323ae7906d138238d8d5b5f8b4f0612c86a087636b3",
+      "downloadSha256": "fdd51733f2a0cdb9c71d154bc39c8094ce2fde382bb4289c67f1af9536d3421c",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-trappist-1-h",
+      "source": "https://science.nasa.gov/exoplanet-catalog/trappist-1-h/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "32398e4679b3b54ea982c7d3333761e66bc8c6149b9688078f887e44b9c2ace3",
+      "downloadSha256": "9c35b79a0832ff12c682358e0e265eb282e0f0d037429cff97aa915c11dddb25",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-wasp-12-b",
+      "source": "https://science.nasa.gov/exoplanet-catalog/wasp-12-b/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "5a29eb1a96ce2bb82831f40758337f9c3f5c35831ede02b7a4e052c9df002eec",
+      "downloadSha256": "89d79386d7686b4d944edb90a698e113e8014a683845ea2087869f76d7d53f68",
+      "imageScope": "object",
+      "attributionNote": "NASA Science (đơn vị công bố); trang danh mục không nêu họa sĩ riêng."
+    },
+    {
+      "id": "exo-bet-pic-b",
+      "source": "https://www.eso.org/public/images/ann1037d/",
+      "retrieved": "2026-10-21",
+      "pageSha256": "41dd1f2259459372b0ca4e2bf2211896df31e3fa6ff919f275d6ef944528300d",
+      "downloadSha256": "acc157da76a866fbf8589ad982675600497c7e9931963f82c51621dbdc0e2560",
+      "imageScope": "object",
+      "attributionNote": "ESO"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "retrieved": "2026-10-21",
+  "records": [
+    {
+      "id": "messier-1",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/",
+      "retrieved": "2026-10-21",
+      "sha256": "f91a257c1b380c08c41160897bcb3ddffbe748d53e49508fb60f738af4c92990",
+      "fields": {
+        "distance": "6,500 light-years",
+        "apparent magnitude": "8.4",
+        "constellation": "Taurus",
+        "object type": "Supernova Remnant"
+      },
+      "imageOriginal": "https://science.nasa.gov/wp-content/uploads/2023/04/crab-nebula-mosaic-jpg.webp?w=2048",
+      "imageDownloaded": "https://science.nasa.gov/wp-content/uploads/2023/04/crab-nebula-mosaic-jpg.webp?w=2048",
+      "credit": "NASA, ESA, J. Hester and A. Loll (Arizona State University)",
+      "sourceNote": ""
+    },
+    {
+      "id": "messier-31",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/",
+      "retrieved": "2026-10-21",
+      "sha256": "804ceee4aa2a48ae41bf086b7496fbdaef66505aaa7228008f32bc918bc67637",
+      "fields": {
+        "distance": "2.5 million light-years",
+        "apparent magnitude": "3.1",
+        "constellation": "Andromeda",
+        "object type": "Spiral Galaxy"
+      },
+      "imageOriginal": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/andromeda/Hubble_M31Mosaic_2025_42208x9870_STScI-01JGY8MZB6RAYKZ1V4CHGN37Q6.jpg?w=2048&h=479&fit=clip&crop=faces%2Cfocalpoint",
+      "imageDownloaded": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/andromeda/Hubble_M31Mosaic_2025_42208x9870_STScI-01JGY8MZB6RAYKZ1V4CHGN37Q6.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+      "credit": "NASA, ESA, Benjamin F. Williams (UWashington), Zhuo Chen (UWashington), L. Clifton Johnson (Northwestern); Image Processing: Joseph DePasquale (STScI)",
+      "sourceNote": "In January of 2025, NASA's Hubble Space Telescope released this panoramic view of the neighboring Andromeda galaxy. It took over 10 years to make this vast and colorful portrait of the galaxy, requiring over 600 Hubble overlapping snapshots that were challenging to stitch together. The"
+    },
+    {
+      "id": "messier-42",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-42/",
+      "retrieved": "2026-10-21",
+      "sha256": "e05d054047d81b580b782b405a2194ea4b006e4f2283d229cd72b08c8deb6bc8",
+      "fields": {
+        "distance": "1,500 light-years",
+        "apparent magnitude": "4.0",
+        "constellation": "Orion",
+        "object type": "Nebula"
+      },
+      "imageOriginal": "https://science.nasa.gov/wp-content/uploads/2023/04/orion-nebula-xlarge_web-jpg.webp?w=1280",
+      "imageDownloaded": "https://science.nasa.gov/wp-content/uploads/2023/04/orion-nebula-xlarge_web-jpg.webp?w=1280",
+      "credit": "NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team",
+      "sourceNote": ""
+    },
+    {
+      "id": "messier-51",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-51/",
+      "retrieved": "2026-10-21",
+      "sha256": "34533483d412e4222cc69934619cff3efc31643ff454c34c10ca2137ea422968",
+      "fields": {
+        "distance": "31 million light-years",
+        "apparent magnitude": "8.4",
+        "constellation": "Canes Venatici",
+        "object type": "Spiral Galaxy"
+      },
+      "imageOriginal": "https://science.nasa.gov/wp-content/uploads/2023/04/m51-and-companion_0-jpg.webp?w=2048",
+      "imageDownloaded": "https://science.nasa.gov/wp-content/uploads/2023/04/m51-and-companion_0-jpg.webp?w=2048",
+      "credit": "NASA, ESA, S. Beckwith (STScI) and the Hubble Heritage Team (STScI/AURA)",
+      "sourceNote": "The Whirlpool Galaxy, M51, is a spiral galaxy located 31 million light-years away. It highlights the attributes of a typical spiral galaxy, including graceful, curving arms, pink star-forming regions, and brilliant blue strands of star clusters."
+    },
+    {
+      "id": "earth",
+      "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002131",
+      "metadata": {
+        "album": [
+          "Test"
+        ],
+        "center": "GSFC",
+        "date_created": "2017-12-08T00:00:00Z",
+        "description": "<b>RELEASE DATE: OCTOBER 9, 2007</b>  <b>Credit: NASA/Goddard Space Flight Center/Reto Stöckli</b>  A day’s clouds. The shape and texture of the land. The living ocean. City lights as a beacon of human presence across the globe. This amazingly beautiful view of Earth from space is a fusion of science and art, a showcase for the remote-sensing technology that makes such views possible, and a testament to the passion and creativity of the scientists who devote their careers to understanding how land, ocean, and atmosphere—even life itself—interact to generate Earth’s unique (as far as we know!) life-sustaining environment.  Drawing on data from multiple satellite missions (not all collected at the same time), a team of NASA scientists and graphic artists created layers of global data for everything from the land surface, to polar sea ice, to the light reflected by the chlorophyll in the billions of microscopic plants that grow in the ocean. They wrapped these layers around a globe, set it against a black background, and simulated the hazy edge of the Earth’s atmosphere (the limb) that appears in astronaut photography of the Earth.  The land surface layer is based on photo-like surface reflectance observations (reflected sunlight) measured by the Moderate Resolution Imaging Spectroradiometer (MODIS) on NASA’s Terra satellite in July 2004.  The sea ice layer near the poles comes from Terra MODIS observations of daytime sea ice observed between August 28 and September 6, 2001.  The ocean layer is a composite. In shallow water areas, the layer shows surface reflectances observed by Terra MODIS in July 2004. In the open ocean, the photo-like layer is overlaid with observations of the average ocean chlorophyll content for 2004. NASA’s Aqua MODIS collected the chlorophyll data.  The cloud layer shows a single-day snapshot of clouds observed by Terra MODIS across the planet on July 29, 2001. City lights on Earth’s night side are visualized from data collected by the Defense Meteorological Satellite Program mission between 1994–1995.  The topography layer is based on radar data collected by the Space Shuttle Endeavour during an 11-day mission in February of 2000. Topography over Antarctica comes from the Radarsat Antarctic Mapping Project, version 2.  Most of the data layers in this visualization are available as monthly composites as part of NASA’s Blue Marble Next Generation image collection. The images in the collection appear in cylindrical projection (rectangular maps), and they are available at 500-meter resolution. The large images provided above are the full-size versions of these globes. In their hope that these images will inspire people to appreciate the beauty of our home planet and to learn about the Earth system, the developers of these images encourage readers to re-use and re-publish the images freely.  NASA images by Reto Stöckli, based on data from NASA and NOAA.  To learn the history of the Blue Marble go here:  <a href=\"http://earthobservatory.nasa.gov/Features/BlueMarble/BlueMarble_history.php\" rel=\"nofollow\">earthobservatory.nasa.gov/Features/BlueMarble/BlueMarble_...</a>  To learn more about the Blue Marble go here:   <a href=\"http://earthobservatory.nasa.gov/IOTD/view.php?id=8108\" rel=\"nofollow\">earthobservatory.nasa.gov/IOTD/view.php?id=8108</a>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b>  is home to the nation's largest organization of combined scientists, engineers and technologists that build spacecraft, instruments and new technology to study the Earth, the sun, our solar system, and the universe.  <b>Follow us on <a href=\"http://twitter.com/NASA_GoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Join us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a><b> </b></b>",
+        "keywords": [
+          "NASA Blue Marble 2007 West",
+          "earth",
+          "space",
+          "nasa",
+          "goddard",
+          "bluemarble",
+          "gsfc",
+          "goddardspaceflightcenter",
+          "nasaearth",
+          "2007bluemarble"
+        ],
+        "location": "Greenbelt, MD",
+        "media_type": "image",
+        "nasa_id": "GSFC_20171208_Archive_e002131",
+        "title": "NASA Blue Marble 2007 West"
+      },
+      "download": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~medium.jpg"
+    },
+    {
+      "id": "mars",
+      "source": "https://images.nasa.gov/details/PIA00407",
+      "metadata": {
+        "center": "JPL",
+        "date_created": "1998-06-08T15:42:52Z",
+        "description": "Global Color Views of Mars  http://photojournal.jpl.nasa.gov/catalog/PIA00407",
+        "description_508": "Global Color Views of Mars",
+        "keywords": [
+          "Mars",
+          "Viking"
+        ],
+        "media_type": "image",
+        "nasa_id": "PIA00407",
+        "secondary_creator": "NASA/JPL/USGS",
+        "title": "Global Color Views of Mars"
+      },
+      "download": "https://images-assets.nasa.gov/image/PIA00407/PIA00407~medium.jpg"
+    },
+    {
+      "id": "moon",
+      "source": "https://images.nasa.gov/details/PIA00405",
+      "metadata": {
+        "center": "JPL",
+        "date_created": "1998-06-08T15:17:56Z",
+        "description": "NASA Galileo spacecraft took this image of Earth moon on December 7, 1992 on its way to explore the Jupiter system in 1995-97. The distinct bright ray crater at the bottom of the image is the Tycho impact basin.  http://photojournal.jpl.nasa.gov/catalog/PIA00405",
+        "description_508": "NASA Galileo spacecraft took this image of Earth moon on December 7, 1992 on its way to explore the Jupiter system in 1995-97. The distinct bright ray crater at the bottom of the image is the Tycho impact basin.",
+        "keywords": [
+          "Moon",
+          "Galileo"
+        ],
+        "media_type": "image",
+        "nasa_id": "PIA00405",
+        "secondary_creator": "NASA/JPL/USGS",
+        "title": "Earth Moon"
+      },
+      "download": "https://images-assets.nasa.gov/image/PIA00405/PIA00405~medium.jpg"
+    },
+    {
+      "id": "sun",
+      "metadata": {
+        "album": [
+          "Test"
+        ],
+        "center": "GSFC",
+        "date_created": "2017-12-08T00:00:00Z",
+        "description": "Full disk view of a filament launch in the SDO AIA 304 band.   Credit: NASA/GSFC/SVS/SDO  To read more about this animation go to:  <a href=\"http://www.nasa.gov/mission_pages/sdo/news/first-light.html\" rel=\"nofollow\">www.nasa.gov/mission_pages/sdo/news/first-light.html</a>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b>  is home to the nation's largest organization of combined scientists, engineers and technologists that build spacecraft, instruments and new technology to study the Earth, the sun, our solar system, and the universe.",
+        "keywords": [
+          "SDO:AIA Full-Disk View of Launching Filament",
+          "sun",
+          "space",
+          "science",
+          "nasa",
+          "sdo",
+          "solardynamicsobservatory",
+          "goddardspaceflightcenter"
+        ],
+        "location": "Greenbelt, MD",
+        "media_type": "image",
+        "nasa_id": "GSFC_20171208_Archive_e002069",
+        "title": "SDO:AIA Full-Disk View of Launching Filament"
+      },
+      "download": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002069/GSFC_20171208_Archive_e002069~small.jpg"
+    },
+    {
+      "id": "proxima",
+      "source": "https://science.nasa.gov/image-article/apod-2016-january-18-proxima-centauri-the-closest-star/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2016/january/ProximaCentauri_Hubble_2048.jpg?w=2048&h=1536&fit=clip&crop=faces%2Cfocalpoint"
+    }
+  ]
+}
