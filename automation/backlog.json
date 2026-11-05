@@ -85,7 +85,7 @@
     {
       "id": "DOC-001",
       "lane": "codex-1",
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "OPS-001"
       ],
@@ -98,7 +98,7 @@
     {
       "id": "AUDIT-001",
       "lane": "codex-2",
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "QA-001"
       ],
@@ -111,7 +111,7 @@
     {
       "id": "QA-002",
       "lane": "codex-3",
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "OPS-002"
       ],
