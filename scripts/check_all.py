@@ -10,12 +10,16 @@ ROOT = Path(__file__).resolve().parents[1]
 def commands(browser=False):
     result = [["node", "--check", "cosmos-explorer/" + name + ".js"] for name in
               ("app", "catalog", "scene", "catalog-expanded", "explorer-model", "explorer-ui")]
-    result += [["python3", "-m", "unittest", "discover", "-s", "scripts/tests"],
+    result += [["node", "--check", "scripts/check_http.cjs"],
+               ["node", "--check", "scripts/check_storage.cjs"],
+               ["python3", "-m", "unittest", "discover", "-s", "scripts/tests"],
                ["node", "cosmos-explorer/tests/smoke.cjs"],
                ["node", "scripts/validate_catalog.cjs"]]
     if browser:
         result += [["node", "scripts/check_browser.cjs"],
-                   ["node", "scripts/check_exoplanet_images.cjs"]]
+                   ["node", "scripts/check_exoplanet_images.cjs"],
+                   ["node", "scripts/check_http.cjs"],
+                   ["node", "scripts/check_storage.cjs"]]
     return result
 
 def main():

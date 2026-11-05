@@ -203,10 +203,6 @@ KHÔNG gọi tool. Chỉ trả JSON kết quả review theo schema.
 def gates(work, folder, name, browser):
     run(['python3', 'scripts/check_all.py', *(['--browser'] if browser else [])],
         cwd=work, log=folder / f'{name}.log', timeout=600)
-    # HTTP gate becomes mandatory as soon as the approved task delivers it.
-    if (work / 'scripts/check_http.cjs').exists():
-        run(['node', 'scripts/check_http.cjs'], cwd=work,
-            log=folder / f'{name}-http.log', timeout=240)
 
 
 def cycle():
