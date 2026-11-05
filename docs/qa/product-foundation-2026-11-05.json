@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-11-05T17:13:27.628222+07:00",
+  "tested_code_commit": "3bc1b409b0acf0afc2b6981aa714a81facf2e643",
+  "result": "PASS",
+  "command": "python3 scripts/check_all.py --browser",
+  "unit_tests": 27,
+  "smoke_groups": 14,
+  "profiles": 138,
+  "verified_images": 126,
+  "database": {
+    "schema_version": 2,
+    "objects": 138,
+    "aliases": 158,
+    "sources": 334,
+    "object_sources": 535,
+    "measurements": 712,
+    "images": 126,
+    "object_images": 126,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "read_only_api_tests": true,
+    "deterministic_rebuild_and_atomic_failure": true
+  },
+  "browser": {
+    "widths": [
+      390,
+      820,
+      1440
+    ],
+    "security_contexts": [
+      "HTTP loopback",
+      "file offline"
+    ],
+    "synthetic_personas": 3,
+    "real_human_participants": 0,
+    "privacy_deletion": [
+      "cancel",
+      "confirm",
+      "keep unrelated keys",
+      "blocked storage"
+    ],
+    "page_errors": 0
+  },
+  "github": {
+    "pr": "https://github.com/nvndy27/Cosmos-Explorer-Demo/pull/11",
+    "private_vulnerability_reporting": true,
+    "main_protection": "PR + required product check, admin enforced, no force push or deletion",
+    "ci_schedule": "02:00 UTC daily plus PR/main pushes"
+  },
+  "limits": [
+    "Browser frontend still reads static catalog, not the optional SQLite API.",
+    "API is local read-only tooling, not a production backend.",
+    "HTTP response headers/HSTS example has not been validated on public hosting.",
+    "No independent astronomy review, five human trials, screen reader, Firefox/Safari acceptance or production load test."
+  ]
+}
