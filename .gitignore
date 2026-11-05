@@ -7,3 +7,8 @@ __pycache__/
 !.env.example
 dist/
 node_modules/
+
+# Rebuildable catalog databases and SQLite journals
+*.sqlite
+*.sqlite-*
+*.sqlite3

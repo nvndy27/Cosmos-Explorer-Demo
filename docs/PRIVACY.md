@@ -6,6 +6,10 @@ Font ngoài Google đã được bỏ để tránh request tới nhà cung cấp
 
 ## Xóa dữ liệu yêu thích
 
-Ứng dụng hiện cho phép bật/tắt từng mục yêu thích bằng nút sao trong hồ sơ; không có nút xóa toàn bộ. Để xóa từng mục, mở hồ sơ đó và nhấn sao để bỏ lưu. Để xóa toàn bộ dữ liệu site, dùng cài đặt trình duyệt xóa dữ liệu trang web/site data cho origin đã dùng. Với `file://`, hành vi và vị trí lưu phụ thuộc trình duyệt; xóa dữ liệu trang/file liên quan trong cài đặt trình duyệt. Không có dữ liệu tài khoản phía máy chủ cần xóa.
+Để xóa một mục, mở hồ sơ và nhấn sao để bỏ lưu. Để xóa toàn bộ, mở **Hướng dẫn (?) → Xóa mục đã lưu trên thiết bị**, đọc xác nhận và chọn đồng ý. Thao tác chỉ xóa khóa yêu thích `cosmos_favorites` của Cosmos Explorer, giữ dữ liệu khác và lựa chọn so sánh. Hủy xác nhận sẽ giữ nguyên danh sách.
+
+Nếu trình duyệt cấm thao tác bộ nhớ, ứng dụng xóa yêu thích trong phiên và báo không thể bảo đảm xóa dữ liệu lưu lâu dài. Khi đó dùng cài đặt trình duyệt để xóa dữ liệu site; với `file://`, cách quản lý bộ nhớ phụ thuộc trình duyệt. Không có dữ liệu tài khoản phía máy chủ cần xóa.
 
 Không nhập thông tin bí mật vào ứng dụng hoặc gửi mật khẩu/token khi báo lỗi. Không có analytics hoặc form thu thông tin cá nhân được cài đặt trong bản hiện tại.
+
+Đường dẫn `file://` được sao chép có thể chứa tên thư mục hoặc tên tài khoản hệ điều hành. Không gửi nguyên đường dẫn cá nhân như một URL website; chia sẻ gói ZIP và ID hồ sơ khi học ngoại tuyến.

@@ -39,7 +39,7 @@ Sơ đồ Canvas là minh họa khám phá, kích thước và khoảng cách kh
 
 ## Dữ liệu của bạn
 
-Bản hiện tại không yêu cầu tên, email hoặc mật khẩu. Yêu thích được lưu trong trình duyệt trên thiết bị đang dùng, chưa đồng bộ giữa các máy. Xóa dữ liệu trang trong trình duyệt sẽ xóa các mục đã lưu. Khi mở từ file cục bộ, liên kết sao chép chỉ là đường dẫn trên máy bạn; người nhận cần bản tải về tương ứng. Mở nguồn khoa học bên ngoài sẽ đưa bạn đến website của đơn vị cung cấp nguồn.
+Bản hiện tại không yêu cầu tên, email hoặc mật khẩu. Yêu thích được lưu trong trình duyệt trên thiết bị đang dùng, chưa đồng bộ giữa các máy. Bạn có thể mở **Hướng dẫn (?) → Xóa mục đã lưu trên thiết bị** để xóa yêu thích sau khi xác nhận; hoặc xóa dữ liệu trang trong cài đặt trình duyệt. Khi mở từ file cục bộ, liên kết sao chép chỉ là đường dẫn trên máy bạn; người nhận cần bản tải về tương ứng. Mở nguồn khoa học bên ngoài sẽ đưa bạn đến website của đơn vị cung cấp nguồn.
 
 [Quyền riêng tư và cách xóa dữ liệu](docs/PRIVACY.md) · [Báo cáo vấn đề bảo mật](SECURITY.md)
 

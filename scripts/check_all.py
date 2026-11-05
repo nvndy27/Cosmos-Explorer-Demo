@@ -15,6 +15,8 @@ def commands(browser=False):
                ["node", "--check", "scripts/check_storage.cjs"],
                ["node", "--check", "scripts/check_share.cjs"],
                ["node", "--check", "scripts/check_security.cjs"],
+               ["node", "--check", "scripts/check_personas.cjs"],
+               ["node", "--check", "scripts/check_privacy.cjs"],
                ["python3", "-m", "unittest", "discover", "-s", "scripts/tests"],
                ["node", "cosmos-explorer/tests/smoke.cjs"],
                ["node", "scripts/validate_catalog.cjs"]]
@@ -24,7 +26,9 @@ def commands(browser=False):
                    ["node", "scripts/check_http.cjs"],
                    ["node", "scripts/check_storage.cjs"],
                    ["node", "scripts/check_share.cjs"],
-                   ["node", "scripts/check_security.cjs"]]
+                   ["node", "scripts/check_security.cjs"],
+                   ["node", "scripts/check_personas.cjs"],
+                   ["node", "scripts/check_privacy.cjs"]]
     return result
 
 def main():
