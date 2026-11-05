@@ -1,4 +1,8 @@
-# Trạng thái sản phẩm — 2026-11-05
+# Trạng thái sản phẩm — 2026-11-06
+
+## Giao diện khám phá museum
+
+Đã nối trang đầu vào toàn bộ catalog thật, đồng nhất nền tối, mở rộng thư viện/so sánh và sửa các nút tìm kiếm/lưu/đọc/chuyển chế độ. Bộ kiểm tra cục bộ trên code `3306a4f0e70a3985d3d9b3d8c0ee314efe447fcd` đạt 28 unit tests, 14 smoke, 12 nhóm museum và các bộ Chrome cũ. Dữ liệu/catalog/ảnh giữ nguyên. [Bằng chứng UI](qa/museum-ui-2026-11-06.json); hai AGY cùng SHA và GitHub CI là cổng trước merge. Chưa deploy công khai.
 
 ## Mở rộng Messier
 
@@ -25,7 +29,7 @@ HTTPS self-signed trên loopback không xác minh hosting/TLS công khai. Kiểm
 ## Người dùng giả lập bổ sung
 Ngày 2026-11-05: ba browser context độc lập ở 390/820/1440 px, offline và reduced motion, đều PASS tìm không dấu, đọc hồ sơ/link nguồn, lưu và so sánh Earth/Mars; không pageerror/overflow trong luồng đã chạy. Đây là 0 người dùng thật, không thay cổng USER-001. [Báo cáo](qa/personas-2026-11-05.json).
 
-## Nền dữ liệu và bảo mật bổ sung
+## Nền dữ liệu và bảo mật — mốc trước Messier, 2026-11-05
 SQLite schema 2 đã dựng thực: 138 hồ sơ, 158 bí danh, 334 nguồn, 535 liên kết nguồn, 712 đại lượng, 126 ảnh. API JSON local chỉ đọc có kiểm tra injection/traversal/giới hạn; frontend vẫn dùng catalog tĩnh. CSP, bỏ font ngoài, referrer policy và thao tác xóa yêu thích trên thiết bị đã có QA. README tập trung sản phẩm và ảnh thật. [Bằng chứng mới](qa/product-foundation-2026-11-05.json).
 
-QA tổng hợp mới đạt 27 unit tests, 14 smoke và các bộ Chrome. GitHub QA chạy theo PR/main/lịch; main yêu cầu PR và check product, cấm force push/xóa; private vulnerability reporting đã bật. Đây là nền kỹ thuật chuẩn bị beta, chưa hoàn thành các cổng người thật/khoa học/hosting ở bảng trên.
+Đợt nền sản phẩm này đạt 27 unit tests, 14 smoke và các bộ Chrome. GitHub QA chạy theo PR/main/lịch; main yêu cầu PR và check product, cấm force push/xóa; private vulnerability reporting đã bật. Đây là nền kỹ thuật chuẩn bị beta, chưa hoàn thành các cổng người thật/khoa học/hosting ở bảng trên.

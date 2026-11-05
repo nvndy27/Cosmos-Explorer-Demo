@@ -4,7 +4,9 @@
 
 Cosmos Explorer là ứng dụng học thiên văn cho học sinh, giáo viên và người yêu vũ trụ. Tìm một thiên thể, đọc hồ sơ có nguồn, xem tư liệu ảnh và đặt các thế giới cạnh nhau để hiểu sự khác biệt. Miễn phí sử dụng, không cần tài khoản.
 
-![Sơ đồ Hệ Mặt Trời và hồ sơ Trái Đất trên Cosmos Explorer](docs/screenshots/explorer-desktop.png)
+![Trang khám phá với ảnh Orion, tìm kiếm và các hồ sơ nổi bật](docs/screenshots/explorer-desktop.png)
+
+Giao diện tối đồng nhất, tìm kiếm ngay trang đầu; thư viện và màn so sánh dùng toàn chiều rộng. Đọc hồ sơ, lưu và thêm vào so sánh ngay từ các thẻ nổi bật.
 
 ## Bạn có thể làm gì?
 
@@ -23,13 +25,13 @@ Cosmos Explorer là ứng dụng học thiên văn cho học sinh, giáo viên v
 
 1. [Tải mã nguồn dạng ZIP](https://github.com/nvndy27/Cosmos-Explorer-Demo/archive/refs/heads/main.zip) và giải nén.
 2. Mở `cosmos-explorer/index.html` bằng trình duyệt. Không cần cài thư viện hay nhập API key.
-3. Vào **Thư viện**, tìm “trai dat”, chọn **Đọc hồ sơ**; mở tab **Nguồn** hoặc thêm Trái Đất và Sao Hỏa vào **So sánh**.
+3. Từ **Khám phá**, tìm “trai dat” rồi chọn **Đọc hồ sơ**; mở tab **Nguồn** hoặc thêm Trái Đất và Sao Hỏa vào **So sánh**. Bạn cũng có thể vào **Thư viện** để lọc toàn bộ danh mục.
 
 Giáo viên có thể dùng bộ sưu tập Hành tinh đá, Hành tinh khổng lồ, TRAPPIST-1 hoặc Vệ tinh để tổ chức một buổi khám phá. [Hướng dẫn học sinh và giáo viên](docs/USER_GUIDE.md) có kịch bản học 15 phút.
 
 <p align="center"><img src="docs/screenshots/profile-mobile.png" width="320" alt="Hồ sơ Trái Đất trong chế độ đọc rộng trên màn hình điện thoại"></p>
 
-Ảnh chụp từ ứng dụng thật ngày 05/11/2026. Tư liệu thiên văn trong giao diện giữ ghi công của nguồn; [nguồn ảnh và chính sách dữ liệu](docs/DATA_POLICY.md) giải thích quyền và phân loại từng tư liệu.
+Ảnh chụp từ ứng dụng thật ngày 06/11/2026. Tư liệu thiên văn trong giao diện giữ ghi công của nguồn; [nguồn ảnh và chính sách dữ liệu](docs/DATA_POLICY.md) giải thích quyền và phân loại từng tư liệu.
 
 ## Dữ liệu và độ tin cậy
 
