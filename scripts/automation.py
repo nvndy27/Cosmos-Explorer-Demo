@@ -32,24 +32,24 @@ def read(path, default=None):
 def run(argv, cwd=ROOT, log=None, timeout=240):
     """Kill the process group on timeout; never leave a duplicate editor running."""
     with subprocess.Popen(['rtk', 'proxy', *map(str, argv)], cwd=cwd,
-                          stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                          stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                           start_new_session=True, text=True) as process:
         try:
-            output, _ = process.communicate(timeout=timeout)
+            output, diagnostics = process.communicate(timeout=timeout)
         except BaseException:
             os.killpg(process.pid, signal.SIGTERM)
             try:
-                output, _ = process.communicate(timeout=10)
+                output, diagnostics = process.communicate(timeout=10)
             except subprocess.TimeoutExpired:
                 os.killpg(process.pid, signal.SIGKILL)
-                output, _ = process.communicate()
+                output, diagnostics = process.communicate()
             if log:
-                log.write_text(output)
+                log.write_text(output + ('\nSTDERR:\n' + diagnostics if diagnostics else ''))
             raise
     if log:
-        log.write_text(output)
+        log.write_text(output + ('\nSTDERR:\n' + diagnostics if diagnostics else ''))
     if process.returncode:
-        raise RuntimeError(f'{argv[0]} exited {process.returncode}; see {log or output[-1500:]}')
+        raise RuntimeError(f'{argv[0]} exited {process.returncode}; see {log or (output + diagnostics)[-1500:]}')
     return output.strip()
 
 

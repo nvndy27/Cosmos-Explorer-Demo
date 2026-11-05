@@ -81,6 +81,45 @@
       "allowed_paths": [],
       "title": "Phát hành web HTTPS",
       "acceptance": "Chủ dự án chọn hosting/domain và yêu cầu deploy rõ; kiểm URL thật, cache, metadata, rollback. Không tự publish."
+    },
+    {
+      "id": "DOC-001",
+      "lane": "codex-1",
+      "status": "ready",
+      "depends_on": [
+        "OPS-001"
+      ],
+      "allowed_paths": [
+        "docs/USER_GUIDE.md"
+      ],
+      "title": "Hướng dẫn học sinh và giáo viên theo ba hành trình",
+      "acceptance": "Viết hướng dẫn tiếng Việt cho người mới: tìm không dấu, sơ đồ minh họa, ảnh/nguồn, so sánh 2–4 và lý do thiếu biểu đồ, lưu chỉ trên máy, chia sẻ hash link HTTPS so với đường dẫn file cục bộ, dùng ZIP ngoại tuyến. Có một kịch bản giáo viên 15 phút và bước báo lỗi không yêu cầu gửi dữ liệu cá nhân. Đọc mã hiện tại để mô tả đúng nút và luồng; không bịa tính năng/URL public/kênh liên hệ đã tồn tại."
+    },
+    {
+      "id": "AUDIT-001",
+      "lane": "codex-2",
+      "status": "ready",
+      "depends_on": [
+        "QA-001"
+      ],
+      "allowed_paths": [
+        "docs/CONTENT_AUDIT.md"
+      ],
+      "title": "Kiểm kê giới hạn nội dung để ưu tiên biên tập",
+      "acceptance": "Đọc catalog/snapshot và DATA_POLICY, viết báo cáo tái kiểm được về trường đại lượng còn thiếu/không comparable, nguồn/ngày, phạm vi ảnh, và 5 hạng mục ưu tiên cho người biên tập. Ghi rõ lệnh thực dùng để đếm và ngày; không thay dữ liệu, không suy khoa học hay coi URL hợp lệ là nguồn đã được đọc; phân biệt thiếu tích hợp với chưa được khoa học biết. Báo cáo là audit cấu trúc nội bộ, không phải kiểm định thiên văn."
+    },
+    {
+      "id": "QA-002",
+      "lane": "codex-3",
+      "status": "ready",
+      "depends_on": [
+        "OPS-002"
+      ],
+      "allowed_paths": [
+        "scripts/tests/test_package_release.py"
+      ],
+      "title": "Kiểm thử gói từ phía người tải về",
+      "acceptance": "Thêm unittest Python chuẩn dùng thư mục tạm và package_release.py: mở ZIP, kiểm tra entrypoint/đủ 126 ảnh/checksum mỗi file, không path traversal/secret/test/cache, giải nén an toàn rồi xác nhận mọi đường dẫn script/link stylesheet cục bộ của index có file và các đường dẫn ảnh manifest hiện hữu. Kiểm chứng hai lần dựng cùng checksum; không sửa implementation hay dữ liệu để test qua. Test chạy bằng unittest discover hiện có, không để artifact vào repo."
     }
   ]
 }

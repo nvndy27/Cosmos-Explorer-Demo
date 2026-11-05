@@ -15,10 +15,10 @@ Cập nhật: 2026-11-05. Ứng dụng hiện là website tĩnh ở `cosmos-expl
 
    Lệnh đầu chạy kiểm tra cú pháp sáu tệp JS, smoke và `scripts/validate_catalog.cjs`. Lệnh `--browser` chạy thêm QA Chrome và kiểm tra ảnh ngoại hành tinh; cần Playwright/Chrome đã cấu hình như `docs/QA.md`. Nếu một lệnh lỗi hoặc không chạy được, ghi đúng lỗi và dừng cổng tương ứng. Smoke không thay QA trình duyệt. Trước bản public cần lưu bằng chứng browser tại 390, 820, 1440 px và kiểm tra tay bàn phím, reduced motion, ảnh lỗi, localStorage lỗi/cấm.
 
-4. Đóng gói phần chạy được, không đưa `.git`, `.automation`, log, token hoặc cấu hình máy vào ZIP. Ví dụ tạo gói tại thư mục tạm ngoài repo (đặt phiên bản/ngày phù hợp):
+4. Ưu tiên `rtk proxy python3 scripts/package_release.py --output-dir /tmp/cosmos-release` để có ZIP tái tạo, OPEN-README.txt và SHA256SUMS bên trong. Ví dụ ZIP thủ công dưới đây chỉ là cách thay thế, không có manifest từng file và có thể chứa tests. Đóng gói phần chạy được, không đưa `.git`, `.automation`, log, token hoặc cấu hình máy vào ZIP. Ví dụ tạo gói tại thư mục tạm ngoài repo (đặt phiên bản/ngày phù hợp):
 
    ```sh
-   mkdir -p /tmp/cosmos-release
+   rtk proxy mkdir -p /tmp/cosmos-release
    rtk proxy zip -r /tmp/cosmos-release/cosmos-explorer-2.2-candidate.zip cosmos-explorer
    rtk proxy sha256sum /tmp/cosmos-release/cosmos-explorer-2.2-candidate.zip > /tmp/cosmos-release/cosmos-explorer-2.2-candidate.zip.sha256
    rtk proxy unzip -l /tmp/cosmos-release/cosmos-explorer-2.2-candidate.zip

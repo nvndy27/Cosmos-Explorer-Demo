@@ -1,6 +1,9 @@
 import importlib.util
 import json
 from pathlib import Path
+import subprocess
+import sys
+import tempfile
 import unittest
 
 spec = importlib.util.spec_from_file_location('automation', Path(__file__).parents[1] / 'automation.py')
@@ -43,6 +46,20 @@ class SafetyGates(unittest.TestCase):
         for value in ('not json', '{}', '{"status":"ERROR","response":"quota"}'):
             with self.assertRaises(ValueError):
                 auto.parse_review(value)
+
+    def test_cli_diagnostics_do_not_corrupt_json(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            log = Path(temporary) / 'cli.log'
+            output = auto.run([sys.executable, '-c',
+                               'import sys; print("{\\"verdict\\":\\"approve\\",'
+                               '\\"summary\\":\\"ok\\",\\"issues\\":[]}"); '
+                               'print("warning: diagnostic", file=sys.stderr)'], log=log)
+            self.assertEqual(auto.parse_review(output)['verdict'], 'approve')
+            self.assertIn('warning: diagnostic', log.read_text())
+
+    def test_timeout_is_an_error(self):
+        with self.assertRaises(subprocess.TimeoutExpired):
+            auto.run([sys.executable, '-c', 'import time; time.sleep(5)'], timeout=0.1)
 
 
 if __name__ == '__main__':

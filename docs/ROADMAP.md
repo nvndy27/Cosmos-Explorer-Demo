@@ -4,7 +4,7 @@ Cập nhật: 2026-11-05. Mốc là thứ tự ưu tiên theo cổng nghiệm th
 
 | Giai đoạn | Kết quả | Chủ trì | Cổng hoàn thành | Trạng thái |
 |---|---|---|---|---|
-| P0 — nền vận hành | Product, rule, backlog, Git, 3 Codex + 2 AGY, lịch chạy và báo cáo | Điều phối | Một đợt CLI thật có báo cáo; timer hoạt động; thất bại giữ thay đổi riêng | Đang thực hiện |
+| P0 — nền vận hành | Product, rule, backlog, Git, 3 Codex + 2 AGY, lịch chạy và báo cáo | Điều phối | Một đợt CLI thật có báo cáo; timer hoạt động; thất bại giữ thay đổi riêng | Đã chạy và được hai AGY duyệt; đang xác nhận service |
 | P1 — sẵn sàng beta | QA HTTPS/file, đóng gói, hướng dẫn phát hành/quay lui, sửa lỗi chặn | Codex nền tảng + QA | Tests tự động đạt; QA browser 3 kích thước và kiểm tra tay được ghi | Chưa nghiệm thu |
 | P2 — trải nghiệm học | Liên kết chia sẻ, hướng dẫn người mới, luồng giáo viên và bộ sưu tập có mục tiêu học | Codex sản phẩm | 4/5 người thử hoàn thành 3 hành trình trong PRODUCT.md | Chưa bắt đầu |
 | P3 — public 1 | Hosting HTTPS, metadata, trang thông tin/ghi công, kênh báo lỗi | Chủ dự án + vận hành | Chủ dự án chọn hosting và yêu cầu deploy; kiểm tra URL thật, rollback đã thử | Chưa bắt đầu |
