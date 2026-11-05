@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import signal
+import shlex
 import subprocess
 import sys
 
@@ -287,6 +288,16 @@ def cycle():
 
 
 def main():
+    # The same local runtime settings are used by manual runs and systemd.
+    env_file = LOCAL / 'runtime.env'
+    if env_file.exists():
+        for line in env_file.read_text().splitlines():
+            key, separator, value = line.partition('=')
+            if separator and key in ('COSMOS_PLAYWRIGHT_MODULE', 'COSMOS_CHROME'):
+                parsed = shlex.split(value)
+                if len(parsed) != 1:
+                    raise ValueError('Invalid runtime setting: ' + key)
+                os.environ.setdefault(key, parsed[0])
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=['run', 'status', 'retry'])
     parser.add_argument('task', nargs='?')

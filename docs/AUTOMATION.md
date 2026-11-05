@@ -44,3 +44,9 @@ Không xoá trạng thái để retry hàng loạt khi chưa hiểu lỗi. Khôn
 Chủ dự án duyệt task với title, acceptance, lane, allowed_paths, depends_on, status. Không đưa hai task cùng file vào một đợt. Dữ liệu khoa học, AGENTS, automation và các gate được bảo vệ, cần thực hiện thủ công có review riêng. Những việc thử người thật/hosting/nguồn chưa đủ đầu vào để manual. Backlog không tự sinh vô hạn. Đọc báo cáo mỗi tuần và bổ sung việc từ nhu cầu/lỗi có thật.
 
 Playwright cài ngoài repo, biến COSMOS_PLAYWRIGHT_MODULE trỏ tới module; COSMOS_CHROME trỏ Chrome. Cấu hình máy ở .automation/runtime.env (không chứa token). Đổi vị trí repo phải sửa WorkingDirectory/ExecStart trong unit và systemctl --user daemon-reload. Máy khác cần cài Python, Node, Git, RTK, Chrome, hai CLI và đăng nhập trước.
+
+## Cài lại timer trên máy này
+```bash
+rtk proxy python3 scripts/install_automation.py --playwright-module /home/nguyenduy/.cache/cosmos-qa/node_modules/playwright --chrome /usr/bin/google-chrome --enable
+```
+Script tạo unit user và runtime.env, không cài phụ thuộc/đăng nhập hay bật quyền root. Không dùng --enable nếu chỉ muốn tạo unit để xem lại.

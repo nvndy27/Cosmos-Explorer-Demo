@@ -1,6 +1,6 @@
 // Optional QA: external Playwright and system Chrome, no app dependencies.
 const {chromium}=require(process.env.COSMOS_PLAYWRIGHT_MODULE||'playwright');
-const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os');
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.COSMOS_CHROME||'/usr/bin/google-chrome',headless:true,args:['--no-sandbox']});
  try{
@@ -16,7 +16,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
    assert.match(await p.locator('.photo-corner').textContent(),o.kind==='illustration'?/Minh họa/:/quan sát/);
    if(o.scope==='generic')assert.match(await p.locator('#photoCaption').textContent(),/đại diện chung/);
   }
-  const out=path.resolve('docs/qa/exoplanet-images');fs.mkdirSync(out,{recursive:true});
+  const out=process.env.COSMOS_QA_OUTPUT?path.resolve(process.env.COSMOS_QA_OUTPUT):fs.mkdtempSync(path.join(os.tmpdir(),'cosmos-exoplanet-qa-'));fs.mkdirSync(out,{recursive:true});
   for(const width of [390,820,1440]){
    await p.setViewportSize({width,height:1000});await p.evaluate(()=>{ExplorerUI.setMode('diagram');select('exo-kepler-22-b')});
    await p.waitForFunction(()=>document.querySelector('#objectImage').naturalWidth>0&&document.querySelector('#objectImage').style.opacity==='1');
@@ -39,7 +39,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
   assert.equal(await p.locator('#dataTypeBadge').textContent(),'Minh họa đồ họa');
   assert.match(await p.locator('#photoCaption').textContent(),/Cosmos Explorer/);
   assert.deepEqual(errors,[]);
-  const report={date:'2026-10-21',profiles:37,artwork:exos.filter(o=>o.kind==='illustration').length,generic:exos.filter(o=>o.scope==='generic').length,observations:exos.filter(o=>o.kind==='observation').length,viewports:[390,820,1440],checks:['fresh offline file context','all 37 profile images decoded and labelled','Kepler library images and artwork labels','generic illustration disclosure','observed-only filter excludes all art','real missing artwork fallback','no horizontal page overflow'],errors};
+  const report={date:new Date().toISOString(),outputDirectory:out,profiles:37,artwork:exos.filter(o=>o.kind==='illustration').length,generic:exos.filter(o=>o.scope==='generic').length,observations:exos.filter(o=>o.kind==='observation').length,viewports:[390,820,1440],checks:['fresh offline file context','all 37 profile images decoded and labelled','Kepler library images and artwork labels','generic illustration disclosure','observed-only filter excludes all art','real missing artwork fallback','no horizontal page overflow'],errors};
   fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2)+'\n');console.log(report);
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exit(1)});
