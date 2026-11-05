@@ -5,10 +5,10 @@ Cosmos Explorer là thư viện thiên văn tiếng Việt với dữ liệu bi�
 ## Hành trình 1: Tìm và đọc một hồ sơ
 
 1. Mở `cosmos-explorer/index.html` trong trình duyệt. Nếu nhận ZIP, trước hết giải nén toàn bộ gói rồi mở `index.html` bên trong thư mục `cosmos-explorer`; giữ nguyên các tệp và thư mục cạnh nó.
-2. Tìm kiếm bằng hộp trên cùng, ví dụ `trai dat`, `sao thuy` hoặc `55 cancri`. Tìm kiếm bỏ dấu và nhận tên/bí danh tiếng Việt, tiếng Anh. Nhấn `/` để chuyển nhanh đến ô tìm kiếm, nhấn Enter để mở kết quả đầu tiên, hoặc dùng Tab tới nút kết quả rồi Enter để chọn.
+2. Trang **Khám phá** có ô tìm kiếm chính: nhập tên rồi Enter để mở kết quả trong Thư viện, sau đó chọn **Đọc hồ sơ**. Ô tìm nhanh trên cùng cũng nhận tìm kiếm, ví dụ `trai dat`, `sao thuy` hoặc `55 cancri`. Tìm kiếm bỏ dấu và nhận tên/bí danh tiếng Việt, tiếng Anh. Nhấn `/` để chuyển nhanh đến ô tìm kiếm, nhấn Enter để mở kết quả đầu tiên, hoặc dùng Tab tới nút kết quả rồi Enter để chọn.
 3. Hoặc chọn **Thư viện**, nhập tên/bí danh và lọc theo phân loại, hệ, mục đã lưu hoặc **Có ảnh từ quan sát**. Mỗi trang hiển thị tối đa 12 thẻ. **Xóa bộ lọc** đưa các bộ lọc về mặc định.
 4. Chọn thiên thể để đọc hồ sơ. Các tab **Tổng quan**, **Đặc điểm**, **Khám phá** và **Nguồn** lần lượt cho nội dung giới thiệu, đại lượng, giới hạn quan sát/nghiên cứu và liên kết tham khảo. Mở **Nguồn** hoặc chọn **Xem dữ liệu gốc** để xem trang nguồn; những liên kết này cần Internet.
-5. Ảnh chi tiết nằm trong hồ sơ bên phải trên màn hình rộng, bên dưới sơ đồ trên điện thoại. Đọc chú thích và nhãn: ảnh quan sát đã xử lý, ảnh tái dựng và minh họa nghệ thuật là các loại tư liệu khác nhau. Ảnh minh họa không phải ảnh chụp bề mặt. Nếu ảnh không tải được, giao diện có hình dự phòng ghi là minh họa của Cosmos Explorer.
+5. Thẻ trên trang Khám phá mở hồ sơ rộng; nút **Trở lại khám phá** hoặc Escape quay lại trang đầu. Trong chế độ Sơ đồ, ảnh chi tiết nằm ở hồ sơ bên phải trên màn hình rộng hoặc bên dưới trên điện thoại. Đọc chú thích và nhãn: ảnh quan sát đã xử lý, ảnh tái dựng và minh họa nghệ thuật là các loại tư liệu khác nhau. Ảnh minh họa không phải ảnh chụp bề mặt. Nếu ảnh không tải được, giao diện có hình dự phòng ghi là minh họa của Cosmos Explorer.
 
 ### Đọc sơ đồ đúng cách
 
@@ -27,7 +27,7 @@ Sơ đồ, vị trí, kích thước và chuyển động là minh họa; chúng
 
 ### Lưu trên thiết bị
 
-Bấm biểu tượng ngôi sao `☆` trong hồ sơ để lưu; ngôi sao `★` cho biết mục đã lưu. Danh sách lưu chỉ nằm trong `localStorage` của trình duyệt trên thiết bị hiện tại, không đồng bộ lên máy chủ và không tự đi theo ZIP hay liên kết chia sẻ. Có thể lọc **Đã lưu** ở thanh bên hoặc trong Thư viện. Nếu trình duyệt chặn/xóa dữ liệu trang, danh sách đã lưu có thể không giữ được.
+Bấm biểu tượng ngôi sao `☆` trong hồ sơ để lưu; ngôi sao `★` cho biết mục đã lưu. Danh sách lưu chỉ nằm trong `localStorage` của trình duyệt trên thiết bị hiện tại, không đồng bộ lên máy chủ và không tự đi theo ZIP hay liên kết chia sẻ. Có thể dùng **Đã lưu** ngay trang Khám phá, hoặc lọc ở thanh bên và trong Thư viện. Nếu trình duyệt chặn/xóa dữ liệu trang, danh sách đã lưu có thể không giữ được.
 
 ### Chia sẻ liên kết hồ sơ
 
@@ -41,7 +41,7 @@ Người phụ trách gói bản phát hành có thể tạo ZIP theo `docs/RELE
 
 1. Giải nén ZIP vào một thư mục trên máy; không chỉ mở `index.html` bên trong trình xem ZIP.
 2. Giữ nguyên toàn bộ thư mục và tệp, gồm CSS, JavaScript, dữ liệu và `assets/` ảnh.
-3. Mở `cosmos-explorer/index.html` bằng trình duyệt. Nội dung và ảnh cục bộ vẫn dùng được ngoại tuyến. Liên kết nguồn khoa học và font tải từ Internet có thể không truy cập được; giao diện có font dự phòng.
+3. Mở `cosmos-explorer/index.html` bằng trình duyệt. Nội dung và ảnh cục bộ vẫn dùng được ngoại tuyến. Liên kết nguồn khoa học cần Internet; giao diện dùng font hệ thống và không cần tải font ngoài.
 4. Nếu có file checksum đi kèm, người phụ trách có thể xác minh ZIP theo hướng dẫn phát hành trước khi phân phối. Kiểm tra checksum xác nhận tệp khớp với checksum nhận được, không tự xác nhận nguồn gốc gói.
 
 Mở bằng `file://` là cách dùng ngoại tuyến, nhưng không thay cho kiểm tra website HTTPS. Cấu hình và quyền lưu trữ trình duyệt có thể khác nhau; nội dung chính vẫn có thể đọc nếu yêu thích không lưu được.

@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-06",
+  "issue": 16,
+  "testedCodeCommit": "3306a4f0e70a3985d3d9b3d8c0ee314efe447fcd",
+  "status": "passed",
+  "catalog": {
+    "profiles": 164,
+    "localImages": 152,
+    "unchangedFrom": "c94f9c9964564d8a7b5c1f2bc15fd3835a2dbf0d",
+    "catalogSnapshotsAssetsByteUnchanged": true
+  },
+  "checks": {
+    "command": "python3 scripts/check_all.py --browser",
+    "unitTests": 28,
+    "smokeGroups": 14,
+    "museumWorkflowChecks": 12,
+    "museumChecks": [
+      "homepage search uses full real catalog and Enter submits",
+      "category navigation opens eight actual planet records",
+      "saved empty state and full164 paginated library",
+      "featured save toggles real persistent favorites, stays home and preserves canonical home URL",
+      "featured comparison button opens actual comparison selection",
+      "native mode click and keyboard roving leave homepage",
+      "comparison uses actual two-object controller",
+      "featured comparison toggle reflects selection and removes without losing home context",
+      "featured profile opens and dark controls avoid default white background",
+      "brand returns to canonical home rather than a hidden profile",
+      "reading return and Escape restore discovery context; global quick search opens actual profile",
+      "dark gallery and controls, 44px targets, missing hero fallback preserves source and opens real profile"
+    ],
+    "viewports": [
+      390,
+      820,
+      1440
+    ],
+    "pageErrors": [],
+    "fullOldBrowserSuites": "passed",
+    "newHeroMissingImageFallback": "passed",
+    "darkGalleryControls": "passed",
+    "targetSize44pxSample": "passed",
+    "allImageHashes": 152,
+    "allProfileRender": 164,
+    "finalLogSha256": "9a89bc0a2aedc811217b6d7482cdbb148c6697979815385762119a4ad522eb73",
+    "readmeScreenshotsCapturedAndViewed": true
+  },
+  "realHumanParticipants": 0,
+  "design": {
+    "projectId": "3da4eb2b-2ac6-43f4-bfd9-cd9eaf6dc337",
+    "draftId": "e3eb1328-4970-4b50-ac61-2a777ea4eab3",
+    "version": 3,
+    "canvasIsVisualReferenceOnly": true,
+    "runtimeCdnDependencies": false
+  },
+  "reviewProcess": "Two independent AGY approvals on final candidate SHA and GitHub product success required before merge; recorded in PR.",
+  "limitations": [
+    "Local Chrome file:// and loopback evidence, no public deployment.",
+    "No real human usability or independent astronomy/rights audit; SCI-001/USER-001/PUB-001 remain manual.",
+    "Firefox/Safari and screen-reader QA remain open.",
+    "Comparison on narrow screens retains scroll inside the metric region."
+  ]
+}

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="enhancements.css" />
   <link rel="stylesheet" href="explorer22.css" />
+  <link rel="stylesheet" href="museum.css" />
 </head>
 <body>
   <div class="ambient-bg"></div>
@@ -27,8 +28,22 @@
         <button class="icon-button" id="helpBtn" title="Hướng dẫn sử dụng" aria-label="Hướng dẫn sử dụng">?</button>
       </div>
     </header>
-    <nav class="mode-bar" aria-label="Chế độ khám phá"><div role="tablist" aria-label="Chế độ"><button id="modeDiagram" class="mode-tab active" data-mode="diagram" role="tab" aria-selected="true" aria-controls="diagramView">Sơ đồ</button><button id="modeLibrary" class="mode-tab" data-mode="library" role="tab" aria-selected="false" aria-controls="libraryView">Thư viện</button><button id="modeCompare" class="mode-tab" data-mode="compare" role="tab" aria-selected="false" aria-controls="comparisonView">So sánh <span id="compareCount">0</span></button></div><p>Quan sát, tìm hiểu và đối chiếu</p></nav>
+    <nav class="mode-bar" aria-label="Chế độ khám phá"><button id="museumHome" type="button" class="museum-home-button" aria-pressed="false">Khám phá</button><div role="tablist" aria-label="Chế độ"><button id="modeDiagram" class="mode-tab active" data-mode="diagram" role="tab" aria-selected="true" aria-controls="diagramView">Sơ đồ</button><button id="modeLibrary" class="mode-tab" data-mode="library" role="tab" aria-selected="false" aria-controls="libraryView">Thư viện</button><button id="modeCompare" class="mode-tab" data-mode="compare" role="tab" aria-selected="false" aria-controls="comparisonView">So sánh <span id="compareCount">0</span></button></div><p>Quan sát, tìm hiểu và đối chiếu</p></nav>
     <p id="uiNotice" class="ui-notice" role="status" aria-live="polite"></p>
+
+    <section id="museumView" class="museum-discover" aria-labelledby="museumTitle">
+      <div class="museum-hero">
+        <div class="museum-copy"><h1 id="museumTitle">Khám phá vũ trụ,<br>từng thiên thể một.</h1><p>Một thư viện thiên văn bằng tiếng Việt. Tìm một thiên thể, xem ảnh có ghi công và theo dấu những nguồn khoa học.</p>
+          <form id="museumSearchForm"><label for="museumQuery">Bạn muốn tìm hiểu điều gì?</label><div class="museum-search"><input id="museumQuery" type="search" placeholder="Trái Đất, Orion, M45…" autocomplete="off"><button type="submit">Tìm kiếm</button></div></form>
+          <div class="museum-actions"><button id="museumAll" type="button">Khám phá thư viện</button><button id="museumDiagram" type="button">Xem sơ đồ</button><button id="museumSaved" type="button">Đã lưu</button></div><small>Không cần tài khoản. Có bản dùng ngoại tuyến.</small>
+        </div>
+        <figure class="museum-figure"><img src="assets/observations/messier-42.webp" alt="Tinh vân Orion qua các bộ lọc của Hubble; ảnh quan sát đã xử lý màu"><figcaption><h2>Tinh vân Orion (M42)</h2><p>Ảnh quan sát Hubble tổng hợp qua bộ lọc; màu hiển thị có xử lý khoa học.</p><p>NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team</p><a href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-42/" target="_blank" rel="noopener noreferrer">Xem nguồn ảnh</a></figcaption></figure>
+      </div>
+      <section class="museum-gallery" aria-labelledby="museumGalleryTitle"><div class="museum-heading"><h2 id="museumGalleryTitle">Một nơi để bắt đầu</h2><p>Chọn một thế giới quen thuộc hoặc đi xa hơn vào không gian.</p></div>
+        <div id="museumCategories" class="museum-categories" role="group" aria-label="Khám phá theo nhóm"><button type="button" class="museum-category" data-classification="">Tất cả 164 hồ sơ</button><button type="button" class="museum-category" data-classification="planet">Hệ Mặt Trời</button><button type="button" class="museum-category" data-classification="moon">Các vệ tinh</button><button type="button" class="museum-category" data-classification="star">Các ngôi sao</button><button type="button" class="museum-category" data-classification="nebula">Tinh vân</button><button type="button" class="museum-category" data-classification="galaxy">Thiên hà</button></div>
+        <div id="museumCards" class="museum-grid"></div><div class="museum-heading"><h3>Đặt các thế giới cạnh nhau</h3><p>Chọn 2–4 thiên thể để đối chiếu những đại lượng có cùng định nghĩa và đơn vị.</p><button id="museumCompare" type="button">Mở bàn so sánh</button></div>
+      </section>
+    </section>
     <div class="layout">
       <aside class="sidebar" id="sidebar">
         <a class="skip-link" href="#details">Đến hồ sơ thiên thể</a><div class="aside-head"><span class="tiny-overline">Thư viện vũ trụ</span><span class="count">164 đối tượng</span></div>
@@ -103,5 +118,6 @@
   <script src="scene.js"></script>
   <script src="app.js"></script>
   <script src="explorer-ui.js"></script>
+  <script src="museum.js"></script>
 </body>
 </html>

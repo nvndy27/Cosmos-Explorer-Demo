@@ -1,0 +1,476 @@
+/* Museum discovery skin. Loaded alongside the existing dark explorer styles. */
+:root {
+  color-scheme: dark;
+  --museum-night: #07111f;
+  --museum-night-raised: #13263b;
+  --museum-ink: #edf4fa;
+  --museum-ink-soft: #b5c5d5;
+  --museum-paper: #0d1b2a;
+  --museum-blue: #b5ddf2;
+  --museum-blue-strong: #5689aa;
+  --museum-gold: #d5ad78;
+  --museum-line-dark: #ffffff30;
+  --museum-line-light: #30465e;
+}
+
+html { scroll-behavior: auto; }
+body {
+  color-scheme: dark;
+  background: var(--museum-night);
+  color: #f2f5fa;
+  font-family: Arial, Helvetica, system-ui, sans-serif;
+}
+
+/* Reassert legible controls above the legacy theme without changing their hooks. */
+body button,
+body input,
+body select,
+body textarea,
+body #copyProfileLink {
+  color-scheme: dark;
+  color: #edf4fa;
+  background-color: #13263b;
+  border-color: #66829b;
+  font-family: inherit;
+  font-size: max(14px, 1em);
+}
+body input::placeholder { color: #b5c5d5; opacity: 1; }
+body button:disabled { color: #b5c5d5; opacity: .58; }
+body:not(.museum-home) .mode-tab.active,
+body:not(.museum-home) .card-actions button:first-child {
+  color: #07111f;
+  background-color: var(--museum-blue);
+  border-color: var(--museum-blue);
+}
+body:not(.museum-home) .mode-tab:not(.active),
+body:not(.museum-home) .collection-title,
+body:not(.museum-home) .source-link { color: var(--museum-blue); }
+body #copyProfileLink { min-height: 44px; }
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--museum-blue);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 2px #07111f;
+}
+
+/* The discovery landing page is opt-in via body.museum-home. */
+#museumView { display: none; }
+.museum-home {
+  min-height: 100vh;
+  height: auto;
+  overflow: auto;
+  background: var(--museum-night);
+  color: #f2f5fa;
+}
+.museum-home .app-shell {
+  height: auto;
+  min-height: 100vh;
+  overflow: visible;
+  background: var(--museum-night);
+}
+.museum-home .layout { display: none; }
+.museum-home #museumView {
+  display: block;
+  width: 100%;
+  background: var(--museum-night);
+  color: #f2f5fa;
+}
+#museumHome,
+.museum-home #museumAll,
+.museum-home #museumDiagram,
+.museum-home #museumCompare,
+.museum-home #museumSaved {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid #ffffff48;
+  border-radius: 8px;
+  color: #e8f1f8;
+  background: #13263b;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+#museumHome { min-width: 44px; min-height: 44px; }
+#museumHome[aria-current="page"],
+#museumHome[aria-pressed="true"],
+.museum-home #museumAll[aria-pressed="true"],
+.museum-home #museumDiagram[aria-pressed="true"],
+.museum-home #museumCompare[aria-pressed="true"],
+.museum-home #museumSaved[aria-pressed="true"] {
+  color: #07111f;
+  border-color: var(--museum-blue);
+  background: var(--museum-blue);
+}
+
+/* Dark editorial hero. Images stay whole and retain their own captions/credits. */
+.museum-discover {
+  --museum-wrap: 1392px;
+  width: min(100%, var(--museum-wrap));
+  margin-inline: auto;
+  padding: 42px clamp(20px, 4vw, 56px) 54px;
+}
+.museum-hero {
+  display: grid;
+  grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+  padding-block: 14px 48px;
+}
+.museum-copy { min-width: 0; }
+.museum-copy h1 {
+  max-width: none;
+  margin: 0;
+  color: #f2f5fa;
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 500;
+  letter-spacing: -.045em;
+  line-height: 1.1;
+}
+.museum-copy p {
+  max-width: 42ch;
+  margin: 20px 0 0;
+  color: #c2d0de;
+  font-size: 17px;
+  line-height: 1.75;
+}
+#museumSearchForm { margin-top: 24px; }
+#museumSearchForm label {
+  display: block;
+  margin-bottom: 8px;
+  color: #d7e1ed;
+  font-size: 14px;
+}
+#museumSearchForm input,
+.museum-home input#museumQuery {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 54px;
+  padding: 10px 15px;
+  border: 1px solid #70869b;
+  border-radius: 9px;
+  color: #fff;
+  background: #13263b;
+  font: inherit;
+  font-size: 16px;
+}
+#museumSearchForm input::placeholder { color: #b5c5d5; opacity: 1; }
+.museum-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 470px;
+  min-height: 58px;
+  padding: 6px 8px 6px 15px;
+  border: 1px solid #70869b;
+  border-radius: 9px;
+  background: #13263b;
+}
+#museumSearchForm .museum-search input#museumQuery {
+  flex: 1;
+  width: 100%;
+  min-height: 44px;
+  padding: 7px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  outline-offset: 2px;
+}
+#museumSearchForm .museum-search button {
+  display: grid;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 92px;
+  height: 44px;
+  min-height: 44px;
+  place-items: center;
+  padding: 0 12px;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 6px;
+  color: #07111f;
+  background: var(--museum-blue);
+  cursor: pointer;
+}
+.museum-copy .museum-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.museum-copy .museum-actions button {
+  min-width: 44px;
+  min-height: 48px;
+  padding: 10px 18px;
+  border: 1px solid var(--museum-blue);
+  border-radius: 8px;
+  color: #07111f;
+  background: var(--museum-blue);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 650;
+  cursor: pointer;
+}
+.museum-copy .museum-actions button + button {
+  color: #e5edf5;
+  background: transparent;
+  border-color: #ffffff56;
+}
+.museum-copy small,
+.museum-copy .museum-access-note { display: block; margin-top: 16px; color: #bdccda; font-size: 14px; line-height: 1.6; }
+.museum-figure { min-width: 0; margin: 0; }
+.museum-figure img {
+  display: block;
+  width: 100%;
+  height: clamp(250px, 29vw, 390px);
+  object-fit: contain;
+  background: #07111f;
+}
+.museum-figure figcaption { padding-top: 13px; }
+.museum-figure h2 { margin: 0; color: #f2f5fa; font-size: 19px; font-weight: 550; }
+.museum-figure p,
+.museum-figure .museum-credit {
+  max-width: 78ch;
+  margin: 6px 0 0;
+  color: #bdccda;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.museum-figure a { display: inline-flex; min-height: 44px; align-items: center; color: #d5e5f3; font-size: 14px; text-underline-offset: 4px; }
+
+/* One dark palette across discovery and app; no isolated white panels. */
+.museum-gallery {
+  width: 100%;
+  padding: 36px 0 0;
+  color-scheme: dark;
+  color: var(--museum-ink);
+  background: transparent;
+  border-top: 1px solid #30465e;
+}
+.museum-heading {
+  display: block;
+  max-width: var(--museum-wrap, 1392px);
+  margin: 0 auto;
+}
+.museum-heading h2 { margin: 0; color: var(--museum-ink); font-size: clamp(28px, 3vw, 36px); font-weight: 500; letter-spacing: -.03em; line-height: 1.2; }
+.museum-heading p { margin: 9px 0 0; color: #b5c5d5; font-size: 16px; line-height: 1.6; }
+.museum-heading a { display: inline-flex; min-height: 44px; align-items: center; color: #c6e4f5; font-size: 15px; text-underline-offset: 5px; }
+.museum-categories {
+  display: flex;
+  gap: 8px;
+  max-width: var(--museum-wrap, 1392px);
+  margin: 18px auto 20px;
+  padding: 4px 0 8px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.museum-category {
+  flex: 0 0 auto;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid #526f88;
+  border-radius: 7px;
+  color: #b5c5d5;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.museum-category[aria-pressed="true"],
+.museum-category.active {
+  color: #fff;
+  background: #13263b;
+  border-color: #13263b;
+}
+#museumCards,
+.museum-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: var(--museum-wrap, 1392px);
+  margin-inline: auto;
+}
+.museum-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #30465e;
+  border-radius: 11px;
+  color: var(--museum-ink);
+  background: #14263b;
+  box-shadow: 0 2px 8px #1021370b;
+}
+.museum-photo {
+  display: flex;
+  min-width: 0;
+  height: clamp(190px, 18vw, 245px);
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 12px;
+  background: #07111f;
+}
+.museum-photo img,
+.museum-photo canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+img.museum-photo {
+  display: block;
+  width: 100%;
+  height: clamp(190px, 18vw, 245px);
+  object-fit: contain;
+  background: #07111f;
+}
+.museum-content { display: flex; min-width: 0; flex: 1; flex-direction: column; padding: 19px 20px 12px; }
+.museum-content h2, .museum-content h3 { margin: 0; color: var(--museum-ink); font-size: 22px; font-weight: 550; line-height: 1.3; overflow-wrap: anywhere; }
+.museum-content p { margin: 10px 0 0; color: #b5c5d5; font-size: 15px; line-height: 1.65; overflow-wrap: anywhere; }
+.museum-content .museum-kind { margin-top: 0; color: #9eb5ca; font-size: 14px; }
+.museum-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; padding: 6px 20px 16px; }
+.museum-gallery button,
+.museum-gallery input,
+.museum-gallery select,
+.museum-actions button,
+.museum-actions a {
+  display: inline-flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+  border: 1px solid #526f88;
+  border-radius: 7px;
+  color: #c6e4f5;
+  background: #20384e;
+  font: inherit;
+  font-size: 14px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.museum-gallery button,
+.museum-gallery input,
+.museum-gallery select {
+  color-scheme: dark;
+  color: var(--museum-ink);
+  background-color: #20384e;
+  border-color: #526f88;
+}
+.museum-actions button[aria-pressed="true"] { color: #102137; background: #e8d6b9; border-color: #b28a55; }
+.museum-credit {
+  margin: 16px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid #30465e;
+  color: #b5c5d5;
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.museum-credit a { color: #b5ddf2; text-underline-offset: 3px; }
+
+/* Full-width discovery modes; retain the existing three-pane diagram and reading profile. */
+body[data-mode="library"]:not(.reading) .layout,
+body[data-mode="compare"]:not(.reading) .layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+body[data-mode="library"]:not(.reading) .sidebar,
+body[data-mode="library"]:not(.reading) .details,
+body[data-mode="compare"]:not(.reading) .sidebar,
+body[data-mode="compare"]:not(.reading) .details { display: none; }
+body[data-mode="library"]:not(.reading) .stage,
+body[data-mode="compare"]:not(.reading) .stage { min-width: 0; }
+body[data-mode="library"]:not(.reading) .library-view,
+body[data-mode="compare"]:not(.reading) .comparison-view { width: 100%; box-sizing: border-box; }
+body.reading .layout { grid-template-columns: minmax(0, 1fr); }
+body.reading .sidebar { display: none; }
+body.reading .stage { display: none; }
+body.reading .details { display: flex; width: min(100%, 1000px); max-width: 1000px; margin-inline: auto; }
+
+@media (max-width: 1100px) {
+  .museum-discover { padding-inline: 32px; }
+  .museum-gallery { padding-inline: 0; }
+  #museumCards, .museum-grid { gap: 16px; }
+  .museum-content { padding-inline: 16px; }
+  .museum-actions { padding-inline: 16px; }
+  .museum-credit { margin-inline: 16px; }
+}
+@media (max-width: 820px) {
+  .museum-hero { grid-template-columns: minmax(0, 1fr); gap: 30px; padding-block: 8px 36px; }
+  .museum-copy h1 { max-width: none; font-size: clamp(40px, 7vw, 54px); }
+  .museum-copy p { max-width: 58ch; }
+  .museum-figure { width: min(100%, 680px); }
+  .museum-figure img { height: 350px; }
+  #museumCards, .museum-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .museum-photo { height: 210px; }
+  .museum-heading { align-items: start; }
+}
+@media (max-width: 580px) {
+  .mode-bar { gap: 6px; padding: 7px 8px; }
+  .mode-bar > div { width: auto; min-width: 0; flex: 1 1 auto; justify-content: flex-end; gap: 4px; }
+  .mode-bar .mode-tab { min-width: 44px; min-height: 44px; padding: 7px 9px; }
+  #museumHome { flex: 0 0 auto; padding-inline: 9px; white-space: nowrap; }
+  .museum-discover { padding: 27px 20px 34px; }
+  .museum-hero { gap: 24px; padding-bottom: 30px; }
+  .museum-copy h1 { max-width: none; font-size: clamp(36px, 9.5vw, 42px); letter-spacing: -.04em; }
+  .museum-copy p { margin-top: 14px; font-size: 16px; }
+  #museumSearchForm { margin-top: 19px; }
+  .museum-home-actions { gap: 8px; }
+  .museum-home-actions button { min-height: 48px; padding-inline: 13px; }
+  .museum-figure img { height: 260px; }
+  .museum-figure h2 { font-size: 18px; }
+  .museum-gallery { padding: 30px 0 0; }
+  .museum-heading { display: block; }
+  .museum-heading h2 { font-size: 29px; }
+  .museum-heading a { margin-top: 8px; }
+  .museum-categories { margin-block: 13px 17px; }
+  #museumCards, .museum-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .museum-photo { height: 260px; }
+  .museum-content { padding: 18px 19px 10px; }
+  .museum-actions { padding-inline: 19px; }
+  .museum-credit { margin-inline: 19px; }
+  body:not(.museum-home) .layout { display: flex; flex-direction: column; }
+  body[data-mode="library"]:not(.reading) .library-view,
+  body[data-mode="compare"]:not(.reading) .comparison-view { padding-inline: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+.museum-home .mode-tab.active{background:transparent;color:var(--secondary);border-color:transparent}
+
+.museum-content { padding: 22px; }
+.museum-content h2 { font-size: 24px; font-weight: 500; }
+.museum-content p { font-size: 16px; }
+.museum-content .museum-kind, .museum-content .museum-credit { font-size: 14px; }
+.museum-content .museum-actions { padding: 20px 0 0; margin-top: auto; }
+.museum-content .museum-actions button:first-child { color: #07111f; background: var(--museum-blue); font-weight: 600; }
+.museum-source, .museum-credit a { text-decoration: underline; }
+
+.museum-content .museum-credit { margin-inline: 0; }
+.museum-home #museumAll { color: #07111f; background: var(--museum-blue); border-color: var(--museum-blue); text-decoration: none; font-weight: 600; }
+
+/* Keep utility and legacy action targets consistent with the discovery controls. */
+body button { min-width: 44px; min-height: 44px; }
+.museum-hero-fallback { display: grid; place-content: center; gap: 20px; min-height: 300px; padding: 32px; border: 1px dashed #52738d; border-radius: 12px; background: #13263b; text-align: center; }
+.museum-hero-fallback p { color: #c2d0de; font-size: 16px; }
+.museum-hero-fallback button { justify-self: center; padding: 10px 20px; border: 1px solid #b5ddf2; border-radius: 8px; background: #20384e; color: #edf4fa; font-size: 16px; }
+
+#helpBtn, #mobileSearchBtn, body .card-actions button, body .reading-controls button, body .modal-close, body .tab { min-width: 44px; min-height: 44px; }
