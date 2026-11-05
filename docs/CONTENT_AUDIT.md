@@ -57,7 +57,7 @@ Mỗi hồ sơ hiện đều có khóa cho sáu đại lượng dưới `measure
 
 Các giá trị trong cùng một cột vẫn không mặc nhiên so sánh được. Bán kính trộn bán kính trung bình, bán kính quá cảnh và bán kính danh mục; khác cả đơn vị. Sáu bản ghi có cờ không comparable ở bán kính là `exo-hd-189733-b`, `exo-hd-209458-b`, `exo-hd-149026-b`, `exo-55-cnc-e`, `exo-gj-436-b`, `exo-bet-pic-b`. Khối lượng TOI-700 d có `mass_from_radius` và cờ không comparable; không nên trình bày như phép đo khối lượng độc lập. `mass_estimate` cũng được phân loại riêng với `mass`; chưa được gộp để suy đại lượng khác.
 
-Các null biểu thị **chưa tích hợp/biên tập trong snapshot này**, theo hợp đồng `DATA_POLICY.md`; chúng không chứng minh đại lượng đó chưa được khoa học biết. Cụ thể, `equatorialRadius` chỉ hiện có cho một phần hồ sơ hành tinh Hệ Mặt Trời; khối lượng/chu kỳ vệ tinh được chính sách ghi là chưa biên tập đầy đủ. Khoảng cách pc ở đây chỉ được chuẩn hóa cho nhóm ngoại hành tinh/hệ chủ; không có khoảng cách cùng định nghĩa cho toàn bộ catalog. Không kết luận thêm về mức độ có thể biết của từng đối tượng.
+Các null biểu thị **chưa tích hợp/biên tập trong snapshot này**, theo hợp đồng `DATA_POLICY.md`; chúng không chứng minh đại lượng đó chưa được khoa học biết. Cụ thể, `equatorialRadius` hiện có cho tám hành tinh và bốn hành tinh lùn; khối lượng/chu kỳ vệ tinh được chính sách ghi là chưa biên tập đầy đủ. Khoảng cách pc ở đây chỉ được chuẩn hóa cho nhóm ngoại hành tinh/hệ chủ; không có khoảng cách cùng định nghĩa cho toàn bộ catalog. Không kết luận thêm về mức độ có thể biết của từng đối tượng.
 
 ## Provenance và ngày
 
@@ -69,7 +69,7 @@ Các null biểu thị **chưa tích hợp/biên tập trong snapshot này**, th
 
 Catalog hiện có ảnh cục bộ ở 126/138 hồ sơ; 12 không có trường `image`: Ngân Hà, tám hồ sơ sao chủ (`star-hd-189733`, `star-hd-209458`, `star-wasp-80`, `star-hd-149026`, `star-wasp-43`, `star-kelt-7`, `star-k2-33`, `star-hat-p-26`) và ba hành tinh lùn Eris/Haumea/Makemake. Đây là thiếu tích hợp ảnh cục bộ trong catalog, không phải khẳng định không tồn tại ảnh phù hợp.
 
-Manifest chia 126 ảnh theo `imageKind`: 83 observation, 36 illustration, 5 composite, 2 reconstruction. Nhãn classification/caption cần được xem cùng loại này: “observation” vẫn có thể là ảnh xử lý màu; “reconstruction” không phải ảnh khả kiến. Snapshot ngoại hành tinh khai báo 20 ảnh minh họa đối tượng, 16 ảnh minh họa đại diện chung và 1 ảnh phạm vi hệ; không gán hình đại diện chung thành bề mặt riêng đã quan sát. 101 hồ sơ không có `imageScope` ở catalog; scope chi tiết nói trên chỉ kiểm kê được cho 37 hồ sơ của snapshot ảnh ngoại hành tinh.
+Manifest chia 126 ảnh theo `imageKind`: 83 observation, 36 illustration, 5 composite, 2 reconstruction. Nhãn classification/caption cần được xem cùng loại này: “observation” vẫn có thể là ảnh xử lý màu; “reconstruction” không phải ảnh khả kiến. Snapshot ngoại hành tinh có 20 tư liệu phạm vi đối tượng (19 minh họa và 1 quan sát), 16 minh họa đại diện chung và 1 minh họa phạm vi hệ; không gán hình đại diện chung thành bề mặt riêng đã quan sát. 101 hồ sơ không có `imageScope` ở catalog; scope chi tiết nói trên chỉ kiểm kê được cho 37 hồ sơ của snapshot ảnh ngoại hành tinh.
 
 ## Năm ưu tiên biên tập
 
