@@ -1,0 +1,36 @@
+name: Product quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  product:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Install isolated browser QA tools
+        run: |
+          npm install --prefix "$RUNNER_TEMP/cosmos-qa" --ignore-scripts --no-audit --no-fund playwright@1.64.1
+          "$RUNNER_TEMP/cosmos-qa/node_modules/.bin/playwright" install --with-deps chromium
+          echo "COSMOS_PLAYWRIGHT_MODULE=$RUNNER_TEMP/cosmos-qa/node_modules/playwright" >> "$GITHUB_ENV"
+          COSMOS_TEST_CHROME=$(node -e "process.stdout.write(require(process.env.RUNNER_TEMP + '/cosmos-qa/node_modules/playwright').chromium.executablePath())")
+          echo "COSMOS_CHROME=$COSMOS_TEST_CHROME" >> "$GITHUB_ENV"
+      - name: Run mandatory product checks
+        run: python3 scripts/check_all.py --browser

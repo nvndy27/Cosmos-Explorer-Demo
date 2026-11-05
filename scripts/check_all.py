@@ -2,6 +2,7 @@
 """Mandatory local gates, optionally including the real Chrome QA suite."""
 import argparse
 import os
+import shutil
 from pathlib import Path
 import subprocess
 
@@ -30,7 +31,7 @@ def main():
     args = parser.parse_args()
     for cmd in commands(args.browser):
         print("RUN " + " ".join(cmd), flush=True)
-        subprocess.run(["rtk", "proxy", *cmd], cwd=ROOT, check=True, timeout=240,
+        subprocess.run((["rtk", "proxy"] if shutil.which("rtk") else []) + cmd, cwd=ROOT, check=True, timeout=240,
                        env=os.environ.copy())
     print("PASS mandatory gates" + (" including Chrome" if args.browser else "; browser NOT run"))
 
