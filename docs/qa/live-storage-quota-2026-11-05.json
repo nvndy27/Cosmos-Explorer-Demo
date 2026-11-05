@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-05",
+  "accepted_commit": "8312fcd622f7390f7583de997fda1deed4ca1b46",
+  "tasks": [
+    "QA-003",
+    "QA-004",
+    "OPS-QUOTA-001"
+  ],
+  "execution": "existing Orca terminals: coordinator + 2 Codex + 2 AGY",
+  "reviews": [
+    {
+      "commit": "8312fcd622f7390f7583de997fda1deed4ca1b46",
+      "verdict": "approve",
+      "issues": []
+    },
+    {
+      "commit": "8312fcd622f7390f7583de997fda1deed4ca1b46",
+      "verdict": "approve",
+      "issues": []
+    }
+  ],
+  "checks": {
+    "unit": 18,
+    "smoke": 14,
+    "storage_cases_passed": 6,
+    "storage_failures": 0,
+    "viewports": [
+      390,
+      820,
+      1440
+    ],
+    "protocols": [
+      "HTTP root",
+      "HTTP /cosmos/",
+      "HTTPS self-signed /cosmos/"
+    ]
+  },
+  "quota_policy": {
+    "minimum_remaining_5h_percent": 10,
+    "poll_seconds": 120,
+    "natural_reset_only": true,
+    "reset_credit_used": false,
+    "read_method": "account/rateLimits/read",
+    "latest_snapshot": {
+      "checked_at": 1793857821.27856,
+      "allowed": false,
+      "minimum_remaining_percent": 10,
+      "five_hour": {
+        "minutes": 300,
+        "remaining_percent": 10,
+        "resets_at": 1793861759
+      },
+      "windows": [
+        {
+          "minutes": 300,
+          "remaining_percent": 10,
+          "resets_at": 1793861759
+        },
+        {
+          "minutes": 10080,
+          "remaining_percent": 84,
+          "resets_at": 1794411875
+        }
+      ],
+      "reason": "quota_reserve",
+      "retry_at": 1793861789
+    },
+    "quota_timer_enabled": true,
+    "systemd_orca_access_verified": true,
+    "natural_reset_observed_in_this_run": false
+  },
+  "public_deployed": false,
+  "local_evidence": ".automation/live-20261105-storage-https/",
+  "finished_at": "2026-11-05T12:50:21.296948+07:00"
+}
