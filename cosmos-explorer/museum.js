@@ -29,6 +29,12 @@
     button.type = 'button';
     button.setAttribute('aria-pressed', String(active));
     button.classList.toggle('active', active);
+    document.querySelectorAll('.mode-tab').forEach((tab, index) => {
+      const selected = !active && tab.dataset.mode === ExplorerUI.state.mode;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = active ? (index === 0 ? 0 : -1) : (selected ? 0 : -1);
+      tab.classList.toggle('active', selected);
+    });
   };
 
   const leaveHome = () => {
@@ -73,13 +79,20 @@
     catch (_) { return []; }
   };
 
-  function syncSavedCards() {
+  function syncCards() {
     if (!root) return;
     const saved = new Set(savedIds());
     root.querySelectorAll('[data-museum-save]').forEach(button => {
       const isSaved = saved.has(button.dataset.museumSave);
       button.textContent = isSaved ? '★ Đã lưu' : '☆ Lưu';
       button.setAttribute('aria-pressed', String(isSaved));
+    });
+    root.querySelectorAll('[data-museum-compare]').forEach(button => {
+      const id = button.dataset.museumCompare;
+      const selected = ExplorerUI.state.compare.includes(id);
+      button.textContent = selected ? 'Bỏ so sánh' : 'So sánh';
+      button.setAttribute('aria-pressed', String(selected));
+      button.setAttribute('aria-label', selected ? 'Bỏ ' + objectFor(id).name + ' khỏi so sánh' : 'Thêm ' + objectFor(id).name + ' vào so sánh');
     });
   }
 
@@ -108,7 +121,7 @@
     history.replaceState(null, '', homeUrl.href);
     body.dataset.museumPalette = 'monochrome';
     setHomeButtonState(true);
-    syncSavedCards();
+    syncCards();
     return true;
   }
 
@@ -196,12 +209,14 @@
     save.addEventListener('click', () => saveUsingExistingControl(id));
     const compare = document.createElement('button');
     compare.type = 'button';
+    compare.dataset.museumCompare = id;
     compare.textContent = 'So sánh';
     compare.setAttribute('aria-label', 'Thêm ' + object.name + ' vào so sánh');
     compare.addEventListener('click', () => {
       if (typeof ExplorerUI === 'undefined') return;
       const hadIt = ExplorerUI.state.compare.includes(id);
       ExplorerUI.toggleCompare(id);
+      syncCards();
       if (!hadIt && ExplorerUI.state.compare.includes(id)) ExplorerUI.setMode('compare', true);
     });
     actions.append(read, save, compare);
@@ -232,7 +247,7 @@
     favoriteButton.click();
     const isSaved = savedIds().includes(id);
     if (previous && objectFor(previous)) select(previous, false);
-    syncSavedCards();
+    syncCards();
     if (wasHome) showHome();
     let persisted = false;
     try {
@@ -337,15 +352,15 @@
         }
       });
     });
-    $('clearSavedOnDevice')?.addEventListener('click', syncSavedCards);
+    $('clearSavedOnDevice')?.addEventListener('click', syncCards);
     window.addEventListener('storage', event => {
-      if (event.key === 'cosmos_favorites' || event.key === null) syncSavedCards();
+      if (event.key === 'cosmos_favorites' || event.key === null) syncCards();
     });
-    window.addEventListener('focus', syncSavedCards);
+    window.addEventListener('focus', syncCards);
 
     if (!window.location.hash) showHome();
     else leaveHome();
-    syncSavedCards();
+    syncCards();
   }
 
   window.Museum = Object.freeze({ showHome, openLibrary });
