@@ -24,7 +24,7 @@ Lịch 09:00 giờ máy (Asia/Ho_Chi_Minh); Persistent=true chạy bù lần b�
 ## Quy trình mỗi đợt
 Khoá chống chồng → từ chối main bẩn/nhánh khác → baseline → chọn backlog → 3 CLI trong worktree riêng → kiểm phạm vi/không sửa Git history → commit cục bộ → cherry-pick ứng viên → đánh dấu task done trên ứng viên → gates → 2 AGY review cùng commit trong hai worktree chỉ đọc theo quy ước → gates lại → xác nhận main không đổi → fast-forward. Một tác vụ lỗi dừng cả đợt; các việc không bị tích hợp một phần. Review chỉ được chấp nhận nếu JSON hợp lệ, verdict=approve và issues rỗng.
 
-AGY dùng --sandbox --mode plan; Codex dùng exec --sandbox workspace-write, không dùng cờ bypass. Worktree và kiểm phạm vi là biện pháp phối hợp/nghiệm thu, không phải cô lập bảo mật tuyệt đối khỏi tài khoản OS. Không giao nội dung không tin cậy hay tác vụ quyền rộng vào backlog. Theo [OpenAI Docs về non-interactive](https://learn.chatgpt.com/docs/non-interactive-mode), exec phù hợp script và cần đặt sandbox rõ. AGY adapter được đối chiếu với agy --help cục bộ.
+AGY dùng --sandbox --mode plan, review trực tiếp diff/mã/log đính kèm và không gọi tool để tránh permission prompt trong headless; Codex dùng exec --sandbox workspace-write, không dùng cờ bypass. Worktree và kiểm phạm vi là biện pháp phối hợp/nghiệm thu, không phải cô lập bảo mật tuyệt đối khỏi tài khoản OS. Không giao nội dung không tin cậy hay tác vụ quyền rộng vào backlog. Theo [OpenAI Docs về non-interactive](https://learn.chatgpt.com/docs/non-interactive-mode), exec phù hợp script và cần đặt sandbox rõ. AGY adapter được đối chiếu với agy --help cục bộ.
 
 ## Sự cố, dừng và tiếp tục
 ```bash
