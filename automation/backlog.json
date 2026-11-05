@@ -37,7 +37,7 @@
     {
       "id": "UX-001",
       "lane": "codex-1",
-      "status": "manual",
+      "status": "ready",
       "depends_on": [
         "QA-001"
       ],
@@ -45,8 +45,8 @@
         "cosmos-explorer/app.js",
         "cosmos-explorer/index.html"
       ],
-      "title": "Chia sẻ liên kết hồ sơ và hướng dẫn người mới",
-      "acceptance": "Cần chốt trải nghiệm và đọc mã hiện tại trước khi chuyển ready. Chứng minh copy link/file fallback, ID không hợp lệ, bàn phím và mobile; giữ ID/yêu thích."
+      "title": "Chia sẻ liên kết hồ sơ và xử lý ID lạ",
+      "acceptance": "Thêm nút ‘Sao chép liên kết hồ sơ’ trong tiêu đề hồ sơ. URL phải giữ nguyên đường dẫn hiện tại và dùng đúng ID trong hash; chọn hồ sơ khác cập nhật ID link. Dùng Clipboard API khi khả dụng và fallback không phụ thuộc HTTPS để hỗ trợ file://. Báo thành công/lỗi trong vùng role=status. Link có ID lạ phải cập nhật về hồ sơ mặc định Saturn và hash #saturn. Giữ ID cũ, yêu thích và hành vi mở trực tiếp. Nút dùng được bằng Tab/Enter và ở 390 px không tràn ngang. Chỉ sửa cosmos-explorer/app.js và cosmos-explorer/index.html; không thêm dependency."
     },
     {
       "id": "SCI-001",
@@ -162,6 +162,19 @@
       ],
       "title": "Giữ 10% hạn mức 5 giờ và tự tiếp tục sau reset",
       "acceptance": "Đọc account/rateLimits/read của Codex qua stdio, xác định cửa sổ 300 phút, dừng nhận việc ở <=10%, không mặc định quota lỗi là còn. systemd kiểm tra lại 2 phút và gửi tiếp vào đúng phiên điều phối idle sau khi backend xác nhận còn >10%. Không gọi model để đọc quota, không tự dùng reset credit, không gửi trùng khi kết quả submit không rõ. Unit tests cho ngưỡng, cửa sổ đảo, quota tuần, dữ liệu lỗi, stale reset và resume một lần."
+    },
+    {
+      "id": "QA-005",
+      "lane": "codex-2",
+      "status": "ready",
+      "depends_on": [
+        "UX-001"
+      ],
+      "allowed_paths": [
+        "scripts/check_share.cjs"
+      ],
+      "title": "Kiểm tra chia sẻ hồ sơ trong Chrome",
+      "acceptance": "Tạo scripts/check_share.cjs dùng Playwright/Chrome ngoài repo theo COSMOS_PLAYWRIGHT_MODULE và COSMOS_CHROME. Kiểm tra sao chép URL chứa ID hiện tại qua Clipboard API trên HTTP localhost; kiểm tra fallback copy trên file:// bằng intercept execCommand để xác nhận đúng URL được chọn, không cần quyền clipboard; mở link trực direct trong context mới đúng hồ sơ; ID lạ fallback về Saturn và #saturn; Tab/Enter kích hoạt nút; layout không tràn ngang 390/820/1440. Ghi JSON vào thư mục tạm, dọn browser/server trong finally. Chỉ thêm script mới, không sửa app hay dependency. Nêu rõ Chrome loopback/file:// không xác minh hosting TLS công khai."
     }
   ]
 }
