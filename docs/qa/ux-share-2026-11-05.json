@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-05",
+  "commit": "010ec39fe9e00ff6c997d4c50424070370042cc4",
+  "result": "PASS",
+  "gates": {
+    "javascriptSyntax": 9,
+    "pythonUnitTests": 18,
+    "smokeGroups": 14,
+    "catalogProfiles": 138,
+    "localImagesWithVerifiedHashes": 126,
+    "browserRegression": [
+      "file:// offline",
+      "keyboard flows",
+      "reduced motion",
+      "image failure fallback",
+      "all profiles and images"
+    ],
+    "viewports": [
+      390,
+      820,
+      1440
+    ],
+    "httpScenarios": [
+      "HTTP root",
+      "HTTP /cosmos/",
+      "HTTPS /cosmos/ self-signed"
+    ],
+    "storageSecurityErrorCases": 6,
+    "shareScenariosPassed": 6,
+    "shareScenarios": [
+      "Clipboard API preserves query and profile hash",
+      "profile change updates link",
+      "direct links and invalid hash fallback",
+      "unhashed root stays clean",
+      "file:// copy fallback and local-path notice",
+      "copy failure manual guidance and transient role=status notice"
+    ],
+    "pageErrors": 0
+  },
+  "review": {
+    "agy1": {
+      "verdict": "approve",
+      "issues": []
+    },
+    "agy2": {
+      "verdict": "approve",
+      "issues": []
+    }
+  },
+  "limitations": [
+    "file:// execCommand fallback is intercepted in the browser test; operating-system clipboard behavior on every browser is not verified.",
+    "HTTPS uses a self-signed loopback certificate; public TLS/hosting is not verified.",
+    "Firefox, Safari, screen readers, and real-user trials are not verified."
+  ]
+}

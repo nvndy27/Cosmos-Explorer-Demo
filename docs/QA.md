@@ -83,3 +83,14 @@ Chưa chạy lại Firefox/Safari hoặc trình đọc màn hình thực, chưa 
 - `quota_guard.py` có kiểm thử ngưỡng 10%, xác định cửa sổ theo 300 phút, hạn mức tuần/backend chặn, dữ liệu lỗi, không tự suy refill theo đồng hồ, giữ khi coordinator bận và chống gửi lặp sau receipt không rõ. Đọc live qua App Server thành công; việc chờ reset thật sẽ do timer theo dõi khi chạm ngưỡng, chưa giả vờ rằng đã trải qua reset tự nhiên trong lượt này.
 
 Bằng chứng chi tiết cục bộ: `.automation/live-20261105-storage-https/`; script browser ghi JSON và ảnh trong thư mục tạm được in trong log. Các giới hạn thử người thật, Firefox/Safari, trình đọc màn hình và hosting công khai ở trên vẫn còn.
+
+
+## Chia sẻ liên kết hồ sơ — 2026-11-05
+
+Đã tích hợp tại commit `010ec39fe9e00ff6c997d4c50424070370042cc4`. Nút **Sao chép liên kết hồ sơ** bảo toàn đường dẫn/query và ID hiện tại; trang mở không hash giữ URL gốc sạch, ID lạ về `#saturn`. Bản `file://` báo rõ đường dẫn chỉ cục bộ; thông báo chia sẻ không đẩy nội dung trang, tự ẩn sau 4,5 giây và được dọn khi đổi hồ sơ. Nút đạt cỡ chữ 14 px và vùng chạm cao 42 px tại 390/820/1440 px.
+
+`check_share.cjs` đạt: Clipboard API trên localhost, chọn hồ sơ Earth rồi Mars, mở link ở context mới, ID lạ khi tải trang và đổi hash, Tab/Enter, query preservation, fallback `file://` với `execCommand` được intercept, thông báo copy lỗi, trạng thái tự hết hạn và không tràn ngang. Fallback file được kiểm tra bằng cách bắt lệnh copy trong trình duyệt; chưa xác nhận hành vi clipboard hệ điều hành trên Safari hoặc mọi cấu hình trình duyệt.
+
+Toàn bộ `scripts/check_all.py --browser` đạt trên commit này: 18 unittest, 14 smoke, validator 138 hồ sơ/126 ảnh, các kiểm tra Chrome cũ, 6 ca localStorage SecurityError, HTTP root, HTTP/HTTPS loopback tại `/cosmos/`, và kiểm tra chia sẻ. Log chi tiết cục bộ: `.automation/live-20261105-ux-share/final-gates.log`; tóm tắt bền: [ux-share-2026-11-05.json](qa/ux-share-2026-11-05.json). Hai AGY đã approve cùng commit, không có issue.
+
+HTTPS dùng chứng chỉ self-signed trên loopback, không xác minh TLS/hosting công khai. Chưa kiểm tra Firefox, Safari, trình đọc màn hình hoặc thử nghiệm người dùng thật; các cổng này vẫn chờ thực hiện thủ công.

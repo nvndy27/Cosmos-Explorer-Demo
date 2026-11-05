@@ -37,7 +37,7 @@
     {
       "id": "UX-001",
       "lane": "codex-1",
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "QA-001"
       ],
@@ -166,7 +166,7 @@
     {
       "id": "QA-005",
       "lane": "codex-2",
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "UX-001"
       ],
