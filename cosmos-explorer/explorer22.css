@@ -12,3 +12,7 @@ body{background:var(--night);font-size:var(--body-size);line-height:1.65}.app-sh
 
 /* Preserve the complete artwork and scientific annotations, including coronagraph images. */
 .card-visual img,.photo-wrap #objectImage{object-fit:contain;background:#081321}
+
+#copyProfileLink{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;max-width:100%;min-height:42px;margin:6px 0 4px;padding:6px 10px;font-size:14px;line-height:1.35;text-align:center;white-space:normal;overflow-wrap:anywhere}
+.ui-notice{display:block;position:fixed;z-index:300;inset-block-start:auto;inset-block-end:calc(env(safe-area-inset-bottom,0px) + 16px);inset-inline-start:50%;transform:translateX(-50%);box-sizing:border-box;width:max-content;max-width:min(560px,calc(100vw - 24px));margin:0;padding:10px 14px;border:1px solid var(--line);border-radius:8px;box-shadow:0 12px 32px #0009;overflow-wrap:anywhere;white-space:normal;opacity:0;pointer-events:none}
+.ui-notice:not(:empty){display:block;opacity:1;pointer-events:auto}
