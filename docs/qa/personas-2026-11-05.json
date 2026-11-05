@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-05T09:43:21.547Z",
+  "kind": "synthetic-browser-personas",
+  "realHumanParticipants": 0,
+  "results": [
+    {
+      "persona": "hoc-sinh",
+      "width": 390,
+      "result": "passed",
+      "journeys": [
+        "tim-khong-dau",
+        "doc-ho-so-va-link-nguon",
+        "luu-rieng-trong-context",
+        "so-sanh-hai-ho-so"
+      ],
+      "errors": []
+    },
+    {
+      "persona": "giao-vien",
+      "width": 1440,
+      "result": "passed",
+      "journeys": [
+        "tim-khong-dau",
+        "doc-ho-so-va-link-nguon",
+        "luu-rieng-trong-context",
+        "so-sanh-hai-ho-so"
+      ],
+      "errors": []
+    },
+    {
+      "persona": "nguoi-dung-tablet",
+      "width": 820,
+      "result": "passed",
+      "journeys": [
+        "tim-khong-dau",
+        "doc-ho-so-va-link-nguon",
+        "luu-rieng-trong-context",
+        "so-sanh-hai-ho-so"
+      ],
+      "errors": []
+    }
+  ],
+  "limitation": "Không đo mức dễ dùng với người thật; chỉ kiểm tra luồng UI, link nguồn hiện hữu, không đọc/xác minh nguồn ngoài khi offline."
+}
