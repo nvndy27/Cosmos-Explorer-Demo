@@ -12,7 +12,7 @@ Ba hành trình chính:
 
 ## Lời hứa
 - Nội dung tiếng Việt dễ hiểu, có giới hạn quan sát và ngày đối chiếu.
-- 138 ID hiện tại cùng yêu thích/liên kết cũ được bảo toàn.
+- 164 hồ sơ hiện hành; toàn bộ 138 ID và nội dung trước mở rộng Messier cùng yêu thích/liên kết cũ được bảo toàn.
 - Không buộc đăng nhập, không API key trên trình duyệt; không thu dữ liệu người dùng theo mặc định.
 - Bản file:// tiếp tục hoạt động với nội dung/ảnh dự phòng; bản HTTPS phải được kiểm tra riêng.
 - Sơ đồ là minh họa có nhãn. Dữ liệu đo, tái dựng và minh họa được phân biệt.

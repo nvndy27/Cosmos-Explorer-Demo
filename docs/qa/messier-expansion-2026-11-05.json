@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-05",
+  "issues": [
+    13,
+    14
+  ],
+  "testedCodeCommit": "dbe55467ed6387a71abd7a51c8933626de723762",
+  "status": "passed",
+  "catalog": {
+    "profiles": 164,
+    "preservedBaselineIds": 138,
+    "preservedBaselineRuntimeContent": true,
+    "newMessierProfiles": 26,
+    "localImages": 152,
+    "observedCompositeReconstruction": 116,
+    "artwork": 36
+  },
+  "database": {
+    "schemaVersion": 2,
+    "counts": {
+      "objects": 164,
+      "object_aliases": 184,
+      "sources": 386,
+      "object_sources": 587,
+      "measurements": 842,
+      "images": 152,
+      "object_images": 152,
+      "schema_migrations": 2
+    },
+    "integrityCheck": "ok",
+    "foreignKeyViolations": 0,
+    "measurementsIncludeNull": true,
+    "loopbackApiTotal": 164
+  },
+  "checks": {
+    "command": "python3 scripts/check_all.py --browser",
+    "unitTests": 28,
+    "smokeGroups": 14,
+    "allImageHashes": 152,
+    "allProfileRender": 164,
+    "newProfileImageDecodeSourceCredit": 26,
+    "viewports": [
+      390,
+      820,
+      1440
+    ],
+    "messierBrowser": {
+      "timestamp": "2026-11-05T12:14:57.631Z",
+      "checks": [
+        "all 26 new profiles render, local images decode, NASA source and image credit appear",
+        "M22/M107 search, cluster classification metadata, and observed-image filter",
+        "offline file:// with no horizontal overflow at 390/820/1440"
+      ],
+      "status": "passed",
+      "pageErrors": [],
+      "finishedAt": "2026-11-05T12:15:01.042Z"
+    },
+    "logSha256": "6215054859c73768cbffc01d4cc483e0de6da26cdf7b3cbd1223e608984b7a20",
+    "sourceIndexHtmlFieldsHashMatches": 26,
+    "oldMessierSnapshotRecordsProvenancePreserved": 59,
+    "oldManifestEntriesPreserved": 126,
+    "importCrossDateIdempotent": true,
+    "readmeScreenshotsCapturedAndViewed": true
+  },
+  "quota": {
+    "fiveHourStopUsedPercent": 50,
+    "minimumRemainingPercent": 50,
+    "quotaUnitTests": 12,
+    "automaticResumeRequiresLiveAllowance": true
+  },
+  "reviewProcess": "Two independent AGY reviews on final candidate SHA and GitHub product CI are required before merge; final review receipts are recorded in the PR.",
+  "limitations": [
+    "No public web deployment.",
+    "No real human usability participants; SCI-001/USER-001/PUB-001 remain manual.",
+    "Source-field and image-provenance checks do not constitute independent expert astronomy or rights clearance.",
+    "Frontend remains static; optional API binds loopback only."
+  ]
+}
