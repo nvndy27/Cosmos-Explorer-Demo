@@ -271,6 +271,8 @@ def build_database(payload: dict[str, Any], destination: Path, migrations: Path 
 
 def output_path(root: Path, requested: str) -> Path:
     candidate = Path(requested)
+    if candidate.suffix.lower() not in {".sqlite", ".sqlite3", ".db"}:
+        raise ValueError("--output must use .sqlite, .sqlite3 or .db to protect source files")
     if candidate.is_absolute():
         raise ValueError("--output must be relative to this worktree")
     resolved = (root / candidate).resolve()

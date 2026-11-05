@@ -56,7 +56,7 @@ python3 -m unittest discover -s scripts/tests -p 'test_database.py' -v
 
 DB được tạo tại `.automation/catalog.sqlite`, schema version 2. Builder dùng argv với shell=False, SQL tham số hóa, insert theo thứ tự ổn định, kiểm foreign_key_check/integrity_check rồi thay file nguyên tử. Nếu build lỗi, file DB trước đó được giữ nguyên. Kiểm thử xác nhận hai lần dựng cùng dữ liệu cho cùng bytes trong cùng môi trường SQLite; phiên bản SQLite khác có thể tạo định dạng file khác.
 
-Có thể tạo một bản riêng bằng `--output .automation/catalog-backup.sqlite`. Đường dẫn output phải tương đối và nằm trong repo/worktree. DB là artifact có thể dựng lại, không commit binary hoặc journal; schema và nguồn biên tập nằm trong Git. Khi lưu bản DB để kiểm toán, ghi kèm Git revision và môi trường SQLite. Migration mới dùng số liên tiếp; không sửa migration đã phát hành để đổi nghĩa âm thầm.
+Có thể tạo một bản riêng bằng `--output .automation/catalog-backup.sqlite`. Đường dẫn output phải tương đối, nằm trong repo/worktree và có đuôi .sqlite/.sqlite3/.db để tránh ghi đè nhầm mã nguồn. DB là artifact có thể dựng lại, không commit binary hoặc journal; schema và nguồn biên tập nằm trong Git. Khi lưu bản DB để kiểm toán, ghi kèm Git revision và môi trường SQLite. Migration mới dùng số liên tiếp; không sửa migration đã phát hành để đổi nghĩa âm thầm.
 
 ## Chạy API thật trên máy
 

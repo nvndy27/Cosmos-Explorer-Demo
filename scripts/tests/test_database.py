@@ -229,6 +229,12 @@ class DatabaseAndAPITest(unittest.TestCase):
                     self.assertEqual(row["source_url"], expected.get("source"))
                     self.assertEqual(row["comparable"], expected.get("comparable"))
 
+    def test_output_path_cannot_overwrite_source_or_escape_worktree(self) -> None:
+        for requested in ("README.md", "cosmos-explorer/index.html", "../outside.sqlite", "/tmp/outside.sqlite"):
+            with self.subTest(requested=requested), self.assertRaises(ValueError):
+                build_database.output_path(ROOT, requested)
+        self.assertEqual(build_database.output_path(ROOT, ".automation/catalog.sqlite"), ROOT / ".automation/catalog.sqlite")
+
     def test_server_refuses_non_loopback_host(self) -> None:
         with self.assertRaises(ValueError):
             catalog_api.make_server(self.database, "0.0.0.0", 0)

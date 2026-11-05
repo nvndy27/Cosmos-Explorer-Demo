@@ -76,3 +76,6 @@ rtk proxy systemctl --user stop cosmos-quota.service
 ```
 
 Installer với --enable cài cả timer hằng ngày và timer quota. Khi khởi động lại Orca hoặc phiên điều phối, phải nhận diện lại terminal và cập nhật binding cục bộ theo inventory mới. Không tái sử dụng handle cũ sau restart.
+
+## GitHub QA độc lập máy cá nhân
+Workflow `.github/workflows/quality.yml` chạy khi PR, push main, thủ công và lịch 02:00 UTC (09:00 Việt Nam). Job có quyền contents:read, checkout không giữ credentials, timeout 20 phút, actions pin SHA và Playwright pin phiên bản ngoài repo. Job chạy check_all.py --browser: unittest gồm DB/API, smoke/catalog và browser security/privacy/personas. Không gọi model, không đăng nhập tài khoản cá nhân, không tự sửa dữ liệu hay deploy. Main remote được bảo vệ bằng PR + check product. Lịch GitHub có thể trễ theo tải hệ thống, không phải lịch thời gian thực bảo đảm.
