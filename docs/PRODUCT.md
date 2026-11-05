@@ -37,3 +37,6 @@ Sau public: ưu tiên phản hồi tự nguyện và số lỗi; chỉ thêm ana
 
 ## Ngoài phạm vi đợt này
 Tài khoản, thanh toán, chat/cộng đồng, dữ liệu cá nhân trên server, API thiên văn thời gian thực, tự sửa số liệu theo API, Gaia 3D. Các mục này chỉ vào roadmap khi có nhu cầu và tiêu chí kiểm chứng riêng.
+
+## Nền dữ liệu và quyền riêng tư bổ sung
+Catalog biên tập được dựng thành SQLite read model với migration/FK/kiểm toàn vẹn và API đọc cục bộ. Đây là lớp truy vấn tùy chọn, frontend chưa dùng API. Không có tài khoản hoặc dữ liệu cá nhân trên server. Quyền xóa yêu thích trên thiết bị có thao tác riêng trong Hướng dẫn; chính sách ở PRIVACY.md. Chi tiết schema và nguồn dữ liệu: DATABASE.md.

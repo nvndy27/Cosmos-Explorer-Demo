@@ -39,3 +39,7 @@ Các yêu cầu F01–N06 ở trên mô tả bản 2.2, không phải bằng ch�
 | P04 | Automation hữu hạn, truy vết được | 3 Codex / 2 AGY, worktree riêng, timeout, lock, log, review cùng commit và tests; không auto deploy |
 | P05 | Người dùng thật hoàn thành việc học | Ít nhất 4/5 người thử hoàn thành ba hành trình ở PRODUCT.md; chủ dự án thu phản hồi |
 | P06 | Khoa học và tiếp cận được rà | Review nguồn/ghi công và QA thủ công trình đọc màn hình; ghi rõ phạm vi/chưa kiểm |
+
+| P07 | CSDL catalog có quan hệ | SQLite dựng tái tạo, migration/FK, raw record round-trip, đại lượng/null/nguồn/ảnh không mất nghĩa; API local chỉ đọc có kiểm thử |
+| P08 | Bảo vệ quyền riêng tư và bề mặt script | CSP, không tải font bên thứ ba, xóa yêu thích có xác nhận, storage lỗi có thông báo và QA |
+| P09 | QA tự động trên PR | Pipeline quyền tối thiểu, dependencies pin, kiểm ứng dụng/CSDL/bảo mật và báo kết quả thật |

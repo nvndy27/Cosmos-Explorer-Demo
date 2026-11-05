@@ -197,6 +197,38 @@ class DatabaseAndAPITest(unittest.TestCase):
         self.assertEqual(result["total"], 0)
         self.assertEqual(self.api("GET", "/api/objects?page_size=100")[3]["total"], 138)
 
+    def test_rebuild_is_deterministic_and_failure_preserves_previous_database(self) -> None:
+        previous = self.database.read_bytes()
+        rebuilt = Path(self.temp_dir.name) / "rebuilt.sqlite"
+        build_database.build_database(self.payload, rebuilt)
+        self.assertEqual(rebuilt.read_bytes(), previous)
+        invalid = dict(self.payload, objects=[*self.payload["objects"], self.payload["objects"][0]])
+        with self.assertRaises(ValueError):
+            build_database.build_database(invalid, self.database)
+        self.assertEqual(self.database.read_bytes(), previous)
+        self.assertEqual(list(self.database.parent.glob(".catalog.sqlite.*.tmp")), [])
+
+    def test_typed_measurements_and_sources_preserve_the_scientific_contract(self) -> None:
+        with sqlite3.connect(self.database) as connection:
+            connection.row_factory = sqlite3.Row
+            for record in self.payload["objects"]:
+                rows = connection.execute(
+                    "SELECT m.*, s.url AS source_url FROM measurements m LEFT JOIN sources s ON s.id=m.source_id WHERE object_id=?",
+                    (record["id"],),
+                ).fetchall()
+                for row in rows:
+                    expected = record["measurements"][row["metric_key"]]
+                    if expected is None:
+                        for field in ("value", "unit", "definition", "source_url", "comparable"):
+                            self.assertIsNone(row[field])
+                        continue
+                    value = expected.get("value")
+                    self.assertEqual(row["value"], None if value is None else float(value))
+                    self.assertEqual(row["unit"], expected.get("unit"))
+                    self.assertEqual(row["definition"], expected.get("definition"))
+                    self.assertEqual(row["source_url"], expected.get("source"))
+                    self.assertEqual(row["comparable"], expected.get("comparable"))
+
     def test_server_refuses_non_loopback_host(self) -> None:
         with self.assertRaises(ValueError):
             catalog_api.make_server(self.database, "0.0.0.0", 0)

@@ -12,3 +12,6 @@ Cosmos Explorer là ứng dụng tĩnh không đăng nhập, không API key và 
 - CSP không biến `innerHTML` hiện tại thành an toàn với dữ liệu không tin cậy; cần giữ catalog nội bộ được review.
 
 Tham khảo: [W3C CSP Level 3](https://www.w3.org/TR/CSP3/) (đặc biệt giới hạn `frame-ancestors` trong meta), [MDN CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP), [GitHub private vulnerability reporting](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately). GitHub private vulnerability reporting đã được bật và xác minh ngày 05/11/2026. Gửi phát hiện nhạy cảm qua [Report a vulnerability](https://github.com/nvndy27/Cosmos-Explorer-Demo/security/advisories/new). Nếu kênh này không còn khả dụng, hỏi chủ repo qua kênh riêng đã biết; không công khai chi tiết khai thác.
+
+## API catalog tùy chọn
+SQLite/API chỉ chứa danh mục thiên văn đã biên tập, không dữ liệu tài khoản hay yêu thích. API mở DB read-only, chỉ bind loopback và dùng SQL có tham số, phân trang có giới hạn. Đây là công cụ đọc cục bộ, chưa phải dịch vụ production hoặc biên giới xác thực. Giao diện chưa gọi API; không đưa response thô vào innerHTML. Xem DATABASE.md để dựng và kiểm tra.

@@ -37,6 +37,8 @@ Giáo viên có thể dùng bộ sưu tập Hành tinh đá, Hành tinh khổng 
 
 Sơ đồ Canvas là minh họa khám phá, kích thước và khoảng cách không theo tỷ lệ thực. Ảnh quan sát, tái dựng từ dữ liệu và minh họa nghệ thuật có nhãn riêng. Giá trị thiếu không được thay bằng 0; bán kính trung bình và bán kính quá cảnh không bị gộp để tạo biểu đồ.
 
+Danh mục cũng có thể dựng thành CSDL SQLite với quan hệ hồ sơ, bí danh, đại lượng, nguồn và ảnh, kèm API JSON chỉ đọc để truy vấn cục bộ. [Schema, cách dựng và chạy CSDL](docs/DATABASE.md) giải thích rõ luồng dữ liệu; giao diện hiện vẫn dùng bản catalog tĩnh để hoạt động ngoại tuyến.
+
 ## Dữ liệu của bạn
 
 Bản hiện tại không yêu cầu tên, email hoặc mật khẩu. Yêu thích được lưu trong trình duyệt trên thiết bị đang dùng, chưa đồng bộ giữa các máy. Bạn có thể mở **Hướng dẫn (?) → Xóa mục đã lưu trên thiết bị** để xóa yêu thích sau khi xác nhận; hoặc xóa dữ liệu trang trong cài đặt trình duyệt. Khi mở từ file cục bộ, liên kết sao chép chỉ là đường dẫn trên máy bạn; người nhận cần bản tải về tương ứng. Mở nguồn khoa học bên ngoài sẽ đưa bạn đến website của đơn vị cung cấp nguồn.

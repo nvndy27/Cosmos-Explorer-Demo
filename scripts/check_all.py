@@ -17,6 +17,7 @@ def commands(browser=False):
                ["node", "--check", "scripts/check_security.cjs"],
                ["node", "--check", "scripts/check_personas.cjs"],
                ["node", "--check", "scripts/check_privacy.cjs"],
+               ["node", "--check", "scripts/export_catalog.cjs"],
                ["python3", "-m", "unittest", "discover", "-s", "scripts/tests"],
                ["node", "cosmos-explorer/tests/smoke.cjs"],
                ["node", "scripts/validate_catalog.cjs"]]
