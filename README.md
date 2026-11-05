@@ -11,3 +11,7 @@ Mở [cosmos-explorer/index.html](cosmos-explorer/index.html) trực tiếp bằ
 [Định nghĩa sản phẩm](docs/PRODUCT.md) · [Roadmap mới](docs/ROADMAP.md) · [Quy tắc làm việc](docs/WORK_RULES.md) · [Vận hành 3 Codex + 2 AGY](docs/AUTOMATION.md) · [Backlog](automation/backlog.json)
 
 Kiểm tra tổng hợp: `rtk proxy python3 scripts/check_all.py`. Automation: `rtk proxy python3 scripts/automation.py status`. Chưa triển khai công khai.
+
+[Hướng dẫn học sinh/giáo viên](docs/USER_GUIDE.md) · [Kiểm kê nội dung](docs/CONTENT_AUDIT.md) · [Phát hành và quay lui](docs/RELEASE.md) · [Báo cáo automation 05/11/2026](docs/qa/automation-2026-11-05.json)
+
+Automation đã kiểm chứng qua systemd user: 3 Codex + 2 AGY, 09:00 giờ Việt Nam mỗi ngày. Khi hết backlog ready chỉ chạy kiểm tra sức khỏe. Trạng thái và cách tạm dừng ở docs/AUTOMATION.md. Bản public vẫn chờ các cổng nghiệm thu trong roadmap.

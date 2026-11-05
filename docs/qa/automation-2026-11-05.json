@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-05",
+  "product_version": "2.2",
+  "public_deployed": false,
+  "configuration": {
+    "codex_workers": 3,
+    "agy_reviewers": 2,
+    "schedule": "09:00 Asia/Ho_Chi_Minh daily",
+    "scheduler": "systemd user",
+    "next_run": "2026-11-06T09:00:00+07:00"
+  },
+  "completed_tasks": [
+    "OPS-001",
+    "QA-001",
+    "OPS-002",
+    "DOC-001",
+    "AUDIT-001",
+    "QA-002"
+  ],
+  "runs": [
+    {
+      "id": "20261105-115041-121541-recovery2",
+      "commit": "83ee3b9330f7be09db35e6f0bd19fef93e65af3a",
+      "status": "integrated",
+      "agy_verdicts": [
+        "approve",
+        "approve"
+      ],
+      "mode": "coordinator recovery after initial QA/CLI adapter fixes",
+      "local_evidence": ".automation/runs/20261105-115041-121541-recovery2/report.json"
+    },
+    {
+      "id": "20261105-120318-636625",
+      "commit": "85e9e046cfceb986710c226640d2a1bdbcf668c6",
+      "status": "integrated",
+      "agy_verdicts": [
+        "approve",
+        "approve"
+      ],
+      "mode": "complete systemd service cycle",
+      "local_evidence": ".automation/runs/20261105-120318-636625/report.json"
+    }
+  ],
+  "checks": {
+    "python_unittests": 7,
+    "smoke_groups": 14,
+    "records": 138,
+    "local_images_hash_verified": 126,
+    "package_checksums_verified": 146,
+    "package_reproducible": true,
+    "chrome_viewports": [
+      390,
+      820,
+      1440
+    ],
+    "file_offline": true,
+    "local_http": true,
+    "real_https_hosting": false
+  },
+  "release": {
+    "file": "dist/cosmos-explorer-release.zip",
+    "sha256": "6fbc2c3b34c5aade0e056ec3a8cc2590fe378999205bac0848f5be4eb0f77f53",
+    "images": 126,
+    "verified_manifest_entries": 146,
+    "reproducible": true
+  },
+  "remaining_manual_gates": [
+    "UX decisions and implementation scope",
+    "independent scientific and image rights review",
+    "5 real user trials and screen reader / Firefox / Safari QA",
+    "hosting selection, HTTPS validation, rollback rehearsal and explicit public deployment request"
+  ],
+  "resolved_setup_issues": [
+    "legacy browser QA wrote into historical tracked screenshots; now uses temporary output and real execution date",
+    "HTTP test waited on hidden collection link; now reveals collection and opens hash in fresh context",
+    "AGY headless command permission denied; now reviews supplied code/diff/gate evidence without tools",
+    "AGY diagnostic on stderr polluted JSON parsing; stdout and stderr now captured separately, with regression test"
+  ]
+}

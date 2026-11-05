@@ -4,9 +4,9 @@ Cập nhật: 2026-11-05. Mốc là thứ tự ưu tiên theo cổng nghiệm th
 
 | Giai đoạn | Kết quả | Chủ trì | Cổng hoàn thành | Trạng thái |
 |---|---|---|---|---|
-| P0 — nền vận hành | Product, rule, backlog, Git, 3 Codex + 2 AGY, lịch chạy và báo cáo | Điều phối | Một đợt CLI thật có báo cáo; timer hoạt động; thất bại giữ thay đổi riêng | Đã chạy và được hai AGY duyệt; đang xác nhận service |
-| P1 — sẵn sàng beta | QA HTTPS/file, đóng gói, hướng dẫn phát hành/quay lui, sửa lỗi chặn | Codex nền tảng + QA | Tests tự động đạt; QA browser 3 kích thước và kiểm tra tay được ghi | Chưa nghiệm thu |
-| P2 — trải nghiệm học | Liên kết chia sẻ, hướng dẫn người mới, luồng giáo viên và bộ sưu tập có mục tiêu học | Codex sản phẩm | 4/5 người thử hoàn thành 3 hành trình trong PRODUCT.md | Chưa bắt đầu |
+| P0 — nền vận hành | Product, rule, backlog, Git, 3 Codex + 2 AGY, lịch chạy và báo cáo | Điều phối | Một đợt CLI thật có báo cáo; timer hoạt động; thất bại giữ thay đổi riêng | Đã đạt — service chạy thành công 2026-11-05 |
+| P1 — sẵn sàng beta | QA HTTPS/file, đóng gói, hướng dẫn phát hành/quay lui, sửa lỗi chặn | Codex nền tảng + QA | Tests tự động đạt; QA browser 3 kích thước và kiểm tra tay được ghi | Đã có QA HTTP, gói và hướng dẫn; còn QA thủ công/HTTPS |
+| P2 — trải nghiệm học | Liên kết chia sẻ, hướng dẫn người mới, luồng giáo viên và bộ sưu tập có mục tiêu học | Codex sản phẩm | 4/5 người thử hoàn thành 3 hành trình trong PRODUCT.md | Đã có hướng dẫn; còn UX và thử người dùng |
 | P3 — public 1 | Hosting HTTPS, metadata, trang thông tin/ghi công, kênh báo lỗi | Chủ dự án + vận hành | Chủ dự án chọn hosting và yêu cầu deploy; kiểm tra URL thật, rollback đã thử | Chưa bắt đầu |
 | P4 — duy trì | Triaging lỗi, rà nguồn, hiệu năng, tiếp cận, phát hành định kỳ | Cả đội | Báo cáo hàng tuần, không lỗi nghiêm trọng mở, bản phát hành có bằng chứng | Liên tục sau beta |
 | P5 — mở rộng có căn cứ | Chuẩn hóa đại lượng còn thiếu, lộ trình học bổ sung | Biên tập + QA | Đọc nguồn gốc, review người có chuyên môn, kiểm tra provenance | Chưa bắt đầu |
@@ -23,3 +23,7 @@ Nguồn máy đọc: automation/backlog.json. Mỗi việc có ID, tiêu chí qu
 
 ## Để sau
 Gaia 3D chỉ triển khai khi có phép biến đổi tọa độ được kiểm chứng, dữ liệu/sai số rõ và phương án hiệu năng. Tài khoản/đồng bộ chỉ triển khai nếu thử nghiệm cho thấy cần thiết; kiến trúc hiện tại đã phù hợp nhiều lượt truy cập độc lập.
+
+## Bằng chứng thiết lập 2026-11-05
+
+Đã hoàn thành OPS-001, QA-001, OPS-002, DOC-001, AUDIT-001, QA-002. Đợt service `20261105-120318-636625` chạy trọn 3 Codex → gates → 2 AGY approve → gates → fast-forward; systemd Result=success. Xem [báo cáo](qa/automation-2026-11-05.json). Backlog hiện hết việc ready; timer tiếp tục kiểm tra sức khỏe, chưa tự chạy các mục manual. Chủ dự án duyệt scope UX, bố trí rà khoa học/thử người dùng và chọn hosting trước khi mở các cổng tiếp theo.

@@ -61,3 +61,16 @@ Chưa chạy Firefox/Safari hay trình đọc màn hình thực; chưa có pipel
 `check_exoplanet_images.cjs` chạy Chrome ở context mới offline/file://: giải mã và kiểm tra nhãn đủ 37 hình trong hồ sơ, Kepler trong thư viện ở 390/820/1440 px, không tràn trang, bộ lọc không nhầm minh họa thành quan sát, và ảnh minh họa lỗi chuyển về đồ họa dự phòng. [Báo cáo](qa/exoplanet-images/report.json), [Kepler desktop](qa/exoplanet-images/library-kepler-1440.png), [Kepler mobile](qa/exoplanet-images/kepler-390.png). Chạy lại bằng Playwright bên ngoài repo như browser QA, thay tên script bằng `scripts/check_exoplanet_images.cjs`.
 
 Khôi phục thử file Kepler-22 b bị thiếu bằng `cache_images.py` từ manifest: tải lại/đổi định dạng và SHA-256 trùng hoàn toàn.
+
+## Kiểm chứng vận hành mới — 2026-11-05
+
+- Chạy lại cú pháp sáu JS, 14 nhóm smoke, validator 138 hồ sơ/126 hash ảnh; đạt.
+- Thêm 7 unittest: phụ thuộc/tác vụ bị giữ, phạm vi bảo vệ, trùng quyền sửa file, JSON AGY/approval mâu thuẫn, tách cảnh báo stderr, timeout và kiểm thử gói từ phía người tải. Đạt trên bản tích hợp.
+- Chrome thật qua `check_browser.cjs`, `check_exoplanet_images.cjs` và `check_http.cjs`: đạt ở 390/820/1440 px; file:// ngoại tuyến, giải mã ảnh/nhãn, ảnh lỗi, bàn phím theo script, giảm chuyển động, storage hỏng và HTTP localhost/hash link context mới. HTTP localhost không chứng minh hosting HTTPS.
+- Đã xem ảnh sơ đồ 390, thư viện 820 và so sánh 1440 của lần chạy này. Các ảnh lazy ngoài viewport chưa tải trong full-page screenshot không được coi là ảnh lỗi; kiểm tra giải mã riêng đạt 126 ảnh.
+- ZIP dựng hai lần cùng SHA-256, 146 entry checksum khớp, đủ 126 ảnh. Không thay dữ liệu khoa học hoặc giao diện ứng dụng trong đợt này.
+- Service systemd thực hoàn tất với Result=success, hai AGY approve cùng commit `85e9e046cfceb986710c226640d2a1bdbcf668c6`, kiểm tra sau review đạt và main fast-forward. Timer đang enabled, lịch 09:00 Asia/Ho_Chi_Minh.
+
+[Báo cáo bền trong repo](qa/automation-2026-11-05.json). Log/prompt/review chi tiết lưu cục bộ trong `.automation/runs/`; chúng không được đưa vào Git/gói phát hành. Script ảnh ngoại hành tinh hiện ghi vào thư mục tạm mới và dùng ngày chạy thật, giữ nguyên bằng chứng lịch sử trong docs/qa.
+
+Chưa chạy lại Firefox/Safari hoặc trình đọc màn hình thực, chưa thử 5 người, HTTPS/hosting thật hay rollback public. Storage bị cấm hoàn toàn vẫn cần QA browser thủ công riêng; không đồng nhất với kiểm tra JSON storage hỏng. Hai AGY không thay kiểm định thiên văn chuyên gia.
