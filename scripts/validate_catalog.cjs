@@ -12,4 +12,19 @@ for(const o of photos){assert(o.credit&&o.imageSource&&o.photoCaption,o.id);cons
 const messierProvenance=new Map(messier.provenance.map(p=>[p.id,p]));for(const id of inventory.newIds){const o=data.find(r=>r.id===id),p=messierProvenance.get(id),image=manifest.find(r=>r.id===id);assert(o.source?.startsWith('https://'),id+' source URL');assert(o.references?.some(([,url])=>url===o.source),id+' source citation');assert(o.reviewed,id+' reviewed date');assert(p&&/^https:\/\/science\.nasa\.gov\//.test(p.url),id+' NASA provenance');assert.equal(p.url,o.source,id+' provenance URL');assert(/^\d{4}-\d{2}-\d{2}$/.test(p.retrieved),id+' retrieved date');assert(/^[a-f0-9]{64}$/.test(p.sha256),id+' source hash');assert(p.fields&&Object.keys(p.fields).length,id+' extracted provenance fields');assert(p.imageOriginal?.startsWith('https://'),id+' original image provenance');assert(p.imageDownloaded?.startsWith('https://'),id+' downloaded image provenance');assert.equal(p.credit,o.credit,id+' provenance credit');assert.equal(o.imageSource,o.source,id+' image source attribution URL');assert(image&&image.file===o.image&&image.credit===o.credit,id+' image manifest attribution');assert(image.sha256===crypto.createHash('sha256').update(fs.readFileSync(path.join(root,o.image))).digest('hex'),id+' image manifest hash')}
 const exoImages=JSON.parse(fs.readFileSync(path.join(root,'data/exoplanet-image-snapshot.json')));assert.equal(Object.keys(exoImages.patches).length,37);for(const o of data.filter(o=>o.classification==='exoplanet')){assert(o.image&&o.imageSource&&o.imageReviewed,o.id);assert.equal(o.imageKind,o.id==='exo-bet-pic-b'?'observation':'illustration');if(o.imageScope==='generic')assert.match(o.photoCaption,/đại diện chung/)}
 assert.equal(data.filter(o=>o.classification==='planet').length,8);assert.equal(data.filter(o=>o.system==='TRAPPIST-1').length,7);
+// Compare displayed source strings to raw provenance without inventing numeric measurements.
+for(const id of inventory.newIds){
+ const raw=messier.records.find(o=>o.id===id),p=messierProvenance.get(id);
+ assert.deepEqual(Object.keys(p.fields).sort(),['apparent magnitude','constellation','distance','object type']);
+ assert.equal(raw.stats[0][1],p.fields.distance.replace(/light-years|light years/g,'năm ánh sáng'),id+' distance text');
+ assert.equal(raw.stats[1][1],p.fields['apparent magnitude'],id+' apparent magnitude');
+ assert.equal(raw.stats[2][1],p.fields.constellation,id+' constellation');
+ assert.equal(raw.stats[3][1],p.fields['object type'],id+' NASA type');
+}
+// Semantic regressions from the NASA pages read for this expansion.
+const m24=data.find(o=>o.id==='messier-24');assert.equal(m24.classification,'field');assert.equal(m24.level,'deep');assert.equal(m24.small,'Đám mây sao');
+for(const id of ['messier-45','messier-46'])assert.equal(data.find(o=>o.id===id).classification,'cluster',id);
+assert.match(data.find(o=>o.id==='messier-45').photoCaption,/Merope/);
+assert.match(data.find(o=>o.id==='messier-46').photoCaption,/NGC\s*2438/);
+for(const id of inventory.newIds){const o=data.find(o=>o.id===id);assert.equal(o.sourceNote,'',id+' should use original editorial text');assert.equal(o.imageKind,'observation',id);assert(o.classification&&o.intro&&o.features?.length&&o.discovery,id+' editorial metadata');for(const value of Object.values(o.measurements))assert.equal(value,null,id+' unnormalized measurements must stay null')}
 console.log(`PASS: ${inventory.expectedCount} unique profiles (138 preserved + 26 Messier), 152 local images with attribution, source provenance, and verified hashes.`);
