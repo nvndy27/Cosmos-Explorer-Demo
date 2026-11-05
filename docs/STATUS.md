@@ -1,0 +1,19 @@
+# Trạng thái sản phẩm — 2026-11-05
+
+Cosmos Explorer 2.2 đang ở giai đoạn chuẩn bị beta: nền vận hành P0 đã đạt; phần kỹ thuật tự động của P1 và tính năng chia sẻ/hướng dẫn trong P2 đã có bằng chứng. Chưa đạt toàn bộ P1/P2 vì QA thủ công và thử người dùng còn thiếu. P3 phát hành public chưa bắt đầu.
+
+## Đã có bằng chứng
+- 138 hồ sơ, 126 ảnh có manifest/hash, web tĩnh và file:// ngoại tuyến.
+- Tìm không dấu, thư viện, so sánh 2–4 hồ sơ, lưu cục bộ, copy link và cảnh báo đường dẫn file cục bộ.
+- Commit ứng dụng `010ec39fe9e00ff6c997d4c50424070370042cc4`: 18 unit tests, 14 smoke, catalog validator, Chrome 390/820/1440, HTTP/HTTPS loopback, storage fault injection và share QA đạt; hai AGY duyệt cùng SHA. [Bằng chứng](qa/ux-share-2026-11-05.json).
+- 3 Codex (gồm điều phối) + 2 AGY đã làm trên các terminal sẵn có; automation ngày 09:00, giữ 10% quota và theo dõi reset trên máy. Máy/phiên phải hoạt động để timer chạy.
+- Mã nguồn đã lên GitHub private; chưa có URL website công khai.
+
+## Cổng còn mở
+| Issue | Việc cần làm | Điều kiện hoàn thành |
+|---|---|---|
+| [SCI-001 / #2](https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/2) | Người có chuyên môn rà nguồn và quyền ảnh | Ghi người rà, phạm vi, sai khác và kết luận |
+| [USER-001 / #3](https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/3) | 5 người dùng thật, screen reader, Firefox/Safari | Ít nhất 4/5 hoàn thành 3 hành trình; QA thủ công có bằng chứng |
+| [PUB-001 / #4](https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/4) | Hosting/domain, deploy và rollback | Hai cổng trên đạt, chủ dự án yêu cầu deploy, URL HTTPS thật và rollback được kiểm |
+
+HTTPS self-signed trên loopback không xác minh hosting/TLS công khai. Kiểm tra tự động không thay người thử hoặc chuyên gia khoa học. Website tĩnh có thể phục vụ nhiều người độc lập khi được host; chưa có thử tải trên hosting thật để hứa số người đồng thời.

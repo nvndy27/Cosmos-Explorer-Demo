@@ -55,7 +55,8 @@
       "depends_on": [],
       "allowed_paths": [],
       "title": "Rà khoa học và quyền sử dụng ảnh",
-      "acceptance": "Chủ dự án bố trí người rà; kiểm đối chiếu nguồn gốc, ngày và các đại lượng chưa chuẩn hóa. Không coi 2 AGY là chuyên gia thiên văn."
+      "acceptance": "Chủ dự án bố trí người rà; kiểm đối chiếu nguồn gốc, ngày và các đại lượng chưa chuẩn hóa. Không coi 2 AGY là chuyên gia thiên văn.",
+      "github_issue": "https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/2"
     },
     {
       "id": "USER-001",
@@ -68,7 +69,8 @@
       ],
       "allowed_paths": [],
       "title": "Thử nghiệm 5 người và kiểm tra tiếp cận thủ công",
-      "acceptance": "Chủ dự án tuyển người đồng ý, ghi 3 hành trình, bàn phím/trình đọc màn hình, Firefox/Safari; không tự liên hệ. Mục tiêu 4/5 hoàn thành."
+      "acceptance": "Chủ dự án tuyển người đồng ý, ghi 3 hành trình, bàn phím/trình đọc màn hình, Firefox/Safari; không tự liên hệ. Mục tiêu 4/5 hoàn thành.",
+      "github_issue": "https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/3"
     },
     {
       "id": "PUB-001",
@@ -80,7 +82,8 @@
       ],
       "allowed_paths": [],
       "title": "Phát hành web HTTPS",
-      "acceptance": "Chủ dự án chọn hosting/domain và yêu cầu deploy rõ; kiểm URL thật, cache, metadata, rollback. Không tự publish."
+      "acceptance": "Chủ dự án chọn hosting/domain và yêu cầu deploy rõ; kiểm URL thật, cache, metadata, rollback. Không tự publish.",
+      "github_issue": "https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/4"
     },
     {
       "id": "DOC-001",

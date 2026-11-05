@@ -27,3 +27,6 @@ allowed_paths được kiểm sau chạy, là cổng nghiệm thu, không phải
 Bắt buộc chạy scripts/check_all.py. Browser QA thực bắt buộc trong đợt tự tích hợp; nếu thiếu Playwright/Chrome thì dừng, không tự hạ cổng. Không sửa test/count để che hồi quy. Snapshot/ảnh/khoa học, AGENTS và bộ điều phối được bảo vệ khỏi tác vụ tự động trừ thay đổi do người điều phối thực hiện có review riêng.
 
 Lỗi sản phẩm nghiêm trọng: giữ bản ổn định, chặn release, tái hiện rồi sửa; rollback public theo RELEASE.md sau khi chủ dự án yêu cầu. Lỗi quota/auth/CLI: ghi log và dừng đợt; không đổi model, tài khoản hay quyền để né lỗi. Timer chạy khi phiên user/máy hoạt động; không hứa chạy 24/7 trên máy ngủ.
+
+## Quy trình remote sau lần push khởi tạo
+Branch/commit/issue/PR tuân theo [GIT_WORKFLOW.md](GIT_WORKFLOW.md). Main remote chỉ cập nhật qua PR có review; timer hiện chỉ tích hợp cục bộ, không tự push.

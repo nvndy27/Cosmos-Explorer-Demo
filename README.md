@@ -17,3 +17,6 @@ Kiểm tra tổng hợp: `rtk proxy python3 scripts/check_all.py`. Automation: `
 Automation đã kiểm chứng qua systemd user: 3 Codex + 2 AGY, 09:00 giờ Việt Nam mỗi ngày. Khi hết backlog ready chỉ chạy kiểm tra sức khỏe. Trạng thái và cách tạm dừng ở docs/AUTOMATION.md. Bản public vẫn chờ các cổng nghiệm thu trong roadmap.
 
 Theo dõi quota đã bật: giữ ít nhất 10% cửa sổ Codex 5 giờ, kiểm tra mỗi 2 phút và gửi tiếp vào đúng phiên điều phối đang mở sau khi backend xác nhận hạn mức hồi lại. [Báo cáo storage/HTTPS/quota](docs/qa/live-storage-quota-2026-11-05.json) · [Chính sách và cách dừng](docs/AUTOMATION.md).
+
+## Phối hợp trên GitHub
+[Trạng thái sản phẩm](docs/STATUS.md) · [Quy tắc branch/commit/issue/PR](docs/GIT_WORKFLOW.md) · [Đóng góp](CONTRIBUTING.md)

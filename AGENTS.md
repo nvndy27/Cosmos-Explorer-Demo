@@ -34,3 +34,6 @@ Không triển khai công khai hoặc gửi tin nhắn cho bên thứ ba nếu c
 
 ## Giữ hạn mức Codex theo yêu cầu chủ dự án
 Trước mỗi lượt giao việc Codex mới chạy `rtk proxy python3 scripts/quota_guard.py check`. Còn <=10% cửa sổ 5 giờ hoặc không đọc được hạn mức thì giữ checkpoint và không giao việc mới; mã thoát 75 nghĩa là đang chờ. Để bộ theo dõi systemd đọc lại hạn mức và gửi tiếp vào phiên điều phối sau reset khi còn >10%. Không dùng reset credit, không đổi tài khoản/model hay mua thêm để né ngưỡng. Các lượt đang chạy kết thúc ở checkpoint an toàn, không bảo đảm chặn đúng từng phần trăm khi nhiều CLI dùng chung tài khoản. Không tự biến các việc SCI/USER/PUB cần con người thành việc tự động.
+
+## GitHub và truy vết công việc
+Đọc docs/GIT_WORKFLOW.md trước khi giao việc hoặc thao tác Git. Một tác vụ có issue, branch theo issue và tiêu chí nghiệm thu; coordinator quản lý commit/push/PR, hai AGY review cùng SHA trước khi merge. Worker không tự thao tác Git. Trạng thái sản phẩm: docs/STATUS.md.
