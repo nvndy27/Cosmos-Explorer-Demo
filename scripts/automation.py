@@ -119,7 +119,7 @@ Thực hiện công việc và kiểm tra cần thiết. Kết thúc báo cáo t
 đã thay gì, lệnh kiểm tra thật, kết quả, giới hạn còn lại.
 '''
     (folder / f'{name}-prompt.txt').write_text(prompt)
-    run(['codex', 'exec', '--sandbox', 'workspace-write', '--color', 'never',
+    run(['codex', '--no-daemon', 'exec', '--sandbox', 'workspace-write', '--color', 'never',
          '--output-last-message', str(folder / f'{name}-report.md'), prompt],
         cwd=work, log=folder / f'{name}.log', timeout=config['worker_timeout_seconds'])
     changed = verify_scope(work, base, task['allowed_paths'])
