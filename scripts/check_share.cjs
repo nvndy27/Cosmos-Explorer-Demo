@@ -34,7 +34,7 @@ async function shareButton(page){
   await page.keyboard.press('Tab');
   assert.equal(await page.evaluate(()=>document.activeElement?.id),'copyProfileLink','Tab/focus phải tới nút chia sẻ');
   await page.keyboard.press('Enter');
-  assert.equal((await page.locator('#uiNotice').textContent()).trim(),'Đã sao chép liên kết hồ sơ.','phải báo đã sao chép qua vùng trạng thái');
+  await page.waitForFunction(() => document.querySelector('#uiNotice')?.textContent?.trim() === 'Đã sao chép liên kết hồ sơ.', null, { timeout: 5000 });
 }
 async function run(){
   const report={task:'QA-005 share links',timestamp:new Date().toISOString(),cwd:process.cwd(),artifactDir:artifacts,selector:'#copyProfileLink',selectorConnection:'Dùng selector đề xuất; nếu implementation đổi selector, coordinator cần nối selector tại helper shareButton.',checks:[],limitation:'Loopback HTTP và file:// offline không kiểm chứng TLS, chứng chỉ hoặc hosting công khai.'};
