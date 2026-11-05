@@ -27,16 +27,17 @@ function createServer() {
 }
 function listen(server){return new Promise((resolve,reject)=>{server.once('error',reject);server.listen(0,'127.0.0.1',resolve);});}
 async function shareButton(page){
-  const button=page.locator('#shareProfile');
+  const button=page.locator('#copyProfileLink');
   await button.waitFor({state:'visible'});
   await button.focus();
   await page.keyboard.press('Shift+Tab');
   await page.keyboard.press('Tab');
-  assert.equal(await page.evaluate(()=>document.activeElement?.id),'shareProfile','Tab/focus phải tới nút chia sẻ');
+  assert.equal(await page.evaluate(()=>document.activeElement?.id),'copyProfileLink','Tab/focus phải tới nút chia sẻ');
   await page.keyboard.press('Enter');
+  assert.equal((await page.locator('#uiNotice').textContent()).trim(),'Đã sao chép liên kết hồ sơ.','phải báo đã sao chép qua vùng trạng thái');
 }
 async function run(){
-  const report={task:'QA-005 share links',timestamp:new Date().toISOString(),cwd:process.cwd(),artifactDir:artifacts,selector:'#shareProfile',selectorConnection:'Dùng selector đề xuất; nếu implementation đổi selector, coordinator cần nối selector tại helper shareButton.',checks:[],limitation:'Loopback HTTP và file:// offline không kiểm chứng TLS, chứng chỉ hoặc hosting công khai.'};
+  const report={task:'QA-005 share links',timestamp:new Date().toISOString(),cwd:process.cwd(),artifactDir:artifacts,selector:'#copyProfileLink',selectorConnection:'Dùng selector đề xuất; nếu implementation đổi selector, coordinator cần nối selector tại helper shareButton.',checks:[],limitation:'Loopback HTTP và file:// offline không kiểm chứng TLS, chứng chỉ hoặc hosting công khai.'};
   let browser,server;
   try{
     browser=await chromium.launch({executablePath:process.env.COSMOS_CHROME||'/usr/bin/google-chrome',headless:true,args:['--no-sandbox']});
@@ -45,11 +46,11 @@ async function run(){
     const page=await httpContext.newPage();page.on('pageerror',e=>pageErrors.push(e.message));
     server=createServer();await listen(server);const addr=server.address();assert(addr&&typeof addr==='object');
     const base=`http://127.0.0.1:${addr.port}/`;
-    await page.goto(base+'#earth',{waitUntil:'networkidle'});
+    await page.goto(base+'?lesson=share#earth',{waitUntil:'networkidle'});
     assert.equal(await page.locator('#objectName').textContent(),'Trái Đất');
     await shareButton(page);
     const copied=await page.evaluate(()=>navigator.clipboard.readText());
-    assert.equal(copied,base+'#earth','Clipboard cần đúng URL/hash hồ sơ');report.checks.push('localhost Clipboard API copied #earth URL');
+    assert.equal(copied,base+'?lesson=share#earth','Clipboard cần giữ query và đúng hash hồ sơ');report.checks.push('localhost Clipboard API retained query and copied the exact #earth URL');
 
     const linked=await browser.newContext();const linkedPage=await linked.newPage();linkedPage.on('pageerror',e=>pageErrors.push(e.message));
     await linkedPage.goto(copied,{waitUntil:'networkidle'});assert.equal(await linkedPage.locator('#objectName').textContent(),'Trái Đất');

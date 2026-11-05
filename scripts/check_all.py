@@ -12,6 +12,7 @@ def commands(browser=False):
               ("app", "catalog", "scene", "catalog-expanded", "explorer-model", "explorer-ui")]
     result += [["node", "--check", "scripts/check_http.cjs"],
                ["node", "--check", "scripts/check_storage.cjs"],
+               ["node", "--check", "scripts/check_share.cjs"],
                ["python3", "-m", "unittest", "discover", "-s", "scripts/tests"],
                ["node", "cosmos-explorer/tests/smoke.cjs"],
                ["node", "scripts/validate_catalog.cjs"]]
@@ -19,7 +20,8 @@ def commands(browser=False):
         result += [["node", "scripts/check_browser.cjs"],
                    ["node", "scripts/check_exoplanet_images.cjs"],
                    ["node", "scripts/check_http.cjs"],
-                   ["node", "scripts/check_storage.cjs"]]
+                   ["node", "scripts/check_storage.cjs"],
+                   ["node", "scripts/check_share.cjs"]]
     return result
 
 def main():
