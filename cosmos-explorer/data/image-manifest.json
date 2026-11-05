@@ -1771,6 +1771,474 @@
         "format": "WEBP",
         "quality": 87
       }
+    },
+    {
+      "id": "messier-22",
+      "file": "assets/observations/messier-22.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1514a-jpg.webp?w=2005",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-22/",
+      "credit": "ESA/Hubble & NASA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble tập trung vào phần trung tâm M22. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "c148e940f888b04cdcec627d9ee732192a2a6ee86e62cc7ea8583b4779dcf9bd",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-24",
+      "file": "assets/observations/messier-24.webp",
+      "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/star-cloud/Hubble_M24_1_flat_FINAL_A_rot90.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-24/",
+      "credit": "NASA, ESA, and R. Sahai (Jet Propulsion Laboratory); Processing: Gladys Kober (NASA/Catholic University of America)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh chỉ bao quát một phần nhỏ Đám mây sao Sagittarius. Đây là trường sao nhìn qua khoảng trống giữa các đám mây bụi về phía cánh tay Sagittarius, không phải một cụm sao riêng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "728f7dbcb8a331d6656bcf34a3734cfb659e252875e0a3b89dd91eccc11d250d",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-28",
+      "file": "assets/observations/messier-28.webp",
+      "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M28_potw1910a.tif?w=900&h=900&fit=clip",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-28/",
+      "credit": "ESA/Hubble & NASA, J. E. Grindlay et al.",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "26907d9cba26d7f960043e18ba69f15b00118c29f05edc3b06dd97f6721e40f5",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-30",
+      "file": "assets/observations/messier-30.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/heic0918a-jpg.webp?w=1999",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-30/",
+      "credit": "NASA, ESA/Hubble",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "e0ef37aded54a2be84f0dfb8e16e2b93896d00d52221c4860fbb758ace127a26",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-35",
+      "file": "assets/observations/messier-35.webp",
+      "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/open-clusters/Hubble_M35_WFPC2ok_flat_FINAL1.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-35/",
+      "credit": "NASA, ESA, and E. Nelan (Space Telescope Science Institute), A. Riess (The Johns Hopkins University), J. Rhodes (Jet Propulsion Laboratory) ; Processing: Gladys Kober (NASA/Catholic University of America)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh ghi lại một số sao trong cụm mở M35, không phải toàn bộ cụm. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "c32a49fe723c20cfe0deba5ce43909c791bfbe04c6236b88c288309f4f6bc8a3",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-43",
+      "file": "assets/observations/messier-43.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/heic0601c-jpg.webp?w=2048",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-43/",
+      "credit": "NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble dùng ánh sáng khả kiến và hồng ngoại để ghi vùng tinh vân M43. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "4775953db99e54d78937bea4e39acec83b395c2a8bb08ef2a156587d9c25406e",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-44",
+      "file": "assets/observations/messier-44.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2024/02/m44-acs-1-color-2-final.jpg?w=2019",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44/",
+      "credit": "NASA, ESA, and S. Lilly (Eidgenossiche Technische Hochschule) and DECam/CTIO/NOIRLabProcessing/NSF/AURA; Processing: Gladys Kober (NASA/Catholic University of America)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh nhìn qua rìa tây nam của M44, gồm sao trong cụm và các thiên hà nền; không thể hiện toàn cụm. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "b2068fbbf39cd06a92886fe3ef9fb3213651e22a94431b0f87ffb40bd7b662a5",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-45",
+      "file": "assets/observations/messier-45.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/interstellar_cloud_in_pleiades-jpg.webp?w=1824",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45/",
+      "credit": "NASA and the Hubble Heritage Team (STScI/AURA); Acknowledgment: George Herbig and Theodore Simon (Institute for Astronomy, University of Hawaii)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh chỉ cho thấy vùng tinh vân phản xạ gần sao Merope, không phải toàn bộ cụm sao Pleiades. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "2941906830d6dfa07b6afd80d9e70687df69bc622e8cf6f3411a9c06738af10d",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-46",
+      "file": "assets/observations/messier-46.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/hubble_ngc2438_wfpc2_screen_3mb.png?w=1077",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-46/",
+      "credit": "NASA, ESA, K. Knoll (NASA Goddard), and S. Öttl (Leopold Franzens Universität Innsbruck), et. al.; Processing: Gladys Kober (NASA/Catholic University of America)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh làm nổi bật tinh vân hành tinh NGC 2438 ở tiền cảnh; phần lớn sao phía sau thuộc M46. Tinh vân không phải thành viên của cụm và không dùng khoảng cách 5.400 năm ánh sáng của M46 cho tinh vân. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "9fbf59c14f4948f51e4f43f35ef85d207c5178dde2cc2a1c9ca6fac26fa26de1",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-48",
+      "file": "assets/observations/messier-48.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2024/08/hubble-m48-1-flat-final-2.jpg?w=2048",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-48/",
+      "credit": "NASA, ESA, A. Riess (The Johns Hopkins University): Processing: Gladys Kober (NASA/Catholic University of America)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble ghi lại một phần của cụm mở M48, không phải toàn bộ cụm. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "5deb664f83aef15bd29c9142f58118a6614090c75b356821f2899a6522ef8690",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-53",
+      "file": "assets/observations/messier-53.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1140a-jpg.webp?w=1280",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-53/",
+      "credit": "ESA/Hubble & NASA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh tổng hợp quan sát khả kiến và hồng ngoại của cụm sao cầu M53. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "d12cb10b58cc0c65273608ebb2dddd1003bc528aab653f6183f1c27e927386c9",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-54",
+      "file": "assets/observations/messier-54.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1145a-jpg.webp?w=2048",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-54/",
+      "credit": "ESA/Hubble & NASA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "M54 là cụm sao cầu liên quan đến thiên hà lùn Sagittarius; không nên suy ra rằng mọi cụm sao cầu thuộc Ngân Hà. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "6d8bd68a8671ba561e5789db6a8539890b72c02257e58ac2f953c2639f372223",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-55",
+      "file": "assets/observations/messier-55.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/06/hubble-m55-mos-acs-long-flat-final2-jpg.webp?w=2048",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-55/",
+      "credit": "NASA, ESA, A. Sarajedini (Florida Atlantic University), and M. Libralato (STScI, ESA, JWST); Image Processing: Gladys Kober",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh chỉ cho thấy một phần M55; các kính thiên văn mặt đất cũng phân giải được một số sao riêng lẻ. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "68a87c69212a37f3be85603563b7dff6f14d80d116167d49898170424efa0224",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-56",
+      "file": "assets/observations/messier-56.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1234a-jpg.webp?w=2002",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-56/",
+      "credit": "NASA & ESA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "47d4692b5816d84e3f8865daf83004dae817c8e6bf71d78ba7d45eeaab91b80c",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-62",
+      "file": "assets/observations/messier-62.webp",
+      "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M62_2019_potw1915a.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-62/",
+      "credit": "NASA, ESA, and S. Anderson (University of Washington) and J. Chaname (Pontificia Universidad Católica de Chile)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "1a1ba75cbee9b3a959efef9755414f93cc878204a692ca9520455f65b5e848e0",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-67",
+      "file": "assets/observations/messier-67.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2024/02/m67-acs-1mstr-flat-final.jpg?w=2048",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-67/",
+      "credit": "NASA, ESA, and J. Krist (Jet Propulsion Laboratory); Processing: Gladys Kober (NASA/Catholic University of America)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble cho thấy một phần nhỏ các sao trong cụm mở M67. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "2f65b6885a6024b7c8ed079d2fa9194b1042af40d973315b5f4c1d7bab9c91bc",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-68",
+      "file": "assets/observations/messier-68.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1231a-jpg.webp?w=1280",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-68/",
+      "credit": "ESA/Hubble & NASA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "e0d2640237d6ac9b162bf14a7204723683e0a36ba57e3babd246fca2c53cc877",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-69",
+      "file": "assets/observations/messier-69.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1240a-jpg.webp?w=2023",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-69/",
+      "credit": "ESA/Hubble & NASA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "b69c3b890a971051eaa63f577a358e16574bc204e35e117dfee8c6d63671f9b9",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-70",
+      "file": "assets/observations/messier-70.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1215a-jpg.webp?w=2013",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-70/",
+      "credit": "ESA/Hubble & NASA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "f8737eac99ea3cadc3246c3b3d5c5745eda88040e5c79664df6f19cdabf9e920",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-71",
+      "file": "assets/observations/messier-71.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1018a-jpg.webp?w=2028",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-71/",
+      "credit": "ESA/Hubble and NASA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh dùng bộ lọc vàng và cận hồng ngoại; màu xanh/đỏ biểu diễn các bộ lọc, không phải màu mắt nhìn. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "d9d07efbe2eab88ba94439ffbc5db2c4df1c52b190a513e8eee90f84d6c2f044",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-72",
+      "file": "assets/observations/messier-72.webp",
+      "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M72_potw2516a.tif?w=900&h=900&fit=clip",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-72/",
+      "credit": "ESA/Hubble & NASA, A. Sarajedini, G. Piotto, M. Libralato",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh kỷ niệm 35 năm Hubble bổ sung dữ liệu tử ngoại mới vào các quan sát Hubble trước đó. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "3c9a55f02a840ebaadbf32b8b941255220478d0675c3f034b9ef85b10d8e449a",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-75",
+      "file": "assets/observations/messier-75.webp",
+      "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M75_2019_potw1916a.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-75/",
+      "credit": "ESA/Hubble & NASA, F. Ferraro et al.",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "a73fae9347efaa24393a07e8ea996af590e34bc5ac789f76bff5eea9352b3ffa",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-79",
+      "file": "assets/observations/messier-79.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/m791343x1343.png?w=1343",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-79/",
+      "credit": "NASA, ESA, STScI, F. Ferraro (Universita di Bologna) and S. Djorgovski (California Institute of Technology)",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "a7d7204698479b9aa20e457a7d3f140c8b268a97dd1cc0bcd8c08416ccdd9897",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-80",
+      "file": "assets/observations/messier-80.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/hubble_m80_wfc3_acs_comb_final2-jpg.webp?w=2048",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-80/",
+      "credit": "NASA, ESA, and G. Piotto (Universita degli Studi di Padova); Image Processing: Gladys Kober",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh tổng hợp dữ liệu tử ngoại, khả kiến và hồng ngoại của M80. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "31911ca4e96e3dbdab8e947ddf6eda8085c918f6f1ca1568de72b8fd95d5543e",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-92",
+      "file": "assets/observations/messier-92.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1449a_0-jpg.webp?w=2048",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-92/",
+      "credit": "ESA/Hubble & NASA; Acknowledgment: Gilles Chapdelaine",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "dfcbe1417ea8015a6cfa4f39486b42d23cca0cc112e359004a0f7a295f4be9ef",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
+    },
+    {
+      "id": "messier-107",
+      "file": "assets/observations/messier-107.webp",
+      "download": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1229a-jpg.webp?w=2006",
+      "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-107/",
+      "credit": "ESA/Hubble & NASA",
+      "classification": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+      "imageKind": "observation",
+      "caption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+      "retrieved": "2026-11-05",
+      "sha256": "13e51099efbbcb30ee44f7911ff029f489fd533b2a74b41d75f8dde817e73f1a",
+      "transform": {
+        "maxWidth": 800,
+        "maxHeight": 800,
+        "format": "WEBP",
+        "quality": 84
+      }
     }
   ]
 }
