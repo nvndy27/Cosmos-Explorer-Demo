@@ -1,6 +1,6 @@
 # Quy trình Git và GitHub
 
-Áp dụng từ 2026-11-05. Repo: https://github.com/nvndy27/Cosmos-Explorer-Demo (private). Đọc cùng WORK_RULES.md; quy tắc này bổ sung quy trình remote, không thay cổng QA/khoa học.
+Áp dụng từ 2026-11-05. Repo: https://github.com/nvndy27/Cosmos-Explorer-Demo (public). Đọc cùng WORK_RULES.md; quy tắc này bổ sung quy trình remote, không thay cổng QA/khoa học.
 
 ## Issue là đầu vào công việc
 Mỗi việc có issue với vấn đề, phạm vi file, người/lane phụ trách, phụ thuộc và tiêu chí nghiệm thu. Dùng ID backlog trong tiêu đề, ví dụ `[UX-002] ...`. Trạng thái: cần đầu vào → sẵn sàng → đang làm → chờ review → hoàn thành. GitHub issue mở chưa đồng nghĩa task được automation chạy: chỉ task `ready` trong automation/backlog.json mới được nhận. Trường `github_issue` liên kết hai nguồn. Issue manual cần người chịu trách nhiệm và đầu vào thật trước khi đổi trạng thái.

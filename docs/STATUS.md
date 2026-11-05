@@ -7,7 +7,7 @@ Cosmos Explorer 2.2 đang ở giai đoạn chuẩn bị beta: nền vận hành 
 - Tìm không dấu, thư viện, so sánh 2–4 hồ sơ, lưu cục bộ, copy link và cảnh báo đường dẫn file cục bộ.
 - Commit ứng dụng `010ec39fe9e00ff6c997d4c50424070370042cc4`: 18 unit tests, 14 smoke, catalog validator, Chrome 390/820/1440, HTTP/HTTPS loopback, storage fault injection và share QA đạt; hai AGY duyệt cùng SHA. [Bằng chứng](qa/ux-share-2026-11-05.json).
 - 3 Codex (gồm điều phối) + 2 AGY đã làm trên các terminal sẵn có; automation ngày 09:00, giữ 10% quota và theo dõi reset trên máy. Máy/phiên phải hoạt động để timer chạy.
-- Mã nguồn đã lên GitHub private; chưa có URL website công khai.
+- Mã nguồn đã lên GitHub public; chưa có URL website công khai.
 
 ## Cổng còn mở
 | Issue | Việc cần làm | Điều kiện hoàn thành |
@@ -17,3 +17,6 @@ Cosmos Explorer 2.2 đang ở giai đoạn chuẩn bị beta: nền vận hành 
 | [PUB-001 / #4](https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/4) | Hosting/domain, deploy và rollback | Hai cổng trên đạt, chủ dự án yêu cầu deploy, URL HTTPS thật và rollback được kiểm |
 
 HTTPS self-signed trên loopback không xác minh hosting/TLS công khai. Kiểm tra tự động không thay người thử hoặc chuyên gia khoa học. Website tĩnh có thể phục vụ nhiều người độc lập khi được host; chưa có thử tải trên hosting thật để hứa số người đồng thời.
+
+## Người dùng giả lập bổ sung
+Ngày 2026-11-05: ba browser context độc lập ở 390/820/1440 px, offline và reduced motion, đều PASS tìm không dấu, đọc hồ sơ/link nguồn, lưu và so sánh Earth/Mars; không pageerror/overflow trong luồng đã chạy. Đây là 0 người dùng thật, không thay cổng USER-001. [Báo cáo](qa/personas-2026-11-05.json).
