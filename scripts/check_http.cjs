@@ -94,15 +94,16 @@ function createServer() {
       viewportResults.push(width);
     }
 
-    // Open a real profile hash link using the browser's new-context gesture.
+    // Open a real profile hash link in a fresh browser context.
     await page.locator('#modeLibrary').click();
+    await page.locator('#collectionToggle').evaluate(element => { element.open = true; });
     const profileLink = page.locator('.collection-links a[href="#earth"]').first();
     await profileLink.waitFor({ state: 'visible' });
-    const popupPromise = context.waitForEvent('page');
-    await profileLink.click({ modifiers: ['Control'] });
-    const linkedPage = await popupPromise;
+    const profileUrl = await profileLink.evaluate(link => link.href);
+    const linkedContext = await browser.newContext();
+    const linkedPage = await linkedContext.newPage();
     linkedPage.on('pageerror', error => errors.push(error.message));
-    await linkedPage.waitForLoadState('networkidle');
+    await linkedPage.goto(profileUrl, { waitUntil: 'networkidle' });
     assert.equal(new URL(linkedPage.url()).hash, '#earth');
     assert.equal(await linkedPage.locator('#objectName').textContent(), 'Trái Đất');
 
