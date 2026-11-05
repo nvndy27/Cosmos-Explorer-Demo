@@ -1,4 +1,5 @@
 import contextlib
+import fcntl
 import importlib.util
 import io
 import json
@@ -20,6 +21,14 @@ def snapshot(used=76, weekly=14):
 
 
 class QuotaPolicy(unittest.TestCase):
+    def test_active_pipeline_defers_reset_prompt(self):
+        with tempfile.TemporaryDirectory() as temporary, patch.object(quota, 'LOCAL', Path(temporary)):
+            with (Path(temporary) / 'lock').open('a') as lock:
+                fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                with patch.object(quota, '_resume_bound_coordinator') as send:
+                    self.assertEqual(quota.resume_coordinator({})['status'], 'pipeline_busy')
+                    send.assert_not_called()
+
     def test_ten_percent_is_reserved_inclusively(self):
         self.assertTrue(quota.assess(snapshot(89), now=1000)['allowed'])
         held = quota.assess(snapshot(90), now=1000)

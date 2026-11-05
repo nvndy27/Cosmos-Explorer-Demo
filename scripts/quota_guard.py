@@ -156,6 +156,16 @@ def record_hold(decision):
 
 
 def resume_coordinator(binding):
+    LOCAL.mkdir(exist_ok=True)
+    with (LOCAL / 'lock').open('a') as lock:
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            return {'status': 'pipeline_busy'}
+        return _resume_bound_coordinator(binding)
+
+
+def _resume_bound_coordinator(binding):
     """Only address the bound, still-identical idle session; never guess a tab."""
     def cli(*args):
         result = subprocess.run(['rtk', 'proxy', 'orca-ide', *args, '--json'],
