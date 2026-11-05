@@ -20,16 +20,18 @@ Không sửa số liệu trực tiếp trong DB để tạo nguồn dữ liệu 
 
 ## Schema và quan hệ
 
-| Bảng | Vai trò | Số dòng bản hiện tại |
+| Bảng | Vai trò | Số dòng sau mở rộng Messier |
 |---|---|---:|
-| objects | ID, tên, loại, hệ và bản ghi JSON đầy đủ | 138 |
-| object_aliases | Bí danh có thứ tự, FK về objects | 158 |
-| sources | URL nguồn không trùng | 334 |
-| object_sources | Liên kết hồ sơ–nguồn, vai trò, nhãn, thứ tự | 535 |
-| measurements | Khóa đại lượng, số/null, đơn vị, định nghĩa, nguồn và giới hạn | 712 |
-| images | Đường dẫn ảnh, nguồn, tác giả, loại tư liệu, ngày lấy, SHA-256 | 126 |
-| object_images | Liên kết hồ sơ với tư liệu ảnh | 126 |
+| objects | ID, tên, loại, hệ và bản ghi JSON đầy đủ | 164 |
+| object_aliases | Bí danh có thứ tự, FK về objects | 184 |
+| sources | URL nguồn không trùng | 386 |
+| object_sources | Liên kết hồ sơ–nguồn, vai trò, nhãn, thứ tự | 587 |
+| measurements | Khóa đại lượng, số/null, đơn vị, định nghĩa, nguồn và giới hạn | 842 |
+| images | Đường dẫn ảnh, nguồn, tác giả, loại tư liệu, ngày lấy, SHA-256 | 152 |
+| object_images | Liên kết hồ sơ với tư liệu ảnh | 152 |
 | schema_migrations | Lịch sử schema 001–002, cùng PRAGMA user_version | 2 |
+
+Các số trên được đo từ DB dựng bằng `scripts/build_database.py` ngày 2026-11-05, sau khi runtime có 164 hồ sơ. `PRAGMA integrity_check` trả `ok`; `foreign_key_check` không có vi phạm. Đợt này thêm dữ liệu, không đổi schema. Dòng đại lượng bao gồm cả null có chủ đích; 842 không phải số phép đo đã biết. Báo cáo nền sản phẩm trước đợt Messier vẫn giữ các số lịch sử 138/126.
 
 ```mermaid
 erDiagram

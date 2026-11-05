@@ -10,7 +10,7 @@ Cosmos Explorer là ứng dụng học thiên văn cho học sinh, giáo viên v
 
 | Trải nghiệm | Điều bạn nhận được |
 |---|---|
-| Khám phá | 138 hồ sơ trong 11 nhóm, từ hành tinh và vệ tinh đến tinh vân, thiên hà, hố đen |
+| Khám phá | 164 hồ sơ trong 11 nhóm, từ hành tinh và vệ tinh đến tinh vân, thiên hà, hố đen |
 | Tìm và lọc | Tìm tiếng Việt không dấu hoặc bí danh; lọc loại, hệ, đã lưu và ảnh quan sát |
 | Đọc có nguồn | Hồ sơ Tổng quan, Đặc điểm, Khám phá, Nguồn; thông số có đơn vị và tham chiếu |
 | So sánh | Chọn 2–4 hồ sơ; chỉ đối chiếu các đại lượng tương thích về định nghĩa và đơn vị |
@@ -33,7 +33,11 @@ Giáo viên có thể dùng bộ sưu tập Hành tinh đá, Hành tinh khổng 
 
 ## Dữ liệu và độ tin cậy
 
-Ứng dụng có 138 hồ sơ và 126 ảnh cục bộ có nguồn, ghi công và checksum. Nội dung được biên tập từ NASA, ESA, JPL, ESO/EHT và các nguồn nghiên cứu được liên kết trong hồ sơ. Đây là dữ liệu tuyển chọn tại thời điểm biên tập, không phải dữ liệu thiên văn thời gian thực.
+Ứng dụng có 164 hồ sơ và 152 ảnh cục bộ có nguồn, ghi công và checksum. Nội dung được biên tập từ NASA, ESA, JPL, ESO/EHT và các nguồn nghiên cứu được liên kết trong hồ sơ. Đây là dữ liệu tuyển chọn tại thời điểm biên tập, không phải dữ liệu thiên văn thời gian thực.
+
+### Thêm 26 hồ sơ Messier
+
+Đợt mở rộng bổ sung 26 mục NASA Messier: M22, M24, M28, M30, M35, M43, M44, M45, M46, M48, M53, M54, M55, M56, M62, M67, M68, M69, M70, M71, M72, M75, M79, M80, M92 và M107. Riêng M24 được mô tả là trường sao nhìn qua khoảng trống giữa các đám mây bụi tối, không gọi là cụm sao; ảnh M45 chỉ thể hiện tinh vân phản xạ gần Merope; NGC 2438 trong ảnh M46 là tinh vân tiền cảnh. Xem [chính sách dữ liệu](docs/DATA_POLICY.md) để biết nguồn và cách biên tập.
 
 Sơ đồ Canvas là minh họa khám phá, kích thước và khoảng cách không theo tỷ lệ thực. Ảnh quan sát, tái dựng từ dữ liệu và minh họa nghệ thuật có nhãn riêng. Giá trị thiếu không được thay bằng 0; bán kính trung bình và bán kính quá cảnh không bị gộp để tạo biểu đồ.
 

@@ -59,8 +59,8 @@ class PackageReleaseTests(unittest.TestCase):
                     package_root = Path(extracted) / 'cosmos-explorer'
                     manifest = json.loads((package_root / 'data/image-manifest.json').read_text(encoding='utf-8'))
                     images = manifest['images']
-                    self.assertEqual(len(images), 126)
-                    self.assertEqual(len({item['id'] for item in images}), 126)
+                    self.assertEqual(len(images), 152)
+                    self.assertEqual(len({item['id'] for item in images}), 152)
                     for item in images:
                         image_path = package_root / item['file']
                         self.assertTrue(image_path.is_file(), item['file'])

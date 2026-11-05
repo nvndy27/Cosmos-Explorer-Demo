@@ -3070,6 +3070,1722 @@ data.push(...[
     "reviewed": "2026-10-21"
   },
   {
+    "id": "messier-22",
+    "name": "Messier 22 (M22)",
+    "aliases": "M22 Messier22 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Sagittarius; trang NASA ghi khoảng cách 10,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "10,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "5.1"
+      ],
+      [
+        "Chòm sao",
+        "Sagittarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M22 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 5.1; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M22 là Globular Cluster; hồ sơ ghi khoảng cách 10,000 light-years và cấp sao biểu kiến 5.1. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble tập trung vào phần trung tâm M22.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-22/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-22/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-22.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1514a-jpg.webp?w=2005",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-22/",
+    "credit": "ESA/Hubble & NASA",
+    "photoCaption": "Ảnh Hubble tập trung vào phần trung tâm M22. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M22",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M22 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Sagittarius.",
+    "features": "Ảnh Hubble tập trung vào phần trung tâm M22. NASA ghi cấp sao biểu kiến 5.1 và khoảng cách xấp xỉ 10,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M22 là Globular Cluster; hồ sơ ghi khoảng cách 10,000 light-years và cấp sao biểu kiến 5.1. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-24",
+    "name": "Messier 24 (M24)",
+    "aliases": "M24 Messier24 Star Cloud",
+    "small": "Đám mây sao",
+    "classification": "field",
+    "level": "deep",
+    "category": "Đám mây sao · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Đám mây sao trong chòm sao Sagittarius; trang NASA ghi khoảng cách 10,000 năm ánh sáng.",
+    "type": "deep",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "10,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "4.6"
+      ],
+      [
+        "Chòm sao",
+        "Sagittarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Star Cloud"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M24 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 4.6; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA gọi M24 là Star Cloud và mô tả vùng nhìn xuyên qua bụi về phía cánh tay Sagittarius. Con số khoảng cách/cấp sao ở trang là thông tin danh mục, không xác định một cụm sao riêng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh chỉ bao quát một phần nhỏ Đám mây sao Sagittarius. Đây là trường sao nhìn qua khoảng trống giữa các đám mây bụi về phía cánh tay Sagittarius, không phải một cụm sao riêng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-24/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-24/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-24.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/star-cloud/Hubble_M24_1_flat_FINAL_A_rot90.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-24/",
+    "credit": "NASA, ESA, and R. Sahai (Jet Propulsion Laboratory); Processing: Gladys Kober (NASA/Catholic University of America)",
+    "photoCaption": "Ảnh chỉ bao quát một phần nhỏ Đám mây sao Sagittarius. Đây là trường sao nhìn qua khoảng trống giữa các đám mây bụi về phía cánh tay Sagittarius, không phải một cụm sao riêng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "A thick field of stars on the black background of space. The stars are blue, red and white and fill the screen.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M24 là đám mây sao trong danh mục Hubble của NASA, thuộc chòm sao Sagittarius.",
+    "features": "Ảnh chỉ bao quát một phần nhỏ Đám mây sao Sagittarius. Đây là trường sao nhìn qua khoảng trống giữa các đám mây bụi về phía cánh tay Sagittarius, không phải một cụm sao riêng. NASA ghi cấp sao biểu kiến 4.6 và khoảng cách xấp xỉ 10,000 năm ánh sáng.",
+    "discovery": "NASA gọi M24 là Star Cloud và mô tả vùng nhìn xuyên qua bụi về phía cánh tay Sagittarius. Con số khoảng cách/cấp sao ở trang là thông tin danh mục, không xác định một cụm sao riêng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-28",
+    "name": "Messier 28 (M28)",
+    "aliases": "M28 Messier28 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Sagittarius; trang NASA ghi khoảng cách 18,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "18,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "7.7"
+      ],
+      [
+        "Chòm sao",
+        "Sagittarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M28 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 7.7; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M28 là Globular Cluster; hồ sơ ghi khoảng cách 18,000 light-years và cấp sao biểu kiến 7.7. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-28/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-28/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-28.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M28_potw1910a.tif?w=900&h=900&fit=clip",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-28/",
+    "credit": "ESA/Hubble & NASA, J. E. Grindlay et al.",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "A sphere of stars fills the upper half of the image. The sphere is cut off at the top but extends through out the rest of the image. Stars in bright-white, blue, orange, red, and yellow highlight this colorful globular cluster.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M28 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Sagittarius.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 7.7 và khoảng cách xấp xỉ 18,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M28 là Globular Cluster; hồ sơ ghi khoảng cách 18,000 light-years và cấp sao biểu kiến 7.7. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-30",
+    "name": "Messier 30 (M30)",
+    "aliases": "M30 Messier30 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Capricornus; trang NASA ghi khoảng cách 28,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "28,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "7.7"
+      ],
+      [
+        "Chòm sao",
+        "Capricornus"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M30 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 7.7; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M30 là Globular Cluster; hồ sơ ghi khoảng cách 28,000 light-years và cấp sao biểu kiến 7.7. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-30/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-30/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-30.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/heic0918a-jpg.webp?w=1999",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-30/",
+    "credit": "NASA, ESA/Hubble",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M30 as observed by Hubble",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M30 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Capricornus.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 7.7 và khoảng cách xấp xỉ 28,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M30 là Globular Cluster; hồ sơ ghi khoảng cách 28,000 light-years và cấp sao biểu kiến 7.7. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-35",
+    "name": "Messier 35 (M35)",
+    "aliases": "M35 Messier35 Open Cluster",
+    "small": "Cụm sao mở",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao mở · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao mở trong chòm sao Gemini; trang NASA ghi khoảng cách 2,800 năm ánh sáng.",
+    "type": "opencluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "2,800 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "5.3"
+      ],
+      [
+        "Chòm sao",
+        "Gemini"
+      ],
+      [
+        "Phân loại NASA",
+        "Open Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M35 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 5.3; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M35 là Open Cluster; hồ sơ ghi khoảng cách 2,800 light-years và cấp sao biểu kiến 5.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh ghi lại một số sao trong cụm mở M35, không phải toàn bộ cụm.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-35/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-35/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-35.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/open-clusters/Hubble_M35_WFPC2ok_flat_FINAL1.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-35/",
+    "credit": "NASA, ESA, and E. Nelan (Space Telescope Science Institute), A. Riess (The Johns Hopkins University), J. Rhodes (Jet Propulsion Laboratory) ; Processing: Gladys Kober (NASA/Catholic University of America)",
+    "photoCaption": "Ảnh ghi lại một số sao trong cụm mở M35, không phải toàn bộ cụm. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "A scattering of stars shine against the black background of space. Most of the stars are white, but some are red. Some small, dim background galaxies are also visible.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M35 là cụm sao mở trong danh mục Hubble của NASA, thuộc chòm sao Gemini.",
+    "features": "Ảnh ghi lại một số sao trong cụm mở M35, không phải toàn bộ cụm. NASA ghi cấp sao biểu kiến 5.3 và khoảng cách xấp xỉ 2,800 năm ánh sáng.",
+    "discovery": "NASA phân loại M35 là Open Cluster; hồ sơ ghi khoảng cách 2,800 light-years và cấp sao biểu kiến 5.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-43",
+    "name": "Messier 43 (M43)",
+    "aliases": "M43 Messier43 Nebula",
+    "small": "Tinh vân",
+    "classification": "nebula",
+    "level": "nebula",
+    "category": "Tinh vân · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Tinh vân trong chòm sao Orion; trang NASA ghi khoảng cách 1,600 năm ánh sáng.",
+    "type": "nebula",
+    "color": "#d89ebc",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "1,600 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "9.0"
+      ],
+      [
+        "Chòm sao",
+        "Orion"
+      ],
+      [
+        "Phân loại NASA",
+        "Nebula"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M43 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 9.0; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M43 là Nebula; hồ sơ ghi khoảng cách 1,600 light-years và cấp sao biểu kiến 9.0. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble dùng ánh sáng khả kiến và hồng ngoại để ghi vùng tinh vân M43.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-43/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-43/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-43.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/heic0601c-jpg.webp?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-43/",
+    "credit": "NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team",
+    "photoCaption": "Ảnh Hubble dùng ánh sáng khả kiến và hồng ngoại để ghi vùng tinh vân M43. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M43",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M43 là tinh vân trong danh mục Hubble của NASA, thuộc chòm sao Orion.",
+    "features": "Ảnh Hubble dùng ánh sáng khả kiến và hồng ngoại để ghi vùng tinh vân M43. NASA ghi cấp sao biểu kiến 9.0 và khoảng cách xấp xỉ 1,600 năm ánh sáng.",
+    "discovery": "NASA phân loại M43 là Nebula; hồ sơ ghi khoảng cách 1,600 light-years và cấp sao biểu kiến 9.0. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-44",
+    "name": "Messier 44 (M44)",
+    "aliases": "M44 Messier44 Open Cluster",
+    "small": "Cụm sao mở",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao mở · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao mở trong chòm sao Cancer; trang NASA ghi khoảng cách 600 năm ánh sáng.",
+    "type": "opencluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "600 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "3.7"
+      ],
+      [
+        "Chòm sao",
+        "Cancer"
+      ],
+      [
+        "Phân loại NASA",
+        "Open Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M44 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 3.7; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M44 là Open Cluster; hồ sơ ghi khoảng cách 600 light-years và cấp sao biểu kiến 3.7. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh nhìn qua rìa tây nam của M44, gồm sao trong cụm và các thiên hà nền; không thể hiện toàn cụm.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-44.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2024/02/m44-acs-1-color-2-final.jpg?w=2019",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44/",
+    "credit": "NASA, ESA, and S. Lilly (Eidgenossiche Technische Hochschule) and DECam/CTIO/NOIRLabProcessing/NSF/AURA; Processing: Gladys Kober (NASA/Catholic University of America)",
+    "photoCaption": "Ảnh nhìn qua rìa tây nam của M44, gồm sao trong cụm và các thiên hà nền; không thể hiện toàn cụm. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "Background galaxies and stars are sprinkled across a black background. Some of the distant galaxies are spirals.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M44 là cụm sao mở trong danh mục Hubble của NASA, thuộc chòm sao Cancer.",
+    "features": "Ảnh nhìn qua rìa tây nam của M44, gồm sao trong cụm và các thiên hà nền; không thể hiện toàn cụm. NASA ghi cấp sao biểu kiến 3.7 và khoảng cách xấp xỉ 600 năm ánh sáng.",
+    "discovery": "NASA phân loại M44 là Open Cluster; hồ sơ ghi khoảng cách 600 light-years và cấp sao biểu kiến 3.7. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-45",
+    "name": "Messier 45 (M45)",
+    "aliases": "M45 Messier45 Open Cluster",
+    "small": "Cụm sao mở",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao mở · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao mở trong chòm sao Taurus; trang NASA ghi khoảng cách 445 năm ánh sáng.",
+    "type": "opencluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "445 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "1.6"
+      ],
+      [
+        "Chòm sao",
+        "Taurus"
+      ],
+      [
+        "Phân loại NASA",
+        "Open Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M45 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 1.6; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M45 là Open Cluster; hồ sơ ghi khoảng cách 445 light-years và cấp sao biểu kiến 1.6. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh chỉ cho thấy vùng tinh vân phản xạ gần sao Merope, không phải toàn bộ cụm sao Pleiades.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-45.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/interstellar_cloud_in_pleiades-jpg.webp?w=1824",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45/",
+    "credit": "NASA and the Hubble Heritage Team (STScI/AURA); Acknowledgment: George Herbig and Theodore Simon (Institute for Astronomy, University of Hawaii)",
+    "photoCaption": "Ảnh chỉ cho thấy vùng tinh vân phản xạ gần sao Merope, không phải toàn bộ cụm sao Pleiades. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "interstellar cloud in Pleiades",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M45 là cụm sao mở trong danh mục Hubble của NASA, thuộc chòm sao Taurus.",
+    "features": "Ảnh chỉ cho thấy vùng tinh vân phản xạ gần sao Merope, không phải toàn bộ cụm sao Pleiades. NASA ghi cấp sao biểu kiến 1.6 và khoảng cách xấp xỉ 445 năm ánh sáng.",
+    "discovery": "NASA phân loại M45 là Open Cluster; hồ sơ ghi khoảng cách 445 light-years và cấp sao biểu kiến 1.6. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-46",
+    "name": "Messier 46 (M46)",
+    "aliases": "M46 Messier46 Open Cluster",
+    "small": "Cụm sao mở",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao mở · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao mở trong chòm sao Puppis; trang NASA ghi khoảng cách 5,400 năm ánh sáng.",
+    "type": "opencluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "5,400 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "10.0"
+      ],
+      [
+        "Chòm sao",
+        "Puppis"
+      ],
+      [
+        "Phân loại NASA",
+        "Open Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M46 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 10.0; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA xếp M46 là Open Cluster. NGC 2438 là tinh vân hành tinh tiền cảnh trong ảnh; không gán nó cho cụm và không áp khoảng cách M46 cho tinh vân.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh làm nổi bật tinh vân hành tinh NGC 2438 ở tiền cảnh; phần lớn sao phía sau thuộc M46. Tinh vân không phải thành viên của cụm và không dùng khoảng cách 5.400 năm ánh sáng của M46 cho tinh vân.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-46/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-46/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-46.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/hubble_ngc2438_wfpc2_screen_3mb.png?w=1077",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-46/",
+    "credit": "NASA, ESA, K. Knoll (NASA Goddard), and S. Öttl (Leopold Franzens Universität Innsbruck), et. al.; Processing: Gladys Kober (NASA/Catholic University of America)",
+    "photoCaption": "Ảnh làm nổi bật tinh vân hành tinh NGC 2438 ở tiền cảnh; phần lớn sao phía sau thuộc M46. Tinh vân không phải thành viên của cụm và không dùng khoảng cách 5.400 năm ánh sáng của M46 cho tinh vân. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "right side of image: circular nebula with reddish-white star at center, turquoise interior with hazy, cloudy yellow-orange and red rings around the center",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M46 là cụm sao mở trong danh mục Hubble của NASA, thuộc chòm sao Puppis.",
+    "features": "Ảnh làm nổi bật tinh vân hành tinh NGC 2438 ở tiền cảnh; phần lớn sao phía sau thuộc M46. Tinh vân không phải thành viên của cụm và không dùng khoảng cách 5.400 năm ánh sáng của M46 cho tinh vân. NASA ghi cấp sao biểu kiến 10.0 và khoảng cách xấp xỉ 5,400 năm ánh sáng.",
+    "discovery": "NASA xếp M46 là Open Cluster. NGC 2438 là tinh vân hành tinh tiền cảnh trong ảnh; không gán nó cho cụm và không áp khoảng cách M46 cho tinh vân. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-48",
+    "name": "Messier 48 (M48)",
+    "aliases": "M48 Messier48 Open Cluster",
+    "small": "Cụm sao mở",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao mở · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao mở trong chòm sao Hydra; trang NASA ghi khoảng cách 2,500 năm ánh sáng.",
+    "type": "opencluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "2,500 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "5.5"
+      ],
+      [
+        "Chòm sao",
+        "Hydra"
+      ],
+      [
+        "Phân loại NASA",
+        "Open Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M48 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 5.5; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M48 là Open Cluster; hồ sơ ghi khoảng cách 2,500 light-years và cấp sao biểu kiến 5.5. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble ghi lại một phần của cụm mở M48, không phải toàn bộ cụm.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-48/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-48/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-48.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2024/08/hubble-m48-1-flat-final-2.jpg?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-48/",
+    "credit": "NASA, ESA, A. Riess (The Johns Hopkins University): Processing: Gladys Kober (NASA/Catholic University of America)",
+    "photoCaption": "Ảnh Hubble ghi lại một phần của cụm mở M48, không phải toàn bộ cụm. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "A smattering of stars against a black background.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M48 là cụm sao mở trong danh mục Hubble của NASA, thuộc chòm sao Hydra.",
+    "features": "Ảnh Hubble ghi lại một phần của cụm mở M48, không phải toàn bộ cụm. NASA ghi cấp sao biểu kiến 5.5 và khoảng cách xấp xỉ 2,500 năm ánh sáng.",
+    "discovery": "NASA phân loại M48 là Open Cluster; hồ sơ ghi khoảng cách 2,500 light-years và cấp sao biểu kiến 5.5. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-53",
+    "name": "Messier 53 (M53)",
+    "aliases": "M53 Messier53 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Coma Berenices; trang NASA ghi khoảng cách 59,700 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "59,700 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "8.3"
+      ],
+      [
+        "Chòm sao",
+        "Coma Berenices"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M53 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 8.3; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M53 là Globular Cluster; hồ sơ ghi khoảng cách 59,700 light-years và cấp sao biểu kiến 8.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh tổng hợp quan sát khả kiến và hồng ngoại của cụm sao cầu M53.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-53/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-53/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-53.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1140a-jpg.webp?w=1280",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-53/",
+    "credit": "ESA/Hubble & NASA",
+    "photoCaption": "Ảnh tổng hợp quan sát khả kiến và hồng ngoại của cụm sao cầu M53. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M53",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M53 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Coma Berenices.",
+    "features": "Ảnh tổng hợp quan sát khả kiến và hồng ngoại của cụm sao cầu M53. NASA ghi cấp sao biểu kiến 8.3 và khoảng cách xấp xỉ 59,700 năm ánh sáng.",
+    "discovery": "NASA phân loại M53 là Globular Cluster; hồ sơ ghi khoảng cách 59,700 light-years và cấp sao biểu kiến 8.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-54",
+    "name": "Messier 54 (M54)",
+    "aliases": "M54 Messier54 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Sagittarius; trang NASA ghi khoảng cách 90,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "90,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "8.4"
+      ],
+      [
+        "Chòm sao",
+        "Sagittarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M54 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 8.4; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M54 là Globular Cluster; hồ sơ ghi khoảng cách 90,000 light-years và cấp sao biểu kiến 8.4. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. NASA mô tả M54 gắn với thiên hà lùn Sagittarius.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. M54 là cụm sao cầu liên quan đến thiên hà lùn Sagittarius; không nên suy ra rằng mọi cụm sao cầu thuộc Ngân Hà.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-54/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-54/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-54.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1145a-jpg.webp?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-54/",
+    "credit": "ESA/Hubble & NASA",
+    "photoCaption": "M54 là cụm sao cầu liên quan đến thiên hà lùn Sagittarius; không nên suy ra rằng mọi cụm sao cầu thuộc Ngân Hà. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M54",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M54 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Sagittarius.",
+    "features": "M54 là cụm sao cầu liên quan đến thiên hà lùn Sagittarius; không nên suy ra rằng mọi cụm sao cầu thuộc Ngân Hà. NASA ghi cấp sao biểu kiến 8.4 và khoảng cách xấp xỉ 90,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M54 là Globular Cluster; hồ sơ ghi khoảng cách 90,000 light-years và cấp sao biểu kiến 8.4. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. NASA mô tả M54 gắn với thiên hà lùn Sagittarius. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-55",
+    "name": "Messier 55 (M55)",
+    "aliases": "M55 Messier55 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Sagittarius; trang NASA ghi khoảng cách 20,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "20,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "6.3"
+      ],
+      [
+        "Chòm sao",
+        "Sagittarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M55 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 6.3; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M55 là Globular Cluster; hồ sơ ghi khoảng cách 20,000 light-years và cấp sao biểu kiến 6.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh chỉ cho thấy một phần M55; các kính thiên văn mặt đất cũng phân giải được một số sao riêng lẻ.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-55/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-55/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-55.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/06/hubble-m55-mos-acs-long-flat-final2-jpg.webp?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-55/",
+    "credit": "NASA, ESA, A. Sarajedini (Florida Atlantic University), and M. Libralato (STScI, ESA, JWST); Image Processing: Gladys Kober",
+    "photoCaption": "Ảnh chỉ cho thấy một phần M55; các kính thiên văn mặt đất cũng phân giải được một số sao riêng lẻ. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "Field is filled with white stars, smattered with blue-white and reddish-orange stars. Stars are concentrated at the center of the image. All are on a black background.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M55 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Sagittarius.",
+    "features": "Ảnh chỉ cho thấy một phần M55; các kính thiên văn mặt đất cũng phân giải được một số sao riêng lẻ. NASA ghi cấp sao biểu kiến 6.3 và khoảng cách xấp xỉ 20,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M55 là Globular Cluster; hồ sơ ghi khoảng cách 20,000 light-years và cấp sao biểu kiến 6.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-56",
+    "name": "Messier 56 (M56)",
+    "aliases": "M56 Messier56 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Lyra; trang NASA ghi khoảng cách 33,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "33,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "8.3"
+      ],
+      [
+        "Chòm sao",
+        "Lyra"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M56 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 8.3; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M56 là Globular Cluster; hồ sơ ghi khoảng cách 33,000 light-years và cấp sao biểu kiến 8.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-56/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-56/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-56.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1234a-jpg.webp?w=2002",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-56/",
+    "credit": "NASA & ESA",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M56",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M56 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Lyra.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 8.3 và khoảng cách xấp xỉ 33,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M56 là Globular Cluster; hồ sơ ghi khoảng cách 33,000 light-years và cấp sao biểu kiến 8.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-62",
+    "name": "Messier 62 (M62)",
+    "aliases": "M62 Messier62 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Ophiuchus; trang NASA ghi khoảng cách 22,200 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "22,200 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "6.6"
+      ],
+      [
+        "Chòm sao",
+        "Ophiuchus"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M62 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 6.6; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M62 là Globular Cluster; hồ sơ ghi khoảng cách 22,200 light-years và cấp sao biểu kiến 6.6. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-62/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-62/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-62.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M62_2019_potw1915a.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-62/",
+    "credit": "NASA, ESA, and S. Anderson (University of Washington) and J. Chaname (Pontificia Universidad Católica de Chile)",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "A sea of red, orange, yellow, green, blue, and white stars concentrated in the upper-left quadrant of the image.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M62 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Ophiuchus.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 6.6 và khoảng cách xấp xỉ 22,200 năm ánh sáng.",
+    "discovery": "NASA phân loại M62 là Globular Cluster; hồ sơ ghi khoảng cách 22,200 light-years và cấp sao biểu kiến 6.6. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-67",
+    "name": "Messier 67 (M67)",
+    "aliases": "M67 Messier67 Open Cluster",
+    "small": "Cụm sao mở",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao mở · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao mở trong chòm sao Cancer; trang NASA ghi khoảng cách ~2,800 năm ánh sáng.",
+    "type": "opencluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "~2,800 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "6.1"
+      ],
+      [
+        "Chòm sao",
+        "Cancer"
+      ],
+      [
+        "Phân loại NASA",
+        "Open Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M67 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 6.1; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M67 là Open Cluster; hồ sơ ghi khoảng cách ~2,800 light-years và cấp sao biểu kiến 6.1. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble cho thấy một phần nhỏ các sao trong cụm mở M67.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-67/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-67/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-67.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2024/02/m67-acs-1mstr-flat-final.jpg?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-67/",
+    "credit": "NASA, ESA, and J. Krist (Jet Propulsion Laboratory); Processing: Gladys Kober (NASA/Catholic University of America)",
+    "photoCaption": "Ảnh Hubble cho thấy một phần nhỏ các sao trong cụm mở M67. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "A scattering of white and reddish stars on a black background.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M67 là cụm sao mở trong danh mục Hubble của NASA, thuộc chòm sao Cancer.",
+    "features": "Ảnh Hubble cho thấy một phần nhỏ các sao trong cụm mở M67. NASA ghi cấp sao biểu kiến 6.1 và khoảng cách xấp xỉ ~2,800 năm ánh sáng.",
+    "discovery": "NASA phân loại M67 là Open Cluster; hồ sơ ghi khoảng cách ~2,800 light-years và cấp sao biểu kiến 6.1. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-68",
+    "name": "Messier 68 (M68)",
+    "aliases": "M68 Messier68 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Hydra; trang NASA ghi khoảng cách 33,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "33,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "8.0"
+      ],
+      [
+        "Chòm sao",
+        "Hydra"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M68 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 8.0; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M68 là Globular Cluster; hồ sơ ghi khoảng cách 33,000 light-years và cấp sao biểu kiến 8.0. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-68/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-68/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-68.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1231a-jpg.webp?w=1280",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-68/",
+    "credit": "ESA/Hubble & NASA",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M68",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M68 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Hydra.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 8.0 và khoảng cách xấp xỉ 33,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M68 là Globular Cluster; hồ sơ ghi khoảng cách 33,000 light-years và cấp sao biểu kiến 8.0. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-69",
+    "name": "Messier 69 (M69)",
+    "aliases": "M69 Messier69 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Sagittarius; trang NASA ghi khoảng cách 29,700 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "29,700 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "8.3"
+      ],
+      [
+        "Chòm sao",
+        "Sagittarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M69 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 8.3; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M69 là Globular Cluster; hồ sơ ghi khoảng cách 29,700 light-years và cấp sao biểu kiến 8.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-69/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-69/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-69.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1240a-jpg.webp?w=2023",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-69/",
+    "credit": "ESA/Hubble & NASA",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M69",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M69 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Sagittarius.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 8.3 và khoảng cách xấp xỉ 29,700 năm ánh sáng.",
+    "discovery": "NASA phân loại M69 là Globular Cluster; hồ sơ ghi khoảng cách 29,700 light-years và cấp sao biểu kiến 8.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-70",
+    "name": "Messier 70 (M70)",
+    "aliases": "M70 Messier70 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Sagittarius; trang NASA ghi khoảng cách 30,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "30,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "9.1"
+      ],
+      [
+        "Chòm sao",
+        "Sagittarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M70 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 9.1; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M70 là Globular Cluster; hồ sơ ghi khoảng cách 30,000 light-years và cấp sao biểu kiến 9.1. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-70/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-70/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-70.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1215a-jpg.webp?w=2013",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-70/",
+    "credit": "ESA/Hubble & NASA",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M70",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M70 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Sagittarius.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 9.1 và khoảng cách xấp xỉ 30,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M70 là Globular Cluster; hồ sơ ghi khoảng cách 30,000 light-years và cấp sao biểu kiến 9.1. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-71",
+    "name": "Messier 71 (M71)",
+    "aliases": "M71 Messier71 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Sagitta; trang NASA ghi khoảng cách 13,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "13,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "6.1"
+      ],
+      [
+        "Chòm sao",
+        "Sagitta"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M71 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 6.1; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M71 là Globular Cluster; hồ sơ ghi khoảng cách 13,000 light-years và cấp sao biểu kiến 6.1. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh dùng bộ lọc vàng và cận hồng ngoại; màu xanh/đỏ biểu diễn các bộ lọc, không phải màu mắt nhìn.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-71/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-71/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-71.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1018a-jpg.webp?w=2028",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-71/",
+    "credit": "ESA/Hubble and NASA",
+    "photoCaption": "Ảnh dùng bộ lọc vàng và cận hồng ngoại; màu xanh/đỏ biểu diễn các bộ lọc, không phải màu mắt nhìn. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M71",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M71 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Sagitta.",
+    "features": "Ảnh dùng bộ lọc vàng và cận hồng ngoại; màu xanh/đỏ biểu diễn các bộ lọc, không phải màu mắt nhìn. NASA ghi cấp sao biểu kiến 6.1 và khoảng cách xấp xỉ 13,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M71 là Globular Cluster; hồ sơ ghi khoảng cách 13,000 light-years và cấp sao biểu kiến 6.1. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-72",
+    "name": "Messier 72 (M72)",
+    "aliases": "M72 Messier72 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Aquarius; trang NASA ghi khoảng cách 50,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "50,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "9.4"
+      ],
+      [
+        "Chòm sao",
+        "Aquarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M72 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 9.4; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M72 là Globular Cluster; hồ sơ ghi khoảng cách 50,000 light-years và cấp sao biểu kiến 9.4. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh kỷ niệm 35 năm Hubble bổ sung dữ liệu tử ngoại mới vào các quan sát Hubble trước đó.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-72/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-72/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-72.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M72_potw2516a.tif?w=900&h=900&fit=clip",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-72/",
+    "credit": "ESA/Hubble & NASA, A. Sarajedini, G. Piotto, M. Libralato",
+    "photoCaption": "Ảnh kỷ niệm 35 năm Hubble bổ sung dữ liệu tử ngoại mới vào các quan sát Hubble trước đó. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "Thousands of bright stars fill a spherically shaped globular cluster. In the center, most of the stars appear blue. The globular cluster’s bright blue-white core is surrounded by a thick shell of yellower stars, seen in differing sizes according to their position in the spherical star cluster. They spread out beyond the edges of the image, appearing smaller and sparser at the corners of the image. A distant spiral galaxy is also visible in the lower-left corner of the image.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M72 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Aquarius.",
+    "features": "Ảnh kỷ niệm 35 năm Hubble bổ sung dữ liệu tử ngoại mới vào các quan sát Hubble trước đó. NASA ghi cấp sao biểu kiến 9.4 và khoảng cách xấp xỉ 50,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M72 là Globular Cluster; hồ sơ ghi khoảng cách 50,000 light-years và cấp sao biểu kiến 9.4. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-75",
+    "name": "Messier 75 (M75)",
+    "aliases": "M75 Messier75 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Sagittarius; trang NASA ghi khoảng cách 67,500 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "67,500 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "8.6"
+      ],
+      [
+        "Chòm sao",
+        "Sagittarius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M75 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 8.6; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M75 là Globular Cluster; hồ sơ ghi khoảng cách 67,500 light-years và cấp sao biểu kiến 8.6. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-75/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-75/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-75.webp",
+    "imageRemote": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M75_2019_potw1916a.jpg?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-75/",
+    "credit": "ESA/Hubble & NASA, F. Ferraro et al.",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "A splotch of stars sits at the center of the image. Its bright-white core is filled with stars. White, yellow-orange, and blue stars dot the view beyond the bright core.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M75 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Sagittarius.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 8.6 và khoảng cách xấp xỉ 67,500 năm ánh sáng.",
+    "discovery": "NASA phân loại M75 là Globular Cluster; hồ sơ ghi khoảng cách 67,500 light-years và cấp sao biểu kiến 8.6. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-79",
+    "name": "Messier 79 (M79)",
+    "aliases": "M79 Messier79 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Lepus; trang NASA ghi khoảng cách 41,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "41,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "8.0"
+      ],
+      [
+        "Chòm sao",
+        "Lepus"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M79 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 8.0; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M79 là Globular Cluster; hồ sơ ghi khoảng cách 41,000 light-years và cấp sao biểu kiến 8.0. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-79/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-79/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-79.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/m791343x1343.png?w=1343",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-79/",
+    "credit": "NASA, ESA, STScI, F. Ferraro (Universita di Bologna) and S. Djorgovski (California Institute of Technology)",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M79, as seen by Hubble",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M79 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Lepus.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 8.0 và khoảng cách xấp xỉ 41,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M79 là Globular Cluster; hồ sơ ghi khoảng cách 41,000 light-years và cấp sao biểu kiến 8.0. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-80",
+    "name": "Messier 80 (M80)",
+    "aliases": "M80 Messier80 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Scorpius; trang NASA ghi khoảng cách 28,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "28,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "7.9"
+      ],
+      [
+        "Chòm sao",
+        "Scorpius"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M80 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 7.9; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M80 là Globular Cluster; hồ sơ ghi khoảng cách 28,000 light-years và cấp sao biểu kiến 7.9. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh tổng hợp dữ liệu tử ngoại, khả kiến và hồng ngoại của M80.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-80/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-80/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-80.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/hubble_m80_wfc3_acs_comb_final2-jpg.webp?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-80/",
+    "credit": "NASA, ESA, and G. Piotto (Universita degli Studi di Padova); Image Processing: Gladys Kober",
+    "photoCaption": "Ảnh tổng hợp dữ liệu tử ngoại, khả kiến và hồng ngoại của M80. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "Image center holds a dense sphere of stars in colors of red, orange, yellow, white, and blue. The stars are densely packed at image center and taper out toward the image's edges. They are on a black background.",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M80 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Scorpius.",
+    "features": "Ảnh tổng hợp dữ liệu tử ngoại, khả kiến và hồng ngoại của M80. NASA ghi cấp sao biểu kiến 7.9 và khoảng cách xấp xỉ 28,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M80 là Globular Cluster; hồ sơ ghi khoảng cách 28,000 light-years và cấp sao biểu kiến 7.9. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-92",
+    "name": "Messier 92 (M92)",
+    "aliases": "M92 Messier92 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Hercules; trang NASA ghi khoảng cách 27,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "27,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "6.3"
+      ],
+      [
+        "Chòm sao",
+        "Hercules"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M92 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 6.3; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M92 là Globular Cluster; hồ sơ ghi khoảng cách 27,000 light-years và cấp sao biểu kiến 6.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-92/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-92/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-92.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1449a_0-jpg.webp?w=2048",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-92/",
+    "credit": "ESA/Hubble & NASA; Acknowledgment: Gilles Chapdelaine",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M92",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M92 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Hercules.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 6.3 và khoảng cách xấp xỉ 27,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M92 là Globular Cluster; hồ sơ ghi khoảng cách 27,000 light-years và cấp sao biểu kiến 6.3. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
+    "id": "messier-107",
+    "name": "Messier 107 (M107)",
+    "aliases": "M107 Messier107 Globular Cluster",
+    "small": "Cụm sao cầu",
+    "classification": "cluster",
+    "level": "clusters",
+    "category": "Cụm sao cầu · Hubble Messier",
+    "kicker": "Danh mục Hubble · NASA",
+    "summary": "Cụm sao cầu trong chòm sao Ophiuchus; trang NASA ghi khoảng cách 20,000 năm ánh sáng.",
+    "type": "cluster",
+    "color": "#b8cfee",
+    "status": "ĐÃ QUAN SÁT",
+    "visualType": "ẢNH QUAN SÁT · XỬ LÝ MÀU",
+    "stats": [
+      [
+        "Khoảng cách (xấp xỉ)",
+        "20,000 năm ánh sáng"
+      ],
+      [
+        "Cấp sao biểu kiến",
+        "8.9"
+      ],
+      [
+        "Chòm sao",
+        "Ophiuchus"
+      ],
+      [
+        "Phân loại NASA",
+        "Globular Cluster"
+      ]
+    ],
+    "radius": null,
+    "system": "Không áp dụng",
+    "host": null,
+    "measurements": {
+      "radius": null,
+      "mass": null,
+      "period": null,
+      "distance": null,
+      "temperature": null
+    },
+    "fact": "M107 là định danh trong danh mục Messier. NASA ghi cấp sao biểu kiến 8.9; đây là độ sáng nhìn từ Trái Đất, không phải đại lượng đo bởi ứng dụng.",
+    "research": "NASA phân loại M107 là Globular Cluster; hồ sơ ghi khoảng cách 20,000 light-years và cấp sao biểu kiến 8.9. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng.",
+    "sourceNote": "",
+    "limits": "Các khoảng cách và cấp sao biểu kiến được giữ dưới dạng văn bản như trang NASA công bố; ứng dụng không suy ra đại lượng vật lý khác. Ảnh Hubble qua bộ lọc có xử lý màu và có thể chỉ bao phủ một phần trường quan sát. Sơ đồ tổng quan không phải bản đồ tọa độ thật. Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng.",
+    "source": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-107/",
+    "references": [
+      [
+        "NASA Hubble — hồ sơ, trường nguồn và ảnh",
+        "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-107/"
+      ]
+    ],
+    "papers": [],
+    "image": "assets/observations/messier-107.webp",
+    "imageRemote": "https://science.nasa.gov/wp-content/uploads/2023/04/potw1229a-jpg.webp?w=2006",
+    "imageSource": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-107/",
+    "credit": "ESA/Hubble & NASA",
+    "photoCaption": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. Ảnh quan sát Hubble; màu hiển thị đã xử lý qua bộ lọc.",
+    "imageAlt": "M107",
+    "reviewed": "2026-11-05",
+    "imageKind": "observation",
+    "intro": "M107 là cụm sao cầu trong danh mục Hubble của NASA, thuộc chòm sao Ophiuchus.",
+    "features": "Ảnh Hubble là một trường quan sát của cụm sao cầu, không nhất thiết bao phủ toàn bộ đối tượng. NASA ghi cấp sao biểu kiến 8.9 và khoảng cách xấp xỉ 20,000 năm ánh sáng.",
+    "discovery": "NASA phân loại M107 là Globular Cluster; hồ sơ ghi khoảng cách 20,000 light-years và cấp sao biểu kiến 8.9. Đây là thông tin của trang NASA, không phải phép đo của ứng dụng. Lịch sử phát hiện chưa được biên tập trong phiên bản này; xem hồ sơ NASA để đọc thêm."
+  },
+  {
     "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20189733%20b",
     "references": [
       [
@@ -10832,5 +12548,5 @@ const exoplanetImages22={
   }
 };
 for(const o of data)Object.assign(o,exoplanetImages22[o.id]||{});
-const displayTypes22={ 'Globular Cluster':'Cụm sao cầu','Open Cluster':'Cụm sao mở','Spiral Galaxy':'Thiên hà xoắn ốc','Elliptical Galaxy':'Thiên hà elip','Compact Elliptical Galaxy':'Thiên hà elip nhỏ gọn','Barred Spiral Galaxy':'Thiên hà xoắn ốc có thanh','Lenticular Galaxy':'Thiên hà thấu kính','Planetary Nebula':'Tinh vân hành tinh','Emission Nebula':'Tinh vân phát xạ','Reflection Nebula':'Tinh vân phản xạ','Galaxy':'Thiên hà','Nebula':'Tinh vân'};
+const displayTypes22={ 'Globular Cluster':'Cụm sao cầu','Open Cluster':'Cụm sao mở','Star Cloud':'Đám mây sao','Spiral Galaxy':'Thiên hà xoắn ốc','Elliptical Galaxy':'Thiên hà elip','Compact Elliptical Galaxy':'Thiên hà elip nhỏ gọn','Barred Spiral Galaxy':'Thiên hà xoắn ốc có thanh','Lenticular Galaxy':'Thiên hà thấu kính','Planetary Nebula':'Tinh vân hành tinh','Emission Nebula':'Tinh vân phát xạ','Reflection Nebula':'Tinh vân phản xạ','Galaxy':'Thiên hà','Nebula':'Tinh vân'};
 for(const o of data){o.stats=o.stats.map(([a,b])=>[a,displayTypes22[b]||b]);if(o.id.startsWith('messier-')){o.research='Các quan sát Hubble giúp nghiên cứu '+o.small.toLocaleLowerCase('vi')+' này. Khoảng cách và độ sáng được dẫn từ hồ sơ NASA; xem nguồn để hiểu phương pháp và vùng quan sát.';o.fact='Ký hiệu Messier là tên trong danh mục thiên thể sâu. Cấp sao biểu kiến mô tả độ sáng nhìn từ Trái Đất, không phải kích thước hoặc độ sáng nội tại.';}o.imageKind=o.imageKind||(o.image?(o.type==='blackhole'?'reconstruction':o.id==='earth'?'composite':'observation'):'illustration');}

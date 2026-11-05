@@ -29,9 +29,17 @@ class QuotaPolicy(unittest.TestCase):
                     self.assertEqual(quota.resume_coordinator({})['status'], 'pipeline_busy')
                     send.assert_not_called()
 
+    def test_half_usage_stops_and_refill_is_required(self):
+        self.assertTrue(quota.assess(snapshot(49), now=1000)["allowed"])
+        held = quota.assess(snapshot(50), now=1000)
+        self.assertFalse(held["allowed"])
+        self.assertEqual(held["minimum_remaining_percent"], 50)
+        self.assertFalse(quota.assess(snapshot(50), now=8000)["allowed"])
+        self.assertTrue(quota.assess(snapshot(0), now=8000)["allowed"])
+
     def test_ten_percent_is_reserved_inclusively(self):
-        self.assertTrue(quota.assess(snapshot(89), now=1000)['allowed'])
-        held = quota.assess(snapshot(90), now=1000)
+        self.assertTrue(quota.assess(snapshot(89), minimum=10, now=1000)['allowed'])
+        held = quota.assess(snapshot(90), minimum=10, now=1000)
         self.assertFalse(held['allowed'])
         self.assertEqual(held['five_hour']['remaining_percent'], 10)
         self.assertEqual(held['retry_at'], 5030)

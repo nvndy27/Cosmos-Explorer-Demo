@@ -1,6 +1,23 @@
 # Dữ liệu và tư liệu khoa học
 
-Ngày biên tập: 2026-10-21. `cosmos-explorer/catalog.js` và `catalog-expanded.js` là dữ liệu chạy của ứng dụng. `catalog-expanded.js` được dựng từ snapshot trong `cosmos-explorer/data/`. Bản 2.2 có 138 hồ sơ và 126 hình ảnh cục bộ (90 tư liệu từ quan sát/tổng hợp/tái dựng, 36 minh họa nghệ thuật). Trường `source` áp dụng cho hồ sơ và thông số; `references` và `papers` bổ sung nguồn quan sát/nghiên cứu; `reviewed` ghi ngày biên tập. Đây là bản ghi tuyển chọn, không tự cập nhật.
+Cập nhật đợt Messier: 2026-11-05. Catalog hiện có **164 hồ sơ và 152 ảnh cục bộ** (116 tư liệu quan sát/tổng hợp/tái dựng, 36 minh họa). `catalog-expanded.js` được dựng từ snapshot trong `cosmos-explorer/data/`; `catalog.js` giữ dữ liệu nền. Nguồn từng thông số, ngày biên tập và ghi công ảnh nằm trong hồ sơ. Đây là dữ liệu tuyển chọn, không tự cập nhật. Các hồ sơ cũ giữ ngày đối chiếu cũ; ngày của đợt mới không được áp cho toàn catalog.
+
+## Mở rộng Messier — 2026-11-05
+
+Thêm đúng 26 mục từ [NASA Hubble Messier Catalog](https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/): M22, M24, M28, M30, M35, M43, M44, M45, M46, M48, M53, M54, M55, M56, M62, M67, M68, M69, M70, M71, M72, M75, M79, M80, M92 và M107. Snapshot Messier hiện có 85 bản ghi; toàn bộ 138 hồ sơ runtime cũ được bảo toàn nguyên nội dung.
+
+Bốn trường khoảng cách, cấp sao biểu kiến, chòm sao và phân loại được đọc trực tiếp từ HTML NASA, đối chiếu với bản trích độc lập và lưu cùng URL/hash/ngày trong provenance. Khoảng cách giữ dạng văn bản với đơn vị năm ánh sáng và nhãn xấp xỉ; không tự phân tích thành đại lượng để sắp xếp hoặc suy thông số mới. Năm đại lượng chưa chuẩn hóa của mỗi mục mới vẫn là null.
+
+- [M24](https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-24/) là trường sao nhìn qua khoảng trống giữa các đám bụi, không phải cụm sao; ảnh chỉ bao phủ một phần nhỏ.
+- [M45](https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45/) là cụm mở Pleiades; ảnh được chọn chỉ chụp vùng tinh vân phản xạ gần Merope.
+- [M46](https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-46/) là cụm mở phía sau tinh vân NGC 2438; không dùng khoảng cách của cụm cho tinh vân tiền cảnh.
+- M44 chỉ được chụp ở rìa cụm, có thiên hà nền; M54 thuộc thiên hà lùn Sagittarius. Chú thích các mục ghi rõ giới hạn vùng ảnh.
+
+26 ảnh mới lấy từ figure quan sát đầu tiên trên trang NASA, giữ URL gốc/tải và credit đầy đủ; chỉ đổi kích thước tối đa 800×800 và định dạng WebP chất lượng 84. Chú thích hiển thị là tiếng Việt tự biên tập; không ghép nguyên văn caption NASA vào giao diện. Manifest ghi SHA-256, nguồn, loại và phép chuyển đổi. Điều kiện sử dụng của từng nguồn tiếp tục áp dụng; review tác nhân không thay kiểm định khoa học/quyền sử dụng bởi người có chuyên môn.
+
+`expand_messier.py --source-dir <cache-da-doi-chieu>` nhận thư mục có `independent-sources.json` và `independent/<so>.html`, kiểm lại hash/trường trước khi nhập 26 ID tường minh. Cache HTML không nằm trong gói sản phẩm; muốn tái biên tập cần cung cấp lại bản nguồn đã đọc. `retrievedUTC` trong provenance đợt này là thời điểm xác nhận/đọc cache, được ghi rõ trong `retrievalNote`, không phải thời điểm tải chính xác từ máy chủ. Công cụ không cập nhật 59 bản ghi Messier cũ; nguồn của ID mới đã tồn tại mà thay đổi hash/trường sẽ bị từ chối để chờ biên tập. Chạy lại cùng đầu vào, kể cả khác ngày, không đổi bytes dữ liệu/ảnh. Sau thay đổi có duyệt, chạy `build_catalog.py`, validator và dựng lại SQLite từ runtime. `refresh_catalog.py` là công cụ tuyển chọn 59 mục ban đầu; không chạy ghi đè snapshot mở rộng.
+
+Các phần 2.1/2.2 bên dưới ghi lại lịch sử, gồm mốc 138 hồ sơ/126 ảnh trước đợt này.
 
 ## Nguồn
 - Hệ Mặt Trời: NASA Science, trang Facts theo từng đối tượng. Số liệu làm tròn; không dùng số vệ tinh hay thông số chưa kiểm chứng mới.
