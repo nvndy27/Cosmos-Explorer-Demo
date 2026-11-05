@@ -62,9 +62,9 @@ class DatabaseAndAPITest(unittest.TestCase):
             self.assertEqual(connection.execute("PRAGMA user_version").fetchone()[0], 2)
             self.assertEqual(connection.execute("PRAGMA integrity_check").fetchone()[0], "ok")
             self.assertEqual(connection.execute("PRAGMA foreign_key_check").fetchall(), [])
-            self.assertEqual(connection.execute("SELECT count(*) FROM objects").fetchone()[0], 138)
-            self.assertEqual(connection.execute("SELECT count(*) FROM images").fetchone()[0], 126)
-            self.assertEqual(connection.execute("SELECT count(*) FROM object_images").fetchone()[0], 126)
+            self.assertEqual(connection.execute("SELECT count(*) FROM objects").fetchone()[0], 164)
+            self.assertEqual(connection.execute("SELECT count(*) FROM images").fetchone()[0], 152)
+            self.assertEqual(connection.execute("SELECT count(*) FROM object_images").fetchone()[0], 152)
             self.assertEqual(connection.execute("SELECT count(*) FROM measurements").fetchone()[0], self.counts["measurements"])
             source_id = connection.execute("SELECT id FROM sources LIMIT 1").fetchone()[0]
             with self.assertRaises(sqlite3.IntegrityError):
@@ -128,14 +128,13 @@ class DatabaseAndAPITest(unittest.TestCase):
                 self.assertEqual(relation["image_id"], image_id)
 
     def test_api_pagination_search_and_type_filter(self) -> None:
-        first = self.api("GET", "/api/objects?" + urlencode({"page": 1, "page_size": 50}))[3]
-        second = self.api("GET", "/api/objects?" + urlencode({"page": 2, "page_size": 50}))[3]
-        third = self.api("GET", "/api/objects?" + urlencode({"page": 3, "page_size": 50}))[3]
-        self.assertEqual([first["total"], second["total"], third["total"]], [138, 138, 138])
-        ids = [item["id"] for page in (first, second, third) for item in page["items"]]
-        self.assertEqual(len(ids), 138)
-        self.assertEqual(len(set(ids)), 138)
-        self.assertIsNone(third["next_page"])
+        pages = [self.api("GET", "/api/objects?" + urlencode({"page": page, "page_size": 50}))[3] for page in range(1, 5)]
+        self.assertEqual([page["total"] for page in pages], [164] * 4)
+        ids = [item["id"] for page in pages for item in page["items"]]
+        self.assertEqual(len(ids), 164)
+        self.assertEqual(len(set(ids)), 164)
+        self.assertEqual([len(page["items"]) for page in pages], [50, 50, 50, 14])
+        self.assertIsNone(pages[3]["next_page"])
 
         search = self.api("GET", "/api/objects?" + urlencode({"q": "earth", "page_size": 100}))[3]
         self.assertIn("earth", {item["id"] for item in search["items"]})
@@ -195,7 +194,7 @@ class DatabaseAndAPITest(unittest.TestCase):
         status, _, _, result = self.api("GET", f"/api/objects?type={injected_type}")
         self.assertEqual(status, 200)
         self.assertEqual(result["total"], 0)
-        self.assertEqual(self.api("GET", "/api/objects?page_size=100")[3]["total"], 138)
+        self.assertEqual(self.api("GET", "/api/objects?page_size=100")[3]["total"], 164)
 
     def test_rebuild_is_deterministic_and_failure_preserves_previous_database(self) -> None:
         previous = self.database.read_bytes()
