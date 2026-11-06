@@ -474,3 +474,128 @@ body button { min-width: 44px; min-height: 44px; }
 .museum-hero-fallback button { justify-self: center; padding: 10px 20px; border: 1px solid #b5ddf2; border-radius: 8px; background: #20384e; color: #edf4fa; font-size: 16px; }
 
 #helpBtn, #mobileSearchBtn, body .card-actions button, body .reading-controls button, body .modal-close, body .tab { min-width: 44px; min-height: 44px; }
+
+/* Diagram mode: calm layered chrome, clear selection, and touch-sized controls. */
+body:not(.museum-home)[data-mode="diagram"] .space-canvas-wrap {
+  background-color: #07111f;
+  background-image: radial-gradient(ellipse at 54% 46%, #142943 0, #0a1728 53%, #07111f 100%);
+  isolation: isolate;
+}
+body:not(.museum-home)[data-mode="diagram"] .scene-top {
+  inset: 16px 18px auto;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid #a9c4dc24;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #13263be8, #0b1828e8);
+  box-shadow: 0 12px 32px #02081255, inset 0 1px #ffffff0b;
+}
+body:not(.museum-home)[data-mode="diagram"] .breadcrumb { min-height: 44px; gap: 8px; color: #b7c8d9; font-size: 12px; }
+body:not(.museum-home)[data-mode="diagram"] .breadcrumb strong { color: #f1d2a7; font-weight: 650; }
+body:not(.museum-home)[data-mode="diagram"] .breadcrumb #breadcrumbObject { color: #f2f6fb; }
+body:not(.museum-home)[data-mode="diagram"] .scene-mode-note {
+  top: 70px; left: 20px; right: 20px; min-height: 44px; width: fit-content; max-width: calc(100% - 40px);
+  display: flex; align-items: center; gap: 12px; padding: 0 13px;
+  border: 1px solid #9db9d324; border-radius: 9px;
+  color: #d9e7f3; background: #101f31e8; box-shadow: 0 8px 24px #02081242;
+  font-size: 13px; font-weight: 600; letter-spacing: .01em;
+}
+body:not(.museum-home)[data-mode="diagram"] .scene-mode-note span { color: #b5c5d5; font-size: 12px; font-weight: 400; }
+body:not(.museum-home)[data-mode="diagram"] .scene-title {
+  top: 142px; left: clamp(20px, 4vw, 58px); max-width: min(420px, 43%);
+  padding: 18px 20px 19px; border: 1px solid #9db9d322; border-radius: 14px;
+  background: linear-gradient(145deg, #0d1b2add, #0b1727bd);
+  box-shadow: 0 18px 48px #02081245, inset 0 1px #ffffff0a; backdrop-filter: blur(8px);
+}
+body:not(.museum-home)[data-mode="diagram"] .scene-title .display-index { color: #f0c894; font-size: 11px; letter-spacing: .13em; line-height: 1.5; }
+body:not(.museum-home)[data-mode="diagram"] .scene-title .display-index .line { width: 26px; background: #d5ad78; }
+body:not(.museum-home)[data-mode="diagram"] .scene-title h1 { margin: 10px 0 8px; color: #f6f8fc; font-size: clamp(30px, 3.15vw, 48px); letter-spacing: -.035em; line-height: 1.08; overflow-wrap: anywhere; }
+body:not(.museum-home)[data-mode="diagram"] .scene-title p { max-width: 40ch; color: #d0dcea; font-size: 15px; line-height: 1.6; }
+body:not(.museum-home)[data-mode="diagram"] .scene-marker { color: #f2f7fc; font-size: 12px; letter-spacing: .025em; text-shadow: 0 2px 10px #000, 0 0 18px #07111f; }
+body:not(.museum-home)[data-mode="diagram"] .marker-cross { color: #b5ddf2; font-size: 19px; }
+body:not(.museum-home)[data-mode="diagram"] .scene-target {
+  min-height: 44px; max-width: 145px; padding: 8px 11px; border: 1px solid #adc4dc70;
+  border-radius: 8px; color: #e4edf6; background: #0b1929eF;
+  box-shadow: 0 5px 18px #02081280; font-size: 12px; font-weight: 600; line-height: 1.35;
+  text-shadow: 0 1px 3px #000;
+}
+body:not(.museum-home)[data-mode="diagram"] .scene-target:hover { border-color: #d5ad78; color: #fff; background: #19324a; }
+body:not(.museum-home)[data-mode="diagram"] .scene-target.selected {
+  color: #07111f; border-color: #f0d3a8; background: #e8c99d;
+  box-shadow: 0 0 0 3px #f0d3a82e, 0 7px 22px #020812aa; text-shadow: none;
+}
+/* Keep the generous hit area without painting empty boxes over the planets. */
+body:not(.museum-home)[data-mode="diagram"] .scene-target:not(.selected):not(:hover):not(:focus-visible) {
+  background: transparent; border-color: transparent; box-shadow: none;
+}
+body:not(.museum-home)[data-mode="diagram"] .scene-target:not(.selected):is(:hover, :focus-visible) span {
+  position: static; clip: auto; width: auto; height: auto; overflow: visible;
+}
+body:not(.museum-home)[data-mode="diagram"] .scene-side-tools { right: 18px; top: 45%; gap: 8px; }
+body:not(.museum-home)[data-mode="diagram"] .scene-side-tools button {
+  width: 46px; height: 46px; min-width: 46px; min-height: 46px; border: 1px solid #b7cde044; border-radius: 12px;
+  color: #eff6fc; background: linear-gradient(145deg, #1a3048f2, #0c1b2cf2);
+  box-shadow: 0 8px 22px #02081280; font-size: 21px;
+}
+body:not(.museum-home)[data-mode="diagram"] .scene-side-tools button:hover { border-color: #b5ddf2; background: #24435f; }
+body:not(.museum-home)[data-mode="diagram"] .bottom-controls {
+  min-height: 96px; padding: 14px clamp(16px, 2vw, 28px); gap: 18px;
+  border-top: 1px solid #b4c8dc36; background: linear-gradient(180deg, #0d1b2aee, #091422f7);
+  box-shadow: 0 -14px 36px #02081254;
+}
+body:not(.museum-home)[data-mode="diagram"] .bottom-left { display: flex; }
+body:not(.museum-home)[data-mode="diagram"] .control-title { color: #e1ebf4; font-size: 12px; letter-spacing: .04em; }
+body:not(.museum-home)[data-mode="diagram"] .control-sub { max-width: 36ch; color: #afc0d0; font-size: 12px; line-height: 1.4; }
+body:not(.museum-home)[data-mode="diagram"] .bottom-right { gap: 12px; }
+body:not(.museum-home)[data-mode="diagram"] .bottom-right > button { min-width: 46px; min-height: 46px; }
+body:not(.museum-home)[data-mode="diagram"] .play-button { width: 46px; height: 46px; color: #eaf6fc; background: #1a344b; border-color: #a8c5dc66; }
+body:not(.museum-home)[data-mode="diagram"] .speed-block { min-height: 46px; gap: 9px; padding: 0 12px; border: 1px solid #a6bed333; border-radius: 10px; background: #102033; }
+body:not(.museum-home)[data-mode="diagram"] .speed-block span { color: #c3d1df; font-size: 12px; }
+body:not(.museum-home)[data-mode="diagram"] .speed-block input { width: 88px; min-height: 44px; accent-color: #b5ddf2; }
+body:not(.museum-home)[data-mode="diagram"] .speed-block b { color: #f1d2a7; font-size: 12px; }
+body:not(.museum-home)[data-mode="diagram"] .next-button { min-height: 46px; padding: 0 15px; color: #102033; background: #e4c69c; border: 1px solid #f3d9b7; font-size: 13px; }
+body:not(.museum-home)[data-mode="diagram"] .next-button:hover { background: #f1d6b1; }
+body:not(.museum-home)[data-mode="diagram"] .scale-label,
+body:not(.museum-home)[data-mode="diagram"] .viewer-tip { color: #d0dceb; font-size: 11px; letter-spacing: .035em; text-shadow: 0 1px 6px #020812; }
+body:not(.museum-home)[data-mode="diagram"] .scale-label { bottom: 116px; left: 24px; }
+body:not(.museum-home)[data-mode="diagram"] .viewer-tip { right: 22px; bottom: 116px; }
+@media (max-width: 1100px) {
+  body:not(.museum-home)[data-mode="diagram"] .scene-title { max-width: min(390px, 48%); }
+  body:not(.museum-home)[data-mode="diagram"] .scene-title h1 { font-size: clamp(28px, 3.5vw, 40px); }
+}
+@media (max-width: 820px) {
+  body:not(.museum-home)[data-mode="diagram"] .space-canvas-wrap { min-height: 560px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-top { inset: 12px 12px auto; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-status { display: none; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-mode-note { top: 66px; left: 12px; right: 12px; width: auto; max-width: none; justify-content: space-between; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-title { top: 124px; left: 12px; right: 12px; max-width: 56%; padding: 14px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-title h1 { font-size: clamp(26px, 5vw, 36px); }
+  body:not(.museum-home)[data-mode="diagram"] .scene-title p { font-size: 14px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-marker { top: 55%; left: 61%; }
+  body:not(.museum-home)[data-mode="diagram"] .bottom-controls { min-height: 100px; padding: 10px 14px; }
+  body:not(.museum-home)[data-mode="diagram"] .bottom-left { display: none; }
+  body:not(.museum-home)[data-mode="diagram"] .bottom-right { width: 100%; justify-content: space-between; }
+  body:not(.museum-home)[data-mode="diagram"] .scale-label { left: 14px; bottom: 112px; }
+  body:not(.museum-home)[data-mode="diagram"] .viewer-tip { display: none; }
+}
+@media (max-width: 580px) {
+  body:not(.museum-home)[data-mode="diagram"] .scene-top { min-height: 44px; padding-inline: 9px; }
+  body:not(.museum-home)[data-mode="diagram"] .breadcrumb { font-size: 11px; gap: 5px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-mode-note { top: 64px; min-height: 44px; padding-inline: 10px; font-size: 12px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-mode-note span { display: none; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-title { top: 120px; max-width: min(76%, 330px); padding: 12px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-title .display-index { font-size: 9px; letter-spacing: .08em; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-title h1 { font-size: clamp(24px, 7.2vw, 31px); }
+  body:not(.museum-home)[data-mode="diagram"] .scene-title p { font-size: 13px; line-height: 1.5; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-marker { top: 58%; left: 57%; font-size: 10px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-target { min-height: 44px; max-width: 100px; padding: 7px 8px; font-size: 11px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-side-tools { top: auto; right: 12px; bottom: 120px; gap: 6px; }
+  body:not(.museum-home)[data-mode="diagram"] .scene-side-tools button { width: 44px; height: 44px; min-width: 44px; min-height: 44px; border-radius: 10px; }
+  body:not(.museum-home)[data-mode="diagram"] .bottom-controls { min-height: 100px; padding: 10px 12px; }
+  body:not(.museum-home)[data-mode="diagram"] .bottom-right { gap: 7px; }
+  body:not(.museum-home)[data-mode="diagram"] .speed-block { flex: 1 1 auto; justify-content: center; gap: 6px; padding-inline: 7px; }
+  body:not(.museum-home)[data-mode="diagram"] .speed-block span { display: none; }
+  body:not(.museum-home)[data-mode="diagram"] .speed-block input { width: clamp(52px, 17vw, 78px); }
+  body:not(.museum-home)[data-mode="diagram"] .next-button { padding-inline: 10px; font-size: 12px; }
+  body:not(.museum-home)[data-mode="diagram"] .scale-label { left: 12px; right: 60px; bottom: 110px; font-size: 10px; }
+}

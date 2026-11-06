@@ -56,3 +56,9 @@ Bản hiện tại không yêu cầu tên, email hoặc mật khẩu. Yêu thíc
 Bản 2.2 đang chuẩn bị beta. Các kiểm tra Chrome ở 390/820/1440 px, luồng ngoại tuyến, ảnh lỗi, bộ nhớ bị cấm và chia sẻ đã có [bằng chứng kiểm thử](docs/QA.md). Ba phiên người dùng giả lập đã chạy; chưa thay thế thử nghiệm với người thật. Chưa hoàn tất rà khoa học độc lập, screen reader, Firefox/Safari hoặc nghiệm thu hosting công khai.
 
 [Trạng thái chi tiết](docs/STATUS.md) · [Lộ trình sản phẩm](docs/ROADMAP.md) · [Báo lỗi](https://github.com/nvndy27/Cosmos-Explorer-Demo/issues/new?template=bug.md) · [Đóng góp](CONTRIBUTING.md)
+
+### Khám phá các hành tinh
+
+Sơ đồ giữ tổng quan Hệ Mặt Trời; trong hồ sơ tám hành tinh, chọn **Xem minh họa hành tinh** để xem ánh sáng, bề mặt và vành đai Canvas. Ảnh tư liệu và ghi công gốc vẫn là mặc định. Đồ họa là minh họa nghệ thuật, không phải mô phỏng vật lý hay bản đồ bề mặt.
+
+![Sơ đồ Hệ Mặt Trời trong ứng dụng](docs/screenshots/planet-diagram-desktop.png)

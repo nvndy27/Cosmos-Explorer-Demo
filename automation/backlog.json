@@ -178,6 +178,54 @@
       ],
       "title": "Kiểm tra chia sẻ hồ sơ trong Chrome",
       "acceptance": "Tạo scripts/check_share.cjs dùng Playwright/Chrome ngoài repo theo COSMOS_PLAYWRIGHT_MODULE và COSMOS_CHROME. Kiểm tra sao chép URL chứa ID hiện tại qua Clipboard API trên HTTP localhost; kiểm tra fallback copy trên file:// bằng intercept execCommand để xác nhận đúng URL được chọn, không cần quyền clipboard; mở link trực direct trong context mới đúng hồ sơ; ID lạ fallback về Saturn và #saturn; Tab/Enter kích hoạt nút; layout không tràn ngang 390/820/1440. Ghi JSON vào thư mục tạm, dọn browser/server trong finally. Chỉ thêm script mới, không sửa app hay dependency. Nêu rõ Chrome loopback/file:// không xác minh hosting TLS công khai."
+    },
+    {
+      "id": "SCENE-001",
+      "lane": "codex-1",
+      "status": "done",
+      "github_issue": 18,
+      "depends_on": [],
+      "allowed_paths": [
+        "cosmos-explorer/scene.js"
+      ],
+      "title": "Nâng chất lượng minh họa hành tinh Canvas",
+      "acceptance": "Ánh sáng/texture/vành đai có cache và deterministic; giữ8hành tinh tổngquan,Earthnhỏ,offline; không ảnh/dữ liệu khoa học mới; Chrome3viewport khôngpageerror."
+    },
+    {
+      "id": "UX-003",
+      "lane": "codex-2",
+      "status": "done",
+      "github_issue": 18,
+      "depends_on": [],
+      "allowed_paths": [
+        "cosmos-explorer/museum.css"
+      ],
+      "title": "Hoàn thiện giao diện sơ đồ tối và responsive",
+      "acceptance": "Điều khiển44px,focusrõ,khôngmảngtrắng/overflow ở390/820/1440; khôngchelabels; giữhome/library/compare/reading."
+    },
+    {
+      "id": "QA-006",
+      "lane": "codex-coordinator",
+      "status": "done",
+      "github_issue": 18,
+      "depends_on": [],
+      "allowed_paths": [
+        "scripts/check_scene.cjs",
+        "scripts/check_all.py",
+        "docs/QA.md",
+        "docs/STATUS.md",
+        "docs/USER_GUIDE.md",
+        "docs/AUTOMATION.md",
+        "cosmos-explorer/index.html",
+        "cosmos-explorer/planet-view.js",
+        "cosmos-explorer/planet-view.css",
+        "cosmos-explorer/tests/smoke.cjs",
+        "docs/qa/planet-ui-2026-11-06.json",
+        "docs/screenshots/planet-diagram-desktop.png",
+        "README.md"
+      ],
+      "title": "Kiểm chứng cảnh hành tinh và phối hợp Claude",
+      "acceptance": "TestChrome thật về8targets/chọn/Earthsmall/zoomreset/pausestatic/play/reducedmotion/modeoff, snapshot; Claudeaudit riêng; fullgates2AGYsameSHA+CI trướcmerge, chưa public. Nút xem minh họa ở hồ sơ8hành tinh,giữ ảnh gốc mặc định/creditvàresetkhiđổihồsơ."
     }
   ]
 }

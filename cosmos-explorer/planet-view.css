@@ -1,0 +1,9 @@
+.planet-art-controls { margin: -4px 0 22px; }
+.planet-art-controls button { min-height: 44px; width: 100%; padding: 10px 16px; border: 1px solid #56778e; border-radius: 10px; background: #142b40; color: #d9effb; font: inherit; font-size: 14px; cursor: pointer; }
+.planet-art-controls button:hover { background: #203d54; }
+.planet-art-controls button[aria-pressed="true"] { border-color: #b5ddf2; background: #23455d; }
+.planet-art-controls button:focus-visible { outline: 2px solid #d8efff; outline-offset: 4px; }
+.planet-art-controls p { color: #b5c5d5; font-size: 14px; line-height: 1.7; margin: 12px 0 0; }
+.illustration-active #objectImage { visibility: hidden; }
+.illustration-active #photoCaption, .illustration-active .photo-corner, .illustration-active #dataTypeBadge { display: none; }
+.illustration-active #photoWrap { background: #050b15; }

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="enhancements.css" />
   <link rel="stylesheet" href="explorer22.css" />
   <link rel="stylesheet" href="museum.css" />
+  <link rel="stylesheet" href="planet-view.css" />
 </head>
 <body>
   <div class="ambient-bg"></div>
@@ -100,6 +101,7 @@
         <div class="badges"><span class="confirmed-badge" id="statusBadge"><i></i> ĐÃ XÁC NHẬN</span><span class="alt-badge" id="dataTypeBadge">NGHỆ THUẬT MINH HỌA</span></div>
         <div class="photo-wrap" id="photoWrap"><div class="photo-fallback" id="photoFallback"><span class="fallback-stars"></span><div class="fallback-planet" id="fallbackPlanet"></div><canvas id="detailCanvas" aria-label="Minh họa thiên thể, không phải ảnh quan sát"></canvas></div><img id="objectImage" alt="Ảnh tư liệu thiên văn" loading="eager" /><span class="photo-corner">NASA • SPACE SCIENCE</span></div>
         <p class="photo-caption" id="photoCaption">Hình minh họa khoa học, không phải ảnh chụp trực tiếp bề mặt.</p>
+        <div id="planetArtControls" class="planet-art-controls hidden"><button id="planetArtToggle" type="button" aria-pressed="false" aria-controls="photoWrap">Xem minh họa hành tinh</button><p id="planetArtCaption" class="hidden">Minh họa đồ họa · Cosmos Explorer. Ánh sáng, bề mặt và vành đai được tạo để khám phá; không phải ảnh quan sát, bản đồ bề mặt hay mô phỏng vật lý.</p></div>
         <p id="profileIntro" class="profile-intro"></p>
         <div class="tabs" role="tablist" aria-label="Nội dung hồ sơ"><button class="tab active" data-tab="overview" role="tab" aria-selected="true">Tổng quan</button><button class="tab" data-tab="features" role="tab" aria-selected="false">Đặc điểm</button><button class="tab" data-tab="research" role="tab" aria-selected="false">Khám phá</button><button class="tab" data-tab="sources" role="tab" aria-selected="false">Nguồn</button></div>
         <div class="tab-content" id="overviewTab" role="tabpanel"><div class="stat-grid" id="statGrid"></div><div class="fact-card"><div class="fact-heading"><span class="fact-star">✧</span> Điểm đáng khám phá</div><p id="factText"></p></div></div>
@@ -119,5 +121,6 @@
   <script src="app.js"></script>
   <script src="explorer-ui.js"></script>
   <script src="museum.js"></script>
+  <script src="planet-view.js"></script>
 </body>
 </html>
