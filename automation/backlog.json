@@ -182,7 +182,7 @@
     {
       "id": "SCENE-001",
       "lane": "codex-1",
-      "status": "ready",
+      "status": "done",
       "github_issue": 18,
       "depends_on": [],
       "allowed_paths": [
@@ -194,7 +194,7 @@
     {
       "id": "UX-003",
       "lane": "codex-2",
-      "status": "ready",
+      "status": "done",
       "github_issue": 18,
       "depends_on": [],
       "allowed_paths": [
@@ -206,7 +206,7 @@
     {
       "id": "QA-006",
       "lane": "codex-coordinator",
-      "status": "ready",
+      "status": "done",
       "github_issue": 18,
       "depends_on": [],
       "allowed_paths": [
