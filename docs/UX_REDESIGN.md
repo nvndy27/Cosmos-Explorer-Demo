@@ -22,4 +22,4 @@ Theo phản hồi về các mảng trắng, mặc định hiện dùng nền t�
 
 `check_all.py --browser` đạt 28 unit tests, 14 nhóm smoke và 12 nhóm kiểm tra museum. Chrome ở 390/820/1440px đã kiểm tìm kiếm, lọc, lưu/bỏ lưu, so sánh, đọc, quay lại, bàn phím, màu nền, vùng chạm và ảnh lỗi; ảnh thực của trang đầu/thư viện/hồ sơ đã được chụp và xem. Các bộ kiểm tra cũ về dữ liệu, chia sẻ, storage, HTTPS loopback, CSP và quyền riêng tư đều đạt. [Bằng chứng](qa/museum-ui-2026-11-06.json).
 
-Đây là kiểm tra tự động và tác nhân, không phải thử với người thật hay chứng nhận WCAG. SCI-001/USER-001/PUB-001 tiếp tục manual; chưa deploy công khai. Giữ ngưỡng dừng khi đã dùng 50% quota 5 giờ.
+Đây là kiểm tra tự động và tác nhân, không phải thử với người thật hay chứng nhận WCAG. SCI-001/USER-001/PUB-001 tiếp tục manual; chưa deploy công khai. Theo yêu cầu cập nhật ngày 06/11/2026, dừng khi còn 10% quota 5 giờ; tự tiếp tục sau khi backend xác nhận hạn mức hồi trên ngưỡng.

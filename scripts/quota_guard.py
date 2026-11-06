@@ -86,7 +86,7 @@ def fetch_limits(timeout=25):
         process.stdout.close()
 
 
-def assess(payload, minimum=50, now=None):
+def assess(payload, minimum=10, now=None):
     """A 300-minute window is identified by duration, never primary position."""
     now = time.time() if now is None else now
     if (isinstance(minimum, bool) or not isinstance(minimum, (int, float))
@@ -127,7 +127,7 @@ def assess(payload, minimum=50, now=None):
             'retry_at': max([w['resets_at'] + 30 for w in held] + [now + 120]) if blocked else None}
 
 
-def check(minimum=50):
+def check(minimum=10):
     try:
         return assess(fetch_limits(), minimum)
     except Exception as error:
@@ -193,10 +193,10 @@ def _resume_bound_coordinator(binding):
         return {'status': 'coordinator_unavailable', 'error': str(error)}
     if not wait.get('wait', {}).get('satisfied'):
         return {'status': 'coordinator_busy'}
-    minimum = load(ROOT / 'automation/config.json', {}).get('minimum_remaining_5h_percent', 50)
+    minimum = load(ROOT / 'automation/config.json', {}).get('minimum_remaining_5h_percent', 10)
     prompt = (f'Hạn mức Codex đã được kiểm tra lại và còn trên {minimum}% cửa sổ 5 giờ. '
               'Người dùng đã yêu cầu tự tiếp tục sau reset. Tiếp tục Cosmos Explorer từ '
-              '.automation/quota-state.json, các checkpoint .automation/live-*/state.json '
+              '.automation/quota-state.json, .automation/RESUME.md, các checkpoint .automation/*-wave/state.json và .automation/live-*/state.json '
               'và backlog đã duyệt. Dùng lại các terminal đúng dự án còn rảnh, giữ worktree '
               'riêng, review 2 AGY và kiểm tra trước tích hợp. Kiểm quota trước giao việc mới. '
               'Không deploy công khai, không liên hệ bên ngoài, không tự mở các cổng '
@@ -216,7 +216,7 @@ def tick():
         state_path = LOCAL / 'quota-state.json'
         previous = load(state_path, {})
         config = load(ROOT / 'automation/config.json', {})
-        current = check(config.get('minimum_remaining_5h_percent', 50))
+        current = check(config.get('minimum_remaining_5h_percent', 10))
         state = transition(previous, current)
         # Persist before submitting; an ambiguous transport result must not cause duplicate input.
         if state['allowed'] and state['resume_pending']:
@@ -247,7 +247,7 @@ def main():
         tick()
         return 0
     config = load(ROOT / 'automation/config.json', {})
-    result = check(config.get('minimum_remaining_5h_percent', 50))
+    result = check(config.get('minimum_remaining_5h_percent', 10))
     if not result['allowed']:
         record_hold(result)
     print(json.dumps(result, ensure_ascii=False, indent=2))
