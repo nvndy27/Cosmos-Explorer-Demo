@@ -81,7 +81,7 @@ function syncOverviewTargets(items){
 }
 function drawOverview(){
  const items=overviewObjects();syncOverviewTargets(level==='solar'&&!items.some(o=>o.id===current)?[...items,obj(current)]:items);overviewHits=[];
- const cx=W*.5+dragX*12,cy=H*.59+dragY*9,R=Math.min(W*.41,H*.31)*zoom;
+ const cx=W*.5+dragX*12,cy=H*.59+dragY*9,R=Math.min(W*.41,H*(W<=820?.265:.31))*zoom;
  if(level==='solar'){
   paintStar(ctx,{id:'sun',type:'star'},cx,cy,Math.max(9,R*.063));
   items.forEach((o,i)=>{const orbit=R*(.17+i*.115),phase=solarPhase[i]+angle*(.04/(1+i*.35)),x=cx+Math.cos(phase)*orbit,y=cy+Math.sin(phase)*orbit*.65;ctx.strokeStyle=o.id===current?'#9ac7dc66':'#7b9ab42b';ctx.lineWidth=1;ctx.beginPath();ctx.ellipse(cx,cy,orbit,orbit*.65,0,0,Math.PI*2);ctx.stroke();const sizes=[3.4,4.6,4.8,3.9,11,9.4,7,6.8];const r=sizes[i]*clamp(R/245,.65,1.2);paintObject(ctx,o,x,y,r);markOverview(o,x,y,r);if(o.id==='earth'&&current==='moon'){paintObject(ctx,obj('moon'),x+21,y-15,2);markOverview(obj('moon'),x+21,y-15,2)}});
