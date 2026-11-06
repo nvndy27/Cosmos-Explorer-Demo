@@ -14,6 +14,7 @@ def commands(browser=False):
     result += [["node", "--check", "cosmos-explorer/museum.js"],
                ["node", "--check", "cosmos-explorer/planet-view.js"],
                ["node", "--check", "scripts/check_scene.cjs"],
+               ["node", "--check", "scripts/check_library_accessibility.cjs"],
                ["node", "--check", "scripts/check_museum.cjs"],
                ["node", "--check", "scripts/check_http.cjs"],
                ["node", "--check", "scripts/check_storage.cjs"],
@@ -27,7 +28,8 @@ def commands(browser=False):
                ["node", "cosmos-explorer/tests/smoke.cjs"],
                ["node", "scripts/validate_catalog.cjs"]]
     if browser:
-        result += [["node", "scripts/check_scene.cjs"],
+        result += [["node", "scripts/check_library_accessibility.cjs"],
+                   ["node", "scripts/check_scene.cjs"],
                    ["node", "scripts/check_museum.cjs"],
                    ["node", "scripts/check_browser.cjs"],
                    ["node", "scripts/check_messier_expansion.cjs"],

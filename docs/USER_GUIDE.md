@@ -10,6 +10,8 @@ Cosmos Explorer là thư viện thiên văn tiếng Việt với dữ liệu bi�
 4. Chọn thiên thể để đọc hồ sơ. Các tab **Tổng quan**, **Đặc điểm**, **Khám phá** và **Nguồn** lần lượt cho nội dung giới thiệu, đại lượng, giới hạn quan sát/nghiên cứu và liên kết tham khảo. Mở **Nguồn** hoặc chọn **Xem dữ liệu gốc** để xem trang nguồn; những liên kết này cần Internet.
 5. Thẻ trên trang Khám phá mở hồ sơ rộng; nút **Trở lại khám phá** hoặc Escape quay lại trang đầu. Trong chế độ Sơ đồ, ảnh chi tiết nằm ở hồ sơ bên phải trên màn hình rộng hoặc bên dưới trên điện thoại. Đọc chú thích và nhãn: ảnh quan sát đã xử lý, ảnh tái dựng và minh họa nghệ thuật là các loại tư liệu khác nhau. Ảnh minh họa không phải ảnh chụp bề mặt. Nếu ảnh không tải được, giao diện có hình dự phòng ghi là minh họa của Cosmos Explorer.
 
+Trong Thư viện, khi mở hồ sơ từ thẻ hoặc liên kết bộ sưu tập, **Escape** hoặc nút quay lại đưa bạn về cùng kết quả đã lọc; ứng dụng cố gắng khôi phục trang, vị trí cuộn và focus trên nút đã gọi. Nếu thẻ đó không còn trong kết quả, focus chuyển tới số kết quả của thư viện. Dùng Tab/Shift+Tab để đi giữa các điều khiển và Enter/Space để kích hoạt nút; **Hướng dẫn (?)** có nút đóng và trả focus về nơi gọi.
+
 ### Đọc sơ đồ đúng cách
 
 Chọn **Sơ đồ** để xem khung minh họa và hồ sơ của đối tượng. Có thể chọn đối tượng ở danh sách bên trái hoặc trên sơ đồ nếu có điểm chọn. Kéo để dịch góc nhìn, cuộn hoặc dùng các nút `+`/`−` để thu phóng, nút đặt lại để trở về góc nhìn ban đầu. Nút **Khám phá tiếp** chuyển sang đối tượng khác. Chuyển động có thể tạm dừng bằng nút phát/tạm dừng.

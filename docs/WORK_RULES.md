@@ -4,7 +4,9 @@ Cập nhật: 2026-11-05. Đọc cùng AGENTS.md, PRODUCT.md, REQUIREMENTS.md v�
 
 ## Quyền và trách nhiệm
 - Chủ dự án sở hữu định hướng, hosting, phát hành công khai, ngân sách và việc liên hệ người dùng.
+- Coordinator là manager của đợt: xác định ưu tiên, tạo/chia tác vụ, giao phạm vi không chồng lấn, theo dõi tiến độ, rà bằng chứng và quản lý backlog/Git/tích hợp. Worker sở hữu phần triển khai, kiểm tra và tài liệu được giao; không tự đổi trạng thái backlog hoặc mở rộng allowed_paths.
 - Codex 1/2/3 nhận tối đa một tác vụ độc lập mỗi đợt; quyền sửa lấy từ allowed_paths của tác vụ. Phân công theo backlog, không ba tác nhân cùng sửa một tệp.
+- Nếu quyền hoặc sandbox chặn worker, worker ghi rõ thao tác bị chặn và bằng chứng rồi báo coordinator để điều chỉnh phân công/quyền theo quy trình; không tự nới sandbox và coordinator không mặc định nhận phần code của worker.
 - AGY 1 review tính đúng, hồi quy và kiến trúc. AGY 2 review hành trình người dùng, khả năng kiểm chứng, khoa học/ghi công. Hai bên không phải kiểm định khoa học độc lập của chuyên gia.
 - Bộ điều phối chỉ nhận thay đổi trong phạm vi; chạy kiểm tra trên bản tích hợp; không tin câu “đã test” nếu không có log. AGY không sửa ứng viên khi review.
 
@@ -13,7 +15,7 @@ Có vấn đề người dùng, kết quả cần có, phạm vi file, ràng bu�
 
 ## Definition of Done
 1. Đáp ứng tiêu chí tác vụ; thay đổi nhỏ và review được; không mất ID/dữ liệu cũ.
-2. Mọi kiểm tra bắt buộc đạt trên bản đã tích hợp; nội dung/ảnh thay đổi có nguồn, ngày, manifest và build tái tạo.
+2. Mọi kiểm tra tự động bắt buộc đạt trên bản đã tích hợp; nội dung/ảnh thay đổi có nguồn, ngày, manifest và build tái tạo. Manual, người dùng thật, chuyên gia, hosting và phê duyệt của chủ dự án chỉ được coi là hoàn tất khi có bằng chứng riêng; không suy ra từ suite tự động.
 3. Cả hai AGY chấp thuận cùng một commit; một bên yêu cầu sửa là dừng. Output lỗi/thiếu/timeout được coi là chưa duyệt.
 4. QA browser thực khi thay hành vi/giao diện; bản public còn cần manual QA, kiểm tra HTTPS và quyết định chủ dự án.
 5. Báo cáo ghi file, lệnh đã chạy, kết quả, giới hạn. Không đánh dấu xong bằng bản kế hoạch.

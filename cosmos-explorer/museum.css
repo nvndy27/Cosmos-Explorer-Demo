@@ -599,3 +599,16 @@ body:not(.museum-home)[data-mode="diagram"] .viewer-tip { right: 22px; bottom: 1
   body:not(.museum-home)[data-mode="diagram"] .next-button { padding-inline: 10px; font-size: 12px; }
   body:not(.museum-home)[data-mode="diagram"] .scale-label { left: 12px; right: 60px; bottom: 110px; font-size: 10px; }
 }
+
+/* Comfortable library targets, including native disclosure controls. */
+body #clearLibraryFilters, body #libraryPrev, body #libraryNext,
+body .collection-title, body .collection-links a, body .card-credit summary, body #collectionToggle > summary {
+  min-width: 44px; min-height: 44px;
+}
+body .card-credit summary { padding-block: 10px; cursor: pointer; }
+body .collection-links a { display: inline-flex; align-items: center; padding-block: 8px; }
+@media (max-width: 520px) {
+  #helpOverlay .modal { padding-top: 12px; scroll-padding-top: 64px; background-attachment: local; }
+  #helpOverlay .modal-close { position: sticky; top: 0; display: block; margin-left: auto; margin-right: -8px; z-index: 2; border: 1px solid #526b83; border-radius: 8px; background: #102237; box-shadow: 0 5px 18px #02081288; }
+  #helpOverlay .modal h2 { margin-top: 12px; }
+}

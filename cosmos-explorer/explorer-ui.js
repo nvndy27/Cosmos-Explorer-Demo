@@ -17,21 +17,45 @@ const ExplorerUI=(()=>{
   if(mode==='library')renderLibrary();if(mode==='compare')renderComparison();if(mode==='diagram')requestAnimationFrame(resize);
   if(focus){$('workspace').setAttribute('tabindex','-1');$('workspace').focus();$('workspace').scrollIntoView({block:'start'})}
  }
+ function captureReadingFocus(){
+  const element=document.activeElement,card=element?.closest?.('.library-card'),collectionLink=element?.closest?.('.collection-links a');let kind='element',id=null,action=null;
+  if(card){kind='library-card';id=card.dataset.id;action=element.classList.contains('card-read')?'read':element.classList.contains('card-compare')?'compare':element.classList.contains('card-save')?'save':null}
+  else if(collectionLink){kind='collection-link';id=collectionLink.dataset.objectId||collectionLink.getAttribute('href')?.slice(1)||null}
+  const scroll=[];for(let node=element;node&&node!==document.documentElement;node=node.parentElement){const style=getComputedStyle(node);if(/auto|scroll|overlay/.test(style.overflowY)&&node.scrollHeight>node.clientHeight+1)scroll.push({node,top:node.scrollTop,left:node.scrollLeft})}
+  return {element,kind,id,action,mode:UI.mode,scroll,x:window.scrollX,y:window.scrollY};
+ }
+ function focusIsVisible(element){return Boolean(element?.isConnected&&element.getClientRects().length&&!element.closest('[hidden],.hidden'))}
+ function restoreReadingFocus(snapshot){
+  if(!snapshot)return;let target=focusIsVisible(snapshot.element)?snapshot.element:null;
+  if(!target&&snapshot.mode==='library'&&UI.mode==='library'&&snapshot.kind==='library-card'&&snapshot.id){
+   let card=[...$('libraryGrid').querySelectorAll('.library-card')].find(node=>node.dataset.id===snapshot.id);
+   if(!card){renderLibrary();card=[...$('libraryGrid').querySelectorAll('.library-card')].find(node=>node.dataset.id===snapshot.id)}
+   if(card)target=card.querySelector(snapshot.action==='read'?'.card-read':snapshot.action==='compare'?'.card-compare':snapshot.action==='save'?'.card-save':'.card-read');
+  }else if(!target&&snapshot.mode==='library'&&UI.mode==='library'&&snapshot.kind==='collection-link'&&snapshot.id){
+   target=[...document.querySelectorAll('.collection-links a')].find(link=>link.dataset.objectId===snapshot.id||link.getAttribute('href')==='#'+snapshot.id)||null;
+  }
+  if(!focusIsVisible(target))target=snapshot.mode==='library'&&UI.mode==='library'?$('libraryCount'):$('details');
+  requestAnimationFrame(()=>{
+   if(focusIsVisible(target)){try{target.focus({preventScroll:true})}catch(_){target.focus()}}
+   for(const saved of snapshot.scroll)if(saved.node.isConnected){saved.node.scrollTop=saved.top;saved.node.scrollLeft=saved.left}
+   window.scrollTo(snapshot.x,snapshot.y);
+  });
+ }
  function setReading(on,restore=true){
-  if(on&&!UI.reading)lastReadingFocus=document.activeElement;const was=UI.reading;UI.reading=Boolean(on);document.body.classList.toggle('reading',UI.reading);$('readWide').setAttribute('aria-expanded',String(UI.reading));$('readWide').textContent=UI.reading?'Trở lại khám phá':'Đọc rộng';
-  if(UI.reading){$('details').focus();$('details').scrollIntoView({block:'start'})}else if(was){requestAnimationFrame(resize);if(restore&&lastReadingFocus?.isConnected)lastReadingFocus.focus()}
+  if(on&&!UI.reading)lastReadingFocus=captureReadingFocus();const was=UI.reading;UI.reading=Boolean(on);document.body.classList.toggle('reading',UI.reading);$('readWide').setAttribute('aria-expanded',String(UI.reading));$('readWide').textContent=UI.reading?'Trở lại khám phá':'Đọc rộng';
+  if(UI.reading){$('details').focus();$('details').scrollIntoView({block:'start'})}else if(was){requestAnimationFrame(resize);const focus=lastReadingFocus;lastReadingFocus=null;if(restore)restoreReadingFocus(focus)}
  }
  function filtered(){let records=collection?.ids?data.filter(o=>collection.ids.includes(o.id)):data;return M.filter(records,UI.filters,favorites)}
  function readFilters(){UI.filters={query:$('libraryQuery').value,classification:$('libraryType').value,system:$('librarySystem').value,sort:$('librarySort').value,saved:$('librarySaved').checked,observed:$('libraryObserved').checked};UI.page=0;renderLibrary()}
  function clearFilters(){collection=null;$('libraryQuery').value='';$('libraryType').value='';$('librarySystem').value='';$('librarySort').value='name';$('librarySaved').checked=false;$('libraryObserved').checked=false;readFilters()}
- function renderCollections(){const container=$('collections');empty(container);for(const c of collections){const block=el('article',null,'collection');block.append(button(c.title,()=>{clearFilters();collection=c;if(c.system)$('librarySystem').value=c.system;if(c.classification)$('libraryType').value=c.classification;readFilters();$('libraryCount').focus()},'collection-title'),el('p',c.intro));const related=c.ids||data.filter(o=>c.system?o.system===c.system:o.classification===c.classification).map(o=>o.id);const links=el('div',null,'collection-links');for(const id of related.slice(0,3)){const a=el('a',obj(id).name);a.href='#'+id;a.addEventListener('click',event=>{if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();select(id);setReading(true)});links.append(a)}block.append(links);container.append(block)}}
+ function renderCollections(){const container=$('collections');empty(container);for(const c of collections){const block=el('article',null,'collection');block.append(button(c.title,()=>{clearFilters();collection=c;if(c.system)$('librarySystem').value=c.system;if(c.classification)$('libraryType').value=c.classification;readFilters();$('libraryCount').focus()},'collection-title'),el('p',c.intro));const related=c.ids||data.filter(o=>c.system?o.system===c.system:o.classification===c.classification).map(o=>o.id);const links=el('div',null,'collection-links');for(const id of related.slice(0,3)){const a=el('a',obj(id).name);a.href='#'+id;a.dataset.objectId=id;a.addEventListener('click',event=>{if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();select(id);setReading(true)});links.append(a)}block.append(links);container.append(block)}}
  function illustration(o){const c=el('canvas');c.width=400;c.height=240;c.setAttribute('role','img');c.setAttribute('aria-label','Minh họa '+o.name+', không phải ảnh quan sát');const g=c.getContext('2d');g.fillStyle='#081321';g.fillRect(0,0,400,240);paintObject(g,o,200,120,['nebula','galaxy','elliptical','cluster','opencluster','deep','remnant'].includes(o.type)?90:57);return c}
  function card(o){
   const article=el('article',null,'library-card');article.dataset.id=o.id;const visual=el('div',null,'card-visual');
   const fallback=()=>{empty(visual);visual.append(illustration(o),el('span','Minh họa đồ họa · Cosmos Explorer','visual-label'));const credit=article.querySelector('.card-credit p');if(credit&&o.image)credit.textContent='Đồ họa dự phòng: Cosmos Explorer. Ghi công ảnh gốc chưa tải được: '+o.credit;};
   if(o.image){const img=el('img');img.src=o.image;img.loading='lazy';img.decoding='async';img.alt=o.name+' — '+(o.photoCaption||'ảnh tư liệu có xử lý');img.width=400;img.height=240;img.addEventListener('error',fallback,{once:true});visual.append(img,el('span',M.imageLabel(o),'visual-label'))}else fallback();
   const content=el('div',null,'card-content');content.append(el('p',M.labels[o.classification]||o.small,'card-kind'),el('h2',o.name));const measurement=o.measurements?.radius;content.append(el('p',measurement?(definitions[measurement.definition]||'Bán kính')+': '+M.format(measurement):o.summary,'card-highlight'));
-  const actions=el('div',null,'card-actions');actions.append(button('Đọc hồ sơ',()=>{select(o.id);setReading(true)}),button(UI.compare.includes(o.id)?'Bỏ so sánh':'So sánh',()=>toggleCompare(o.id),'card-compare'));actions.lastChild.setAttribute('aria-pressed',String(UI.compare.includes(o.id)));
+  const actions=el('div',null,'card-actions'),read=button('Đọc hồ sơ',()=>{select(o.id);setReading(true)},'card-read');actions.append(read,button(UI.compare.includes(o.id)?'Bỏ so sánh':'So sánh',()=>toggleCompare(o.id),'card-compare'));actions.lastChild.setAttribute('aria-pressed',String(UI.compare.includes(o.id)));
   const saved=button(favorites.includes(o.id)?'★ Đã lưu':'☆ Lưu',()=>toggleSaved(o.id),'card-save');saved.setAttribute('aria-pressed',String(favorites.includes(o.id)));actions.append(saved);content.append(actions);
   const credit=el('details',null,'card-credit');if(o.imageSource?.includes('eso.org'))credit.open=true;credit.append(el('summary','Nguồn và ghi công hình'));credit.append(el('p',o.image?o.credit:'Minh họa đồ họa: Cosmos Explorer. Không tái dựng bề mặt đã quan sát.'));if(o.image)credit.append(el('p',o.photoCaption));if(o.imageSource)credit.append(source(o.imageSource,'Trang tư liệu gốc'));else credit.append(source(o.source,'Nguồn thông tin thiên thể'));content.append(credit);article.append(visual,content);return article;
  }

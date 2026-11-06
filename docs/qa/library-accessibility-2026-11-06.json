@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-06",
+  "issue": 20,
+  "kind": "library-keyboard-return",
+  "status": "passed",
+  "candidateIntegrated": true,
+  "checks": 15,
+  "viewports": [390, 820, 1440],
+  "coverage": [
+    "Escape and Back restore filtered library and invoking keyboard focus",
+    "Reading return survives card DOM regeneration",
+    "Page and collection-link context survive profile reading",
+    "Removed invoking card falls back to visible result count",
+    "Touch targets are at least 44px; help focus trap and return; no overflow or pageerror"
+  ],
+  "artifactDir": "/tmp/cosmos-library-a11y-Zevi6K",
+  "aggregateGate": {
+    "status": "passed",
+    "log": ".automation/accessibility-wave/final-gates.log",
+    "finalLine": "PASS mandatory gates including Chrome",
+    "unitTests": 28,
+    "smokeGroups": 14,
+    "museumChecks": 12,
+    "sceneChecks": 9,
+    "libraryChecks": 15,
+    "candidateOnly": true,
+    "mergeApprovalsAndGitHubProductConfirmed": false
+  },
+  "realHumanParticipants": 0,
+  "limitations": [
+    "Automated Chrome QA only; no human usability or screen-reader testing.",
+    "No Firefox, Safari, or public-hosting verification.",
+    "This standalone candidate report does not establish full integration gates, two AGY approvals, or GitHub product success."
+  ]
+}
