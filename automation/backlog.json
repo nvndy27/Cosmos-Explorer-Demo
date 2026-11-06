@@ -226,6 +226,66 @@
       ],
       "title": "Kiểm chứng cảnh hành tinh và phối hợp Claude",
       "acceptance": "TestChrome thật về8targets/chọn/Earthsmall/zoomreset/pausestatic/play/reducedmotion/modeoff, snapshot; Claudeaudit riêng; fullgates2AGYsameSHA+CI trướcmerge, chưa public. Nút xem minh họa ở hồ sơ8hành tinh,giữ ảnh gốc mặc định/creditvàresetkhiđổihồsơ."
+    },
+    {
+      "id": "OPS-QUOTA-002",
+      "lane": "codex-coordinator",
+      "status": "done",
+      "github_issue": 20,
+      "depends_on": [],
+      "allowed_paths": [
+        "automation/config.json",
+        "scripts/quota_guard.py",
+        "scripts/automation.py",
+        "scripts/tests/test_quota_guard.py",
+        "AGENTS.md",
+        "docs/AUTOMATION.md",
+        "docs/UX_REDESIGN.md",
+        "docs/WORK_RULES.md"
+      ],
+      "title": "Giữ lại10% hạn mức và tiếp tục sau hồi quota",
+      "acceptance": "Theo yêu cầu mới6/11, default/config10; đọcquota lỗi/weeklyhếtvẫngiữ; watcherđúngbinding2phút khônggửitrùng; testsquota12đạt."
+    },
+    {
+      "id": "UX-004",
+      "lane": "codex-1",
+      "status": "done",
+      "github_issue": 20,
+      "depends_on": [],
+      "allowed_paths": [
+        "cosmos-explorer/explorer-ui.js"
+      ],
+      "title": "Khôi phục focus và kết quả sau đọc hồ sơ",
+      "acceptance": "Librarycard/collection mởreading, Escape/backphảivềmode/query/pagevàfocus; DOMrerendercófallback; giữhome/diagram."
+    },
+    {
+      "id": "UX-005",
+      "lane": "codex-2",
+      "status": "done",
+      "github_issue": 20,
+      "depends_on": [],
+      "allowed_paths": [
+        "cosmos-explorer/museum.css"
+      ],
+      "title": "Vùng chạm thư viện và đóng hướng dẫn mobile",
+      "acceptance": "Filter/pagination/summary/collection44px; hướngdẫnscrollchủý/nútđóngdễthấy; khôngpháfocustrap và3viewport."
+    },
+    {
+      "id": "QA-007",
+      "lane": "codex-coordinator",
+      "status": "done",
+      "github_issue": 20,
+      "depends_on": [],
+      "allowed_paths": [
+        "scripts/check_library_accessibility.cjs",
+        "scripts/check_all.py",
+        "docs/QA.md",
+        "docs/STATUS.md",
+        "docs/USER_GUIDE.md",
+        "docs/qa/library-accessibility-2026-11-06.json"
+      ],
+      "title": "Kiểm thử hồi quy focus thư viện",
+      "acceptance": "Browser3viewport Escape/back/DOMregen/focus/44px/help; fullgates+2AGYsameSHA+GitHubproduct; khôngfakehumanQA."
     }
   ]
 }
