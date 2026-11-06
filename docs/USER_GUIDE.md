@@ -66,3 +66,7 @@ Không cần gửi tên thật, email, tài khoản, lịch sử duyệt web, da
 
 ## Xóa dữ liệu trên thiết bị
 Mở **Hướng dẫn (?)**, chọn **Xóa mục đã lưu trên thiết bị** và xác nhận. Chỉ yêu thích của Cosmos Explorer được xóa; hủy giữ nguyên danh sách. Nếu trình duyệt chặn bộ nhớ, ứng dụng báo giới hạn và bạn cần xóa dữ liệu site trong cài đặt trình duyệt.
+
+## Xem minh họa hành tinh
+
+Trong hồ sơ tám hành tinh, chọn **Xem minh họa hành tinh** để xem đồ họa ánh sáng/bề mặt/vành đai trong khung ảnh của hồ sơ. Chọn **Trở lại ảnh tư liệu** để xem lại ảnh và ghi công gốc. Khi chuyển hồ sơ, ứng dụng quay về ảnh tư liệu mặc định. Các bề mặt Canvas là minh họa nghệ thuật, không phải bản đồ bề mặt chính xác, ảnh quan sát hay mô phỏng vật lý; sơ đồ Hệ Mặt Trời vẫn giữ tổng quan với kích thước và khoảng cách nén riêng.

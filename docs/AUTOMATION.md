@@ -79,3 +79,11 @@ Installer với --enable cài cả timer hằng ngày và timer quota. Khi khở
 
 ## GitHub QA độc lập máy cá nhân
 Workflow `.github/workflows/quality.yml` chạy khi PR, push main, thủ công và lịch 02:00 UTC (09:00 Việt Nam). Job có quyền contents:read, checkout không giữ credentials, timeout 20 phút, actions pin SHA và Playwright pin phiên bản ngoài repo. Job chạy check_all.py --browser: unittest gồm DB/API, smoke/catalog và browser security/privacy/personas. Không gọi model, không đăng nhập tài khoản cá nhân, không tự sửa dữ liệu hay deploy. Main remote được bảo vệ bằng PR + check product. Lịch GitHub có thể trễ theo tải hệ thống, không phải lịch thời gian thực bảo đảm.
+
+## Đợt tương tác có Claude — issue #18
+
+Theo yêu cầu chủ dự án ngày 06/11/2026, đợt hoàn thiện giao diện dùng 3 Codex gồm điều phối và hai worker, một terminal Claude CLI hiện có để rà hành trình, cùng hai AGY review ứng viên. Orca orchestration lưu Run/Task/Dispatch; worker có phạm vi tệp riêng, báo `worker_done` và kết thúc lượt. Claude không thay hai cổng AGY hoặc kiểm thử người thật. Model/tài khoản giữ theo cấu hình chủ dự án, không tự chuyển để né hạn mức.
+
+Run tương tác được tiếp tục từ `.automation/polish-wave/state.json` và báo cáo trong cùng thư mục; binding terminal phải được đối chiếu inventory sau mỗi lần khởi động lại Orca. Không dùng handle cũ sau restart. Worker hoàn thành được giữ để tái sử dụng theo yêu cầu chủ dự án; không gửi cùng một prompt cho hai người làm cùng phạm vi.
+
+Timer Python hằng ngày vẫn dùng cấu hình 3 Codex + 2 AGY đã kiểm chứng; chưa gọi Claude tự động trong timer này. Phân công Claude ở đợt tương tác do điều phối Orca thực hiện và lưu bằng chứng riêng. Không có cam kết chạy khi máy ngủ, hết quota hoặc các cổng con người còn thiếu đầu vào.

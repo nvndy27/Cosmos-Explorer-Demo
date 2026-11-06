@@ -1,5 +1,11 @@
 # Trạng thái sản phẩm — 2026-11-06
 
+## Đợt hoàn thiện cảnh hành tinh — issue #18
+
+Ngày 06/11/2026: đã triển khai renderer Canvas có cache, ánh sáng/bề mặt và vành đai trước/sau; thêm lựa chọn minh họa trong hồ sơ tám hành tinh, giữ ảnh tư liệu mặc định và ghi công gốc. Giao diện sơ đồ có bề mặt tối và vùng chạm rõ hơn. Đây là minh họa nghệ thuật, không phải mô phỏng vật lý hoặc vị trí thời gian thực. Catalog 164 hồ sơ/152 ảnh không thay đổi.
+
+Đợt tương tác có ba Codex (gồm điều phối), Claude CLI rà hành trình và hai AGY review trước tích hợp. Bằng chứng kiểm tra và giới hạn được ghi trong QA.md. Trạng thái sản phẩm vẫn là beta local: SCI-001/USER-001/PUB-001 cần người thật; chưa triển khai công khai.
+
 ## Giao diện khám phá museum
 
 Đã nối trang đầu vào toàn bộ catalog thật, đồng nhất nền tối, mở rộng thư viện/so sánh và sửa các nút tìm kiếm/lưu/đọc/chuyển chế độ. Bộ kiểm tra cục bộ trên code `3306a4f0e70a3985d3d9b3d8c0ee314efe447fcd` đạt 28 unit tests, 14 smoke, 12 nhóm museum và các bộ Chrome cũ. Dữ liệu/catalog/ảnh giữ nguyên. [Bằng chứng UI](qa/museum-ui-2026-11-06.json); hai AGY cùng SHA và GitHub CI là cổng trước merge. Chưa deploy công khai.

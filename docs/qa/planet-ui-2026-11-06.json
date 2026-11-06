@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-06",
+  "issue": 18,
+  "testedCodeCommit": "67cb72a",
+  "fullGates": "passed",
+  "followupCodeCommit": "6cc6601",
+  "followupGate": "required before merge; result in PR",
+  "checks": {
+    "unit": 28,
+    "smoke": 14,
+    "museum": 12,
+    "scene": 9,
+    "viewports": [
+      390,
+      820,
+      1440
+    ]
+  },
+  "catalogUnchanged": {
+    "profiles": 164,
+    "localImages": 152,
+    "base": "c247737"
+  },
+  "realHumanParticipants": 0,
+  "independentCodexBrowser": "unverified: Chrome SIGTRAP/crashpad sandbox environment",
+  "limitations": [
+    "illustrations not physics or surface maps",
+    "no public deployment",
+    "SCI/USER/PUB remain manual"
+  ]
+}
